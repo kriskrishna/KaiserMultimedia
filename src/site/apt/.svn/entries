@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2010-04-20T16:03:53.588726Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/site/apt"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l525045"
+   committed-rev="9722"/>
+</wc-entries>

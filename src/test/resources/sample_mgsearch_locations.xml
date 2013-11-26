@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<vce>
+  <param name="v:sources" value="kp-mg-facdir"/>
+  <param name="v:project" value="kp-mg-facdir-project"/>
+  <param name="query" value="care"/>
+  <param name="rop" value="NCA"/>
+  <param name="render.function" value="xml-feed-display-wpp-mg"/>
+  <param name="content-type" value="text/xml"/>
+  <binning base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?&amp;v:sources=kp-mg-facdir&amp;v:project=kp-mg-facdir-project&amp;query=care&amp;rop=NCA&amp;binning-state=">
+    <binning-state separator="%0A%0A"/>
+    <binning-set label="city" bs-id="city">
+      <bin label="Antioch" ndocs="2" token="city==Antioch"/>
+      <bin label="Bolinas" ndocs="1" token="city==Bolinas"/>
+      <bin label="Elk Grove" ndocs="1" token="city==Elk Grove"/>
+      <bin label="Fairfield" ndocs="1" token="city==Fairfield"/>
+      <bin label="Folsom" ndocs="1" token="city==Folsom"/>
+      <bin label="Fremont" ndocs="1" token="city==Fremont"/>
+      <bin label="Fresno" ndocs="2" token="city==Fresno"/>
+      <bin label="Gilroy" ndocs="1" token="city==Gilroy"/>
+
+      <bin label="Hayward" ndocs="1" token="city==Hayward"/>
+      <bin label="Lincoln" ndocs="1" token="city==Lincoln"/>
+      <bin label="Livermore" ndocs="1" token="city==Livermore"/>
+      <bin label="Manteca" ndocs="2" token="city==Manteca"/>
+      <bin label="Martinez" ndocs="1" token="city==Martinez"/>
+      <bin label="Milpitas" ndocs="1" token="city==Milpitas"/>
+      <bin label="Modesto" ndocs="4" token="city==Modesto"/>
+      <bin label="Mountain View" ndocs="1" token="city==Mountain View"/>
+      <bin label="Napa" ndocs="1" token="city==Napa"/>
+
+      <bin label="Novato" ndocs="1" token="city==Novato"/>
+      <bin label="Oakland" ndocs="1" token="city==Oakland"/>
+      <bin label="Patterson" ndocs="1" token="city==Patterson"/>
+      <bin label="Petaluma" ndocs="1" token="city==Petaluma"/>
+      <bin label="Pleasanton" ndocs="1" token="city==Pleasanton"/>
+      <bin label="Redwood City" ndocs="1" token="city==Redwood City"/>
+      <bin label="Richmond" ndocs="1" token="city==Richmond"/>
+      <bin label="Rohnert Park" ndocs="1" token="city==Rohnert Park"/>
+      <bin label="Roseville" ndocs="2" token="city==Roseville"/>
+
+      <bin label="Sacramento" ndocs="3" token="city==Sacramento"/>
+      <bin label="San Francisco" ndocs="1" token="city==San Francisco"/>
+      <bin label="San Jose" ndocs="1" token="city==San Jose"/>
+      <bin label="San Leandro" ndocs="1" token="city==San Leandro"/>
+      <bin label="San Rafael" ndocs="2" token="city==San Rafael"/>
+      <bin label="Santa Clara" ndocs="1" token="city==Santa Clara"/>
+      <bin label="Santa Rosa" ndocs="3" token="city==Santa Rosa"/>
+      <bin label="South San Francisco" ndocs="1" token="city==South San Francisco"/>
+      <bin label="Stockton" ndocs="2" token="city==Stockton"/>
+
+      <bin label="Tracy" ndocs="1" token="city==Tracy"/>
+      <bin label="Union City" ndocs="1" token="city==Union City"/>
+      <bin label="Vallejo" ndocs="1" token="city==Vallejo"/>
+      <bin label="Walnut Creek" ndocs="2" token="city==Walnut Creek"/>
+    </binning-set>
+    <binning-set label="department type" bs-id="department_type">
+      <bin label="Other Clinical Services" ndocs="48" token="department_type==Other Clinical Services"/>
+      <bin label="Pharmacy" ndocs="48" token="department_type==Pharmacy"/>
+      <bin label="Laboratory" ndocs="45" token="department_type==Laboratory"/>
+      <bin label="Pediatrics/Teenage Medicine" ndocs="40" token="department_type==Pediatrics/Teenage Medicine"/>
+      <bin label="Radiology" ndocs="40" token="department_type==Radiology"/>
+      <bin label="Optometry" ndocs="35" token="department_type==Optometry"/>
+      <bin label="Obstetrics/Gynecology" ndocs="29" token="department_type==Obstetrics/Gynecology"/>
+      <bin label="Occupational Health" ndocs="29" token="department_type==Occupational Health"/>
+      <bin label="Psychiatry" ndocs="29" token="department_type==Psychiatry"/>
+      <bin label="Dermatology" ndocs="27" token="department_type==Dermatology"/>
+      <bin label="Physical, Occupational, Speech Therapy" ndocs="27" token="department_type==Physical, Occupational, Speech Therapy"/>
+      <bin label="Allergy" ndocs="26" token="department_type==Allergy"/>
+
+      <bin label="Eye Care Services" ndocs="26" token="department_type==Eye Care Services"/>
+      <bin label="Home Health" ndocs="26" token="department_type==Home Health"/>
+      <bin label="Ophthalmology " ndocs="26" token="department_type==Ophthalmology "/>
+      <bin label="Internal Medicine" ndocs="25" token="department_type==Internal Medicine"/>
+      <bin label="Surgery" ndocs="24" token="department_type==Surgery"/>
+      <bin label="Injection Clinics" ndocs="23" token="department_type==Injection Clinics"/>
+      <bin label="Cardiology" ndocs="20" token="department_type==Cardiology"/>
+      <bin label="Orthopedics/Podiatry" ndocs="20" token="department_type==Orthopedics/Podiatry"/>
+      <bin label="Emergency Department" ndocs="19" token="department_type==Emergency Department"/>
+
+      <bin label="Gastroenterology" ndocs="19" token="department_type==Gastroenterology"/>
+      <bin label="Neurology" ndocs="19" token="department_type==Neurology"/>
+      <bin label="Urology" ndocs="19" token="department_type==Urology"/>
+      <bin label="Head and Neck Surgery" ndocs="17" token="department_type==Head and Neck Surgery"/>
+      <bin label="Audiology" ndocs="15" token="department_type==Audiology"/>
+      <bin label="Physical Medicine and Rehabilitation" ndocs="14" token="department_type==Physical Medicine and Rehabilitation"/>
+      <bin label="Family Practice" ndocs="13" token="department_type==Family Practice"/>
+      <bin label="Hospice Home Care" ndocs="13" token="department_type==Hospice Home Care"/>
+      <bin label="General" ndocs="12" token="department_type==General"/>
+
+      <bin label="Hearing " ndocs="12" token="department_type==Hearing "/>
+      <bin label="Endocrinology/Diabetes" ndocs="11" token="department_type==Endocrinology/Diabetes"/>
+      <bin label="Diagnostic Imaging/Radiology" ndocs="10" token="department_type==Diagnostic Imaging/Radiology"/>
+      <bin label="Nuclear Medicine" ndocs="10" token="department_type==Nuclear Medicine"/>
+      <bin label="Pulmonary Function Laboratory" ndocs="9" token="department_type==Pulmonary Function Laboratory"/>
+      <bin label="Infectious Disease" ndocs="8" token="department_type==Infectious Disease"/>
+      <bin label="Addiction Medicine" ndocs="7" token="department_type==Addiction Medicine"/>
+      <bin label="Pulmonary Rehabilitation" ndocs="6" token="department_type==Pulmonary Rehabilitation"/>
+      <bin label="Radiation Oncology" ndocs="6" token="department_type==Radiation Oncology"/>
+
+      <bin label="Vision Essentials" ndocs="6" token="department_type==Vision Essentials"/>
+      <bin label="Genetics" ndocs="5" token="department_type==Genetics"/>
+      <bin label="Other Administrative Services" ndocs="5" token="department_type==Other Administrative Services"/>
+      <bin label="Pain Management Center" ndocs="4" token="department_type==Pain Management Center"/>
+      <bin label="Dialysis Unit" ndocs="3" token="department_type==Dialysis Unit"/>
+      <bin label="Food and Nutrition" ndocs="3" token="department_type==Food and Nutrition"/>
+      <bin label="Health Education" ndocs="3" token="department_type==Health Education"/>
+      <bin label="Member services" ndocs="2" token="department_type==Member services"/>
+      <bin label="Neurosurgery" ndocs="2" token="department_type==Neurosurgery"/>
+
+      <bin label="Social Medicine" ndocs="2" token="department_type==Social Medicine"/>
+      <bin label="Cardiac Catheterization Laboratory" ndocs="1" token="department_type==Cardiac Catheterization Laboratory"/>
+      <bin label="Cardiac Surgery" ndocs="1" token="department_type==Cardiac Surgery"/>
+      <bin label="Gift Shop" ndocs="1" token="department_type==Gift Shop"/>
+      <bin label="Gynecologic Oncology" ndocs="1" token="department_type==Gynecologic Oncology"/>
+      <bin label="Outpatient Infusion Center" ndocs="1" token="department_type==Outpatient Infusion Center"/>
+      <bin label="Volunteer Services" ndocs="1" token="department_type==Volunteer Services"/>
+    </binning-set>
+  </binning>
+
+  <added-source test-strictly="test-strictly" name="kp-mg-facdir" type="vse" modified="1289947449" elt-id="10" max-elt-id="200" modified-by="Q944458" over-request="1.3" num="200" status="queried" requested="200" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="53" admin-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/admin" stem="depluralize" stem2="none" stoplist="none" search-ms="3" retrieval-ms="10" total-results-with-duplicates="53" retrieved="53">
+    <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22care%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=normal&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=200&amp;staging=0&amp;collection=kp-mg-facdir&amp;r-o-p=0&amp;output-contents=title%0aaffiliated_facility%0a-snippet%0aphone_number%0adept_list%0ap_url%0astreet_address%0acity%0astate&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=0&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0&amp;rights=NCA" start-time="50" end-time="79" http-status="200 OK" status="fetched processed parsed" retrieved="53"/>
+  </added-source>
+  <added-source name="kp-mg-facdir-spelling-corrector" maintainers="Q944458" test-strictly="test-strictly" type="ref" elt-id="2" max-elt-id="6" modified="1286318605" modified-by="Q944458" requested="1">
+    <parse url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/spelling-corrector?xml=%3coperator%20logic%3d%22and%22%3e%3cterm%20field%3d%22query%22%20str%3d%22care%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%2f%3e%3c%2foperator%3e&amp;dict=%3c%3fxml%20version%3d%221.0%22%20encoding%3d%22UTF-8%22%3f%3e%0a%3cspelling-corrector-configuration%3e%3cspelling-corrector-field%20field%3d%22query%22%20dictionary%3d%22kp-mg-facdir-dictionary%22%20stemmer%3d%22delanguage%2bdepluralize%22%2f%3e%3c%2fspelling-corrector-configuration%3e%0a&amp;" start-time="51" end-time="224" http-status="200 OK" status="fetched processed parsed"/>
+  </added-source>
+  <list path="" num="53" level="0" start="0" per="25">
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100322" score="11.9785" rank="0" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc0&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente San Jose Medical Center</content>
+
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100322</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">250 Hospital Parkway</content>
+      <content name="city" type="html">San Jose</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">408-972-3000</content>
+
+      <content name="services_list" type="html">Durable Medical Equipment, Psychiatry (Adult), Hearing Aid Center, Hospice, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; - Outpatient, Acupuncture/Complementary and Alternative Medicine, Admitting, Advanced Illness Coordinated &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program (AICCP), Allergy, Anesthesia Consultation Clinic, Cardiac Cath Lab, Cardiology, &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Services, Chemical Dependency Services, Chronic Pain Management Program, Continuing &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Cosmetic Esthetician Services, CT Scan, Dermatology, Diabetic Retinopathy Screening, Electrocardiography (EKG), Electroencephalography (EEG), Electromyography (EMG), Emergency, Endocrinology/Diabetes Clinic, Eye &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Family Medicine, Gastroenterology/Infectious Disease, Genetics, Gift Shop, Head and Neck Surgery, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospital Medicine, Industrial Injury Physical Therapy, Infusion Center, Injection Clinic (Adult), Internal Medicine/Young Adult Clinic, Interventional Pain, Laboratory (Building D), Laboratory (Family Health Center), Laboratory (Hospital), Laboratory (One North), Mammography, Medical Weight Management Program, Member Services Call Center, Memory Clinic, Minor Injury Clinic, Mohr Micrographic Surgery, MRI, Nephrololgy, Neurology, Nutrition Clinic, Obstetrics/Gynecology, Occupational Health Center, Oncology, Ophthalmology, Optical Center, Optometry, Orthopedics, Outpatient Sleep Program, Pediatrics, Pharmacy (Building D), Pharmacy (Discharge), Pharmacy (Family Health Center), Pharmacy (One North), Pharmacy (Two North), Physical Medicine, Rehabilitation and Spine Clinic, Physical Therapy (Inpatient), Physical Therapy (Outpatient), Podiatry, Poison Control, Pulmonary, Radiology, Radiology (Outpatient), Radiology - CT Scan/MRI, Rheumatology, Spine Surgery, Spiritual &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Sports Medicine, Surgery, Teen Clinic, TTY for the hearing/speech impaired, Ultrasound, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Young Adult Clinic, Chronic Conditions Management, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; - Inpatient, Preoperative Medicine, Plastic Surgery, Urology, Vascular Surgery, Heart Failure Home Telemonitoring, Injection Clinic (Children), Psychiatry (Child and Adolescent), Psychiatry - Autism/Spectrum Disorders, </content>
+
+      <content name="snippet" type="html">250 Hospital Parkway, San Jose, CA  95119</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100324" score="11.9785" rank="1" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc1&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Santa Rosa Medical Center and Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100324</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">401 Bicentennial Way</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">707-393-4000</content>
+      <content name="services_list" type="html">Admitting, Advice Nurse, Allergy injections, Allergy testing, Anesthesiology, Audiology, Business office, Cardiac Lab Services (EKG), Dermatology, Emergency Services, Family Medicine, Family Medicine After-hours urgent &lt;span class="vivbold qt0"&gt;care&lt;/span&gt;, Family Medicine Anticoagulation services, Family Medicine subspecialties, Gastroenterology (GI), Head and Neck Surgery, Health Education Center, Health Sciences Library, HIV Team, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice Services, Infusion Center, Infusion Center- Satellite, Laboratory service center, Laboratory service center 2, Medical Imaging, Member Service Call Center, Member Services/Patient relations, Obstetrics/Gynecology, Orthopedic Surgery, Pediatrics After-hours urgent &lt;span class="vivbold qt0"&gt;care&lt;/span&gt;, Pharmacy 1, Pharmacy 2, Pharmacy 3, Rheumatology, Social Services (Coordination of &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;), Surgery, Vascular Surgery, Breast &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Center, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;/after-hours &lt;span class="vivbold qt0"&gt;care&lt;/span&gt; - Adults, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;/after-hours &lt;span class="vivbold qt0"&gt;care&lt;/span&gt;-Pediatrics, Urology, </content>
+      <content name="city" type="html">San Jose</content>
+      <content name="snippet" type="html">401 Bicentennial Way, Santa Rosa, CA  95403</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100361" score="11.6855" rank="2" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc2&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Hayward Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100361</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">27400 Hesperian Blvd.</content>
+
+      <content name="city" type="html">Hayward</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">510-784-4000</content>
+      <content name="services_list" type="html">Adult Medicine, Alcohol and Drug Abuse, Allergy, Bioethics Referral, Cardiology, Diabetes/PHASE Management, Emergency Services, Gastroenterology, HIV Testing, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice Services, Infectious Disease, Injections and Immunizations, Laboratory, Lactation Nurse/Newborn Follow-up, Mammography, Minor Injury Clinic, Nuclear Medicine, Nutrition Services, Obstetrics/Gynecology, Oncology, Oncology - Urgent conditions, Pain Management Program, Pharmacy, Physical and Occupational Therapy, Poison Control, Postpartum &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Center, Preoperative Clinic, Pulmonology, Radiology, Respiratory &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Outpatient Services, Surgery, Ultrasound, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Wound &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Services, X-ray, Adolescent/Teen Health Clinic, Laboratory (Sleepy Hollow Medical Offices), Nephrology, Neurology/Electroencephalography, Pediatrics, Pharmacy (Sleepy Hollow MO), Urology, </content>
+
+      <content name="snippet" type="html">27400 Hesperian Blvd., Hayward, CA  94545</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100327" score="11.6855" rank="3" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc3&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente San Rafael Medical Center and Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100327</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">99 Montecillo Road</content>
+
+      <content name="city" type="html">San Rafael</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">415-482-6800</content>
+      <content name="services_list" type="html">Chemical Dependency Services, Patient Relations, Psychiatry, Admitting, Advice Nurse, Allergy/injections, Asthma &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Audiology, Cardiac Catherization lab, Chronic Pain &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, CT Scan, Dermatology, Dermatology - Cosmetic services, Emergency Services, Head and Neck Surgery, Health Education, HIV services, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Imaging Services, Infectious Diseases, Interventional Radiology, Kaiser On-the-Job Dedicated Health Center, Laboratory, Mammography, Medicine - Anticoagulation services, Medicine - Cardiology, Medicine-Congestive heart failure &lt;span class="vivbold qt0"&gt;care&lt;/span&gt; management, Medicine - Gastroenterology (GI), Medicine - Insulin Pump Program, Medicine -Internal Medicine, Medicine - MultiFit (Cardiac Rehab Services), Medicine - Oncology, Mohs Surgery, MRI, Neurology, Nuclear Medicine, Nutrition Services, Obstetrics/Gynecology, Oncology, Ophthalmology, Optical Center, Optometry, Orthopedic Medicine, Orthopedic Surgery, Pediatrics, Pharmacy 1, Pharmacy 2, Physical Medicine and Rehabilitation, Physical Therapy, Plastic and Reconstructive Surgery, Poison Control, Radiology, Ultrasound, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Urology, X-ray film duplication/pick up, </content>
+
+      <content name="snippet" type="html">99 Montecillo Road, San Rafael, CA  94903</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100341" score="11.6855" rank="4" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc4&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Petaluma Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100341</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">3900 Lakeville Highway</content>
+
+      <content name="city" type="html">Petaluma</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local TTY">711 (TTY for the hearing/speech impaired)</content>
+      <content name="services_list" type="html">Allergy Injections, Anticoagulation Services, Asthma &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Audiology, Cardiology, Chemical Dependency Services, Complex Chronic Conditions, Congestive Heart Failure &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Cosmetic Services, CT Scan, Ultrasound, Dermatology, Diabetes/Cardiovascular Risk Management, Family Medicine, Gastroenterology, General Surgery, Head and Neck Surgery, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Imaging Services/Mammography, CT Scan/MRI/PET, Insulin Pump Program, Internal Medicine, Laboratory, MultiFit (Cardiac Rehab Services), Nephrology, Nutrition Services, Obstetrics/Gynecology, Occupational Health Services, Opthalmology, Optical Center, Optometry, Orthopedic Surgery, Pediatrics, Pharmacy, Physical Therapy, Podiatry, Psychiatry, Radiology, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Urgent Eye &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Urology, </content>
+
+      <content name="snippet" type="html">3900 Lakeville Highway, Petaluma, CA  94954</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100343" score="11.623" rank="5" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc5&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Park Shadelands Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100343</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">320 Lennon Lane</content>
+
+      <content name="city" type="html">Walnut Creek</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">925-906-2040</content>
+      <content name="services_list" type="html">Adult Medicine, Allergy/Immunization Injections, Allergy/Immunology, &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Chronic Conditions Program, Cosmetic Dermatology, Dermatology, HIV Education, Testing, and Results, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice Services, Injection Clinic, Laboratory, Laser Vision Correction, Mammography, Occupational Health, Ophthalmology, Optical Center, Optometry, Pediatrics, Pharmacy - Sequoia, Pharmacy - Yosemite, Physical Therapy, Radiology/Imaging Services, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; (Pediatrics), Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; (Women's Health), Women's Health Center, </content>
+
+      <content name="snippet" type="html">320 Lennon Lane, Walnut Creek, CA  94598</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100318" score="11.623" rank="6" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc6&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Stockton Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100318</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">7373 West Ln</content>
+
+      <content name="city" type="html">Stockton</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">209-476-2000</content>
+      <content name="services_list" type="html">Urology, Adult Medicine, Allergy Clinic, Asthma &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Audiology, Cardiology, Chemical Dependency Recovery Services, Chemotherapy Clinic, Cosmetic Dermatology, Definitive Evaluation Unit (DEU), Dermatology, Electroencephalogram (EEG), Endocrinology, Gastreenterology, Genetics, Head and Neck Surgery, Hearing Center, Hematology/Oncology, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;/Hospice Services, Infectious Disease, Infusion Center, Injection Clinic, Laboratory, Laser Vision Correction Services, Medical Procedure Unit, Midwifery Services, MultiFit &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Nephrology, Neurology, Occupational Health, Opthalmology, Optical Center, Optometry, Orthopedics, Outpatient Surgey Procedure and Anesthesiology, Pediatrics, Pharmacies, Physical Medicine and Rehabilitation, Podiatry, Psychiatry, Pulmonary Function Laboratory (PFT), Pulmonary Rehabilitation, Pulmonology, Radiology, Rheumatology, Sleep Laboratory, Speech and Language Pathology, Spine Clinic, Surgery, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Women's Health (Ob/Gyn), </content>
+
+      <content name="snippet" type="html">7373 West Ln, Stockton, CA  95210</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100326" score="11.373" rank="7" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc7&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Downtown San Rafael Medical Offices - 3rd Street</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100326</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1033 Third St.</content>
+
+      <content name="city" type="html">San Rafael</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">415-482-6800</content>
+      <content name="services_list" type="html">Anticoagulation Services, Asthma &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Complex Chronic Conditions, Congestive Heart Failure &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Dermatology, Diabetes/Cardiovascular Risk Management, Imaging Services, Insulin Pump Program, Internal Medicine, Laboratory, MultiFit (Cardiac Rehab Services), Nephrology, Ophthalmology, Optical Center, Optometry, Pharmacy, Radiology/Mammography, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Urgent Eye &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Vision Essentials, </content>
+
+      <content name="snippet" type="html">1033 Third St., San Rafael, CA  94901</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100363" score="11.373" rank="8" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc8&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Fresno Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100363</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">7300 North Fresno St.</content>
+
+      <content name="city" type="html">Fresno</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">559-448-4500</content>
+      <content name="services_list" type="html">Adult Medicine, Anticoagulation services (Coumadin Clinic), Birthing Center, Breast Cancer Coordinator, Cardiology, Chronic &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Programs, Continuing &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Ear, Nose, and Throat, Echocardiography, Electrocardiography, Emergency Department, Endocrinology, Foot and Ankle Surgery, Gastroenterology, Head and Neck Surgery, Infectious Disease, Infusion Center, Injection Clinic, Laboratory, Lactation Clinic, Nephrology, Neurology, Obstetrics/Gynecology, Occupational Health, Oncology, Ophthalmology, Optical Center, Optometry, Orthopedic Surgery, Pathology, Pediatrics, Pharmacy, Plastic/Cosmetic and General Surgery, Poison Control, Pulmonary Medicine, Radiation Oncology, Radiology, Rehabilitation Services, Rheumatology, Sports Medicine, Surgical Center, Travel Clinic, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; (Adult and Pediatric), Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; (Pediatric Weekend and Holiday), Urology, Vision Essentials, </content>
+
+      <content name="snippet" type="html">7300 North Fresno St., Fresno, CA  93720</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100331" score="11.373" rank="9" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc9&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Roseville Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100331</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1600 Eureka Road</content>
+
+      <content name="city" type="html">Roseville</content>
+      <content name="state" type="html">CT</content>
+      <content name="phone_number" type="Local">916-784-4000</content>
+      <content name="services_list" type="html">Allergy, Optical Center, Optometry, Vision Essentials, Psychiatry - Adult, Psychiatry - Child/adolescent, Adult Medicine, Cardiology, Echocardiography (Echo)/ Electrocardiography (EKG), Emergency Services, Endocrinology, Gastroenterology (GI), Head and Neck Surgery, Hematology, Laboratory - Hospital building, Neurology, Nuclear Medicine, Nutrition, Occupational Health, Oncology, Orthopedics, Pediatrics, Pediatric Specialties, Pharmacy A - Eureka First Floor, Pharmacy B - Eureka Second Floor, Physical Therapy, Podiatry, Pulmonary Rehabilitation and Function, Radiology - CT Scan, Radiology - Magnetic Resonance Imaging (MRI), Radiology - Nuclear Medicine, Radiology - Ultrasound, Radiology - Xray, Respiratory Therapy, Rheumatology, Spinal Reconstruction - Spinal Surgery, Surgery, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; - Adults, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; - Pediatric, Urology, Women's Health (Ob/Gyn), Radiation Oncology Center, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice Services, Dermatology, Hearing Center, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program, Physical Medicine and Rehabilitation, Laboratory - Sierra Gardens, Pediatrics - Sierra Gardens, Pharmacy - Pediatric, Radiology - (Sierra Gardens), </content>
+
+      <content name="snippet" type="html">1600 Eureka Road, Roseville, CA  95661</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100328" score="11.3711" rank="10" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc10&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente San Francisco Medical Center and Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100328</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">601 Van Ness Ave.</content>
+
+      <content name="city" type="html">San Francisco</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">415-833-4325</content>
+      <content name="services_list" type="html">Allergy/ Immunology, Cardiac Fitness and Rehabilitation, Ophthalmology, Optical Center, Optometry, Physical Therapy and Physical Medicine, Spine Clinic, Urgent Eye &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Vision Essentials, Chemical Dependency Services, Aerosol Treatment Center/ Infusion Center, Bone Density, Chronic Pain Procedure Clinic, Electrocardiography, Gastroenterology, HIV &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; and Prevention Services, Infusion Center, Injury Center, Internal Medicine, Laboratory - Outpatient, Obstetrics/Gynecology, Pharmacy - 4th Floor, Pharmacy - 6th Floor, Pharmacy - Main, Radiology, Surgery - Outpatient Services, Nutrition Clinic, Cardiology, Cardiothoracic Surgery, Genetics, Preoperative Surgery (Cardiothoracic), Advice Nurse, Ambulatory Surgery Unit, Echocardiography, Emergency Services, Hospital Medicine Department, Laboratory - Inpatient, Laboratory - MRI, Nuclear Medicine, Perinatal Services - Labor and Delivery, Presurgery Centers, Ultrasound - Sonography, Hospice Services, Laboratory - Pre-Surgery, Audiology/ Hearing Center, Autism Spectrum Disorder Evaluation Center, Chronic Pain Management Program, Hearing Center, Pharmacy - French Camp, Psychiatry, Pulmonary Function Laboratory, Breastfeeding Center and Prenatal Education, Nephrology Specialty, Pediatrics, Pharmacy - O'Farrell, Teen Clinic, Dermatology, Ear, Nose, and Throat, Electroencephalography (EEG)/ Sleep Laboratory, Head and Neck Surgery, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Mammography, Neurology, Orthopedic Surgery, Podiatry, Poison Control, Sigmoidoscopy, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Urology, Physical Therapy - Satellite Office, Occupational Health, Occupational Health Services, </content>
+
+      <content name="snippet" type="html">601 Van Ness Ave., San Francisco, CA  94115</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100305" score="11.3711" rank="11" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc11&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Santa Clara Medical Center and Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100305</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">700 Lawrence Expressway</content>
+
+      <content name="city" type="html">Santa Clara</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">408-851-1000</content>
+      <content name="services_list" type="html">Memory Clinic, Perinatal Service Center (Regional), Pharmacy - Tantau, Psychiatry - Adult, Psychiatry - Child and Adolescent, Hearing Center, Cancer Treatment Center, Allergy, Chronic Pain, Physical Medicine and Rehabilitation, Reproductive Endocrinology and Infertility, Admitting, Ambulatory Surgery, Cardiac Procedures Unit, Emergency, Heart Failure Home Telemonitoring, Imaging/Radiology (X-ray), Nuclear Medicine, Nutrition, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Pharmacy, Volunteer Services - Hospital, Cardiac Electrophysiology, Cardiology, Cardiovascular Surgery, Chronic Conditions Management, Cosmetic Services, Dermatology, Eye Surgery Center, Gastroenterology/GI, Head and Neck Surgery, Heart Transplant, HIV and AIDS Resource Counseling (HARC), Infusion Center, Injection Clinic - Adult, Injection Clinic - Pediatric, Internal Medicine, Laboratory/Blood draw - 1st Floor, Laboratory/Blood draw - 2nd Floor, Mammography, Maxillofacial Surgery, Nephrology/Peritoneal Dialysis, Neurology, Newborn Club, Obstetrics/Gynecology, Oncology/Hematology, Ophthalmology, Optical Center, Optometry, Orthopedics, Outpatient Procedure Center, Patient Financial Services, Pediatric Neuroscience, Pediatrics, Perinatology/OB/Ultrasound/Genetics, Pharmacy - 1st Floor, Pharmacy - 1st Floor, Pharmacy - 2nd Floor, Pharmacy - 3rd Floor, Pharmacy - Hospital, Pharmacy - Mail Order, Plastic Surgery Clinic, Podiatry, Preoperative Clinic, Psychiatry - Chemical Dependency Recovery Program, Pulmonary Medicine, Rehabilitation Services, Sleep Apnea/CPAP, Sports Medicine, Surgery Clinic/General Surgery, Urology, Vascular Surgery, Vision Essentials, Women's Clinic, Women's Imaging, Wound &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Wound &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice, Occupational Health Services, </content>
+
+      <content name="snippet" type="html">700 Lawrence Expressway, Santa Clara, CA  95051</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100344" score="11.3711" rank="12" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc12&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Oakland Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100344</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">280 W. MacArthur Blvd.</content>
+
+      <content name="city" type="html">Oakland</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">510-752-1000</content>
+      <content name="services_list" type="html">Advice Nurse, Cardiovascular Surgery, HIV Testing, Genetics, Laboratory (Pediatric) - Mosswood building, Pediatric Hematology/Oncology, Pediatric Immunizations/Injections, Pediatric Neurosurgery, Pediatrics, Pediatric Subspecialists, Pediatric Surgery, Pharmacy - Mosswood Pediatric, Psychiatry (Child and Family), Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; - Pediatric, Dermatology, Gynecologic Oncology, Hematology/Oncology (Adult), Hospice and Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Infusion Center (Adult), Internal Medicine, Laboratory - Broadway Medical Office building, Neurology, Nutritionist, Occupational Health Services, Occupational Therapy, Oncology, Pediatric Rehabilitation, Pharmacy - Broadway MOB and Cancer Ctr - 1st floor, Physical Medicine and Rehabilitation, Physical Therapy, Radiation Oncology, Radiology - Magnetic Resonance Imaging (MRI), Behavioral Medicine, Psychiatry (Adult), Adult Medicine, Allergy Shots, Ambulatory Services, Audiology, Electrocardiography (EKG) - Fabiola Bldg., Emergency Department, Ophthalmology, Optical Center, Optometry, Podiatry, Rehabilitation Services, Vision Essentials, Adult Injections, Allergy, Diabetes Education Program, Laboratory - Fabiola building, Pharmacy - Fabiola First Floor, Pharmacy - Fabiola Fourth Floor, Ultrasound - Fabiola, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; - Adult, Young Adult Clinic, Ear, Nose, and Throat, Head and Neck Surgery, Obstetrics/Gynecology, Speech Pathology, Electrocardiography (EKG) - Hospital, Cardiology, Gastroenterology, Laboratory - Hospital building, Lithotripsy, Mammography, Maxillofacial Surgery, Mental Health Crisis, Orthopedics, Pharmacy - Hospital Discharge, Poison Control, Pulmonary Function Laboratory, Radiology - CT Scan, Radiology - Interventional, Radiology - Xray/Special Procedures, Urology, Autologous Blood Donation, Cardiac Lab Services, Heart Cuisine, HIV Consultant Clinic, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Infectious Disease, Nephrology, Nuclear Medicine, Pacemaker, Pharmacy - Hospital Outpatient, Radiology - General, Spine Surgery, Surgery, Ultrasound - Hospital Building, </content>
+
+      <content name="snippet" type="html">280 W. MacArthur Blvd., Oakland, CA  94611</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100330" score="11.3672" rank="13" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc13&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Sacramento Medical Center and Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100330</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">2025 Morse Avenue</content>
+
+      <content name="city" type="html">Sacramento</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">916-973-5000</content>
+      <content name="services_list" type="html">Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program, Alzheimer Dementia Program, Hospice Services, Cosmetic Services, Psychiatry, Occupational Health, Ambulatory Surgery, Cardiology, Diabetes Center, Ear, Nose, and Throat, Electrocardiography (EKG), Emergency Services, Endocrinology, Gastroenterology (GI), Head and Neck Surgery, Hearing Center, HIV/ AIDS Program, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Infectious Disease, Labor and Delivery, Laboratory, Mammogram, Nephrology, Neurology, Neuroscience Program, Neurosurgery, Nuclear Medicine, Oncology and Hematology, Orthopedics, Pharmacy - First Floor, Plastic Surgery, Podiatry, Poison Control, Pulmonary Medicine, Radiology - General, Radiology - Mammography, Radiology - MRI (outpatient), Radiology - Nuclear Medicine (outpatient), Respiratory &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Services, Surgery, Urology, Adult Medicine, Obstetrics/Gynecology, Occupational Therapy, Pediatrics, Rehabilitation Services, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Chemical Dependency Recovery Program, </content>
+
+      <content name="snippet" type="html">2025 Morse Avenue, Sacramento, CA  95825</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100571" score="11.2461" rank="14" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc14&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Delta Fair Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100571</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">3400 Delta Fair Blvd.</content>
+
+      <content name="city" type="html">Antioch</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">925-779-5000</content>
+      <content name="services_list" type="html">Mental Health/Chemical Dependency Services, Adult Medicine, Allergy, &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Case Management, Chronic Conditions Programs, HIV education, testing and results, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice Services, Immunizations/Injection Clinic - Adult, Immunizations/Injection Clinic - Pediatric, Laboratory, Optical Center, Optometry, Pediatrics/Adolescent Medicine, Pharmacy - Diablo, Physical Therapy, Radiology/Imaging Services, Telederm, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Pharmacy - Delta Square, Women's Health Center, </content>
+
+      <content name="snippet" type="html">3400 Delta Fair Blvd., Antioch, CA  94509</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100354" score="11.2422" rank="15" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc15&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Martinez Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100354</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">200 Muir Road</content>
+
+      <content name="city" type="html">Martinez</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">925-372-1000</content>
+      <content name="services_list" type="html">Acupuncture Clinic, Adult Medicine, &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Chronic Conditions Program, Chronic Pain, Dermatology, Electrocardiography/Echocardiography, HIV Education, Testing, and Results, HIV Services, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Hospice Services, Infusion Center, Injection Clinic - Adult, Laboratory, Member Service Call Center, Mental Health/Chemical Dependency Services, Occupational Health, Optical Center, Optometry, Pediatrics, Pharmacy, Physical Medicine and Rehabilitation, Physical Therapy, Pulmonary Function, Radiology/Imaging Services, Sleep Studies, Special Procedures Center, Spine Clinic, Ultrasound, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; (Adult, Pediatric, Women's Health), Women's Health Center, </content>
+
+      <content name="snippet" type="html">200 Muir Road, Martinez, CA  94553</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100347" score="11.2422" rank="16" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc16&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Novato Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100347</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">97 San Marin Drive</content>
+
+      <content name="city" type="html">Novato</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">415-899-7400</content>
+      <content name="services_list" type="html">Urgent Eye &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Allergy Injections, Asthma &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Imaging, Internal Medicine, Laboratory, Mammography, Obstetrics/Gynecology, Optical Center, Optometry, Pediatrics, Pharmacy, Radiology/Mammography, Vision Essentials, </content>
+
+      <content name="snippet" type="html">97 San Marin Drive, Novato, CA  94945</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100381" score="11.2344" rank="17" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc17&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Dale Road Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100381</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">3800 Dale Rd.</content>
+
+      <content name="city" type="html">Modesto</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">209-735-5000</content>
+      <content name="services_list" type="html">Psychiatry/Mental Health, Women's Health, Adult Medicine, Congestive Heart Failure Telemonitoring Program, Continuing &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Outreach Program, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;/Hospice Services, Injection Clinic, Laboratory, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program, Pharmacy, Radiology, Skilled Nursing, </content>
+
+      <content name="snippet" type="html">3800 Dale Rd., Modesto, CA  95356</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100373" score="10.9844" rank="18" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc18&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Dameron Hospital</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100373</content>
+      <content name="affiliated_facility" type="html">Yes</content>
+      <content name="street_address" type="html">525 West Acacia St.</content>
+
+      <content name="city" type="html">Stockton</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">209-944-5550</content>
+      <content name="services_list" type="html">Congestive Heart Failure Telemonitoriing Program, Continuing &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Outreach Program, Emergency Services, Home Health, Hospice, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program, Skilled Nursing, </content>
+
+      <content name="snippet" type="html">525 West Acacia St., Stockton, CA  95203</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100383" score="10.9688" rank="19" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc19&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Bangs Avenue Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100383</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">4125 Bangs Ave.</content>
+
+      <content name="city" type="html">Modesto</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">209-557-1000</content>
+      <content name="services_list" type="html">Laboratory, Pharmacy, Allergy, Congestive Heart Failure Telemonitoring Program, Dermatology, Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;/Hospice Services, Injection Clinic, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program, Pediatrics, Psychiatry, Skilled Nursing, </content>
+
+      <content name="snippet" type="html">4125 Bangs Ave., Modesto, CA  95356</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100314" score="10.9688" rank="20" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc20&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">West Marin Coastal Health Alliance</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100314</content>
+      <content name="affiliated_facility" type="html">Yes</content>
+      <content name="street_address" type="html">7 Wharf Road</content>
+      <content name="city" type="html">Bolinas</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">415-899-7525</content>
+      <content name="services_list" type="html">Bolinas Family Practice, Point Reyes Medical Clinic, Stinson Beach Medical Center, West Marin Medical Center, West Marin Pharmacy, Primary &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Services, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, </content>
+      <content name="snippet" type="html">7 Wharf Road, Bolinas, CA  94924</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100382" score="10.7422" rank="21" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc21&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content name="title" type="text">Antioch Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100382</content>
+      <content name="city" type="html">Antioch</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">925-813-6500</content>
+      <content name="snippet" type="html">4501 Sand Creek Road, Antioch, CA  94531</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100367" score="10.7188" rank="22" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc22&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Fremont Medical Center and Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100367</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">39400 Paseo Padre Parkway</content>
+
+      <content name="city" type="html">Fremont</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">510-248-7066</content>
+      <content name="services_list" type="html">Home Health &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Pediatrics (Fremont West), Infertility/Reproductive Endocrinology/InVitro, Adult travel injections, Advice Nurse, Allergy, Ambulatory Surgery Center, Cardiology, &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Management, Case Management, Dermatology, Emergency Department, Gastroenterology (GI), Head and Neck Surgery/Audiology/Speech Therapy, Infectious Disease, Internal Medicine, Laboratory and Pathology, Nephrology, Neurology, Obstetrics/Gynecology, Occupational Health, Oncology, Ophthalmology, Optical Center, Optometry, Orthopedics, Pediatric injections, Pediatrics (Fremont Main Campus), Pharmacy (Niles East), Pharmacy (Niles West), Pharmacy (Ohlone Pediatric Pharmacy), Podiatry, Psychiatry, Pulmonology, Radiology, Rehabilitation Services (Physical and Occupational, Rheumatology Services, Sports Medicine, Sub-Specialty Medicine, Surgery Clinic, Urgent &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Urology, </content>
+
+      <content name="snippet" type="html">39400 Paseo Padre Parkway, Fremont, CA  94538</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100560" score="10.5" rank="23" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc23&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Post-Acute &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Center (KPPACC)</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100560</content>
+
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1440 168th Ave.</content>
+      <content name="city" type="html">San Leandro</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">510-481-8575</content>
+      <content name="services_list" type="html"/>
+
+      <content name="snippet" type="html">1440 168th Ave., San Leandro, CA  94578</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100356" score="10.4688" rank="24" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc24&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Manteca Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100356</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1777 W. Yosemite Avenue</content>
+
+      <content name="city" type="html">Manteca</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">209-825-3700</content>
+      <content name="services_list" type="html">Injection Clinic, Midwifery, Obstetrics/Gynecology, Pediatrics, Pharmacy, Poison  Control, Women's Health (Obstetrics/Gynecology), Adult Medicine, Cardiology Testing, Congestive Heart Failure Telemonitoring Program, Emergency, Gynecology, Home Health, Hospice, Laboratory, Palliative &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt; Program, Physical Therapy, PresurgeryAnesthesiology, Radiology, Respiratory &lt;span class="vivbold qt0"&gt;Care&lt;/span&gt;, Skilled Nursing, Chronic Conditions Management, Endocrinology, Occupational Health, Surgery, Chemical Dependency Recovery Program (CDRP), Urology, </content>
+
+      <content name="snippet" type="html">1777 W. Yosemite Avenue, Manteca, CA  95337</content>
+    </document>
+  </list>
+  <navigation base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v:state=root|root-">
+    <link start="0" end="25">0-25|0</link>
+    <link start="25" end="50">25-25|0</link>
+    <link start="50" end="53">50-25|0</link>
+
+    <link type="next" start="25" end="50">25-25|0</link>
+  </navigation>
+  <tree base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;v:state=" recluster-base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_JFnfZw&amp;">
+    <node type="top" level="0" ndocs="53" active="1" subnodes="13" ts="|root" ls="root|root" bs="|root">
+      <node type="close" level="1" ndocs="22" subnodes="7" ts="(root(N177))|root" ls="root|N177" bs="(root(N177))|N177">
+        <description>Kaiser Permanente</description>
+      </node>
+      <node type="close" level="1" ndocs="5" subnodes="2" ts="(root(N113))|root" ls="root|N113" bs="(root(N113))|N113">
+
+        <description>Urgent Care, Vision Essentials</description>
+      </node>
+      <node type="close" level="1" ndocs="3" subnodes="0" ts="(root(N107))|root" ls="root|N107" bs="(root(N107))|N107">
+        <description>Road Medical Offices</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N120))|root" ls="root|N120" bs="(root(N120))|N120">
+        <description>Stockton, Ca</description>
+
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N108))|root" ls="root|N108" bs="(root(N108))|N108">
+        <description>Fair, Adult Medicine, Allergy</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N119))|root" ls="root|N119" bs="(root(N119))|N119">
+        <description>Audiology, Chronic Conditions Programs, Cosmetic</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N105))|root" ls="root|N105" bs="(root(N105))|N105">
+
+        <description>Family Practice</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N178))|root" ls="root|N178" bs="(root(N178))|N178">
+        <description>Occupational Health, Optical Center, Optometry, Pediatrics</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N117))|root" ls="root|N117" bs="(root(N117))|N117">
+        <description>Internal Medicine, Laboratory, Mammography, Minor Injury</description>
+
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N109))|root" ls="root|N109" bs="(root(N109))|N109">
+        <description>Manteca Medical</description>
+      </node>
+      <node type="more" ts="(root-0-20)|root"/>
+    </node>
+  </tree>
+</vce>

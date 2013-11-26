@@ -1,0 +1,57 @@
+
+<div class="pcpContainerFieldset" id="pcpFocusId" tabindex="0" style="outline:0">
+  <div id="mgsNCAhideContainer">
+	<div class="mgsEnhancementPCPContainer" style="float:left">
+		<%if(strGateYes.length()==0 && strGateNo.length()==0){ %>
+		
+				<label class="wptheme-access" for="radioPCP2">Search all doctors, Selecting will refresh page</label>
+				<input id="mgsPcpAllPhysicians" type="radio" name="radioPCP" checked="checked" value="NO" onclick='this.form.submit()'/> <span style="margin-left:5px"><fmt:message key="search.all.text.physicians"/><span class="wptheme-access">, Selecting will refresh page</span></span>
+		<%}else{%>
+			<%if(strGateNo.length()>0){ %>
+				<label class="wptheme-access" for="radioPCP2">Search all doctors, Selecting will refresh page</label>
+				<input id="mgsPcpAllPhysicians" type="radio" name="radioPCP" checked="checked" value="NO" onclick='this.form.submit()'/> <span style="margin-left:5px"><fmt:message key="search.all.text.physicians"/><span class="wptheme-access">, Selecting will refresh page</span></span>
+			<%}else{ %>
+				<label class="wptheme-access" for="radioPCP2">Search all doctors, Selecting will refresh page</label>
+				<input id="mgsPcpAllPhysicians"  type="radio" name="radioPCP" "<%=strGateNo %>" value="NO" onclick='this.form.submit()'/> <span style="margin-left:5px"><fmt:message key="search.all.text.physicians"/><span class="wptheme-access">, Selecting will refresh page</span></span>
+			<%}} %>
+		
+	</div>
+	<div id="searchResults" style="display:none;"></div>
+	
+	<div class="mgsEnhancementPCPContainerNewPatients" style="float:left">
+		<%if(null!=mpFGroups){%>
+		<%List<Facet> lPCP = mpFGroups.get(IPortletConstants.FACET_TITLE_PCP_LABEL);
+		    if(null!=lPCP && lPCP.size() > 0){%>
+		<c:forEach var="curFacet" items="<%=lPCP%>">
+			<c:if test="${curFacet.title == 'yes'}">
+		
+		<%-- Present if first time --%>
+		
+		
+		<%-- Present if data is pulling from session --%>
+			<%if(strGateYes.length()>0){ %>
+				<label class="wptheme-access" for="radioPCP">Search doctors accepting new patients, Selecting will refresh page</label>
+				<input id="mgsPcpNewPatients" type="radio" name="radioPCP" checked="checked"  value="${curFacet.selectHref}" onclick='this.form.submit()'/> <span style="margin-left:5px"><fmt:message key="search.pcp.text.physicians"/><span class="wptheme-access">, Selecting will refresh page</span></span>
+			<%}else{ %>
+				<label class="wptheme-access" for="radioPCP">Search doctors accepting new patients, Selecting will refresh page</label>
+				<input id="mgsPcpNewPatients" type="radio" name="radioPCP" value="${curFacet.selectHref}" onclick='this.form.submit()'/> <span style="margin-left:5px"><fmt:message key="search.pcp.text.physicians"/><span class="wptheme-access">, Selecting will refresh page</span></span>
+			<%}%>
+			</c:if>
+			</c:forEach>
+			
+			<%}}%>
+	</div>
+	<div style="clear:both;"></div>
+   </div>
+</div>
+
+
+<script>
+<% if(pcpGateNo==null && pcpGateYes==null){ %>
+				setTimeout(function() {
+				  kaiser.wpp.scrollTo("RegionDropDwnDoctors")
+				}, 200);
+    
+<% } %>
+
+</script>

@@ -1,0 +1,29 @@
+<script type="text/javascript"> <%-- link style sheets on demand --%>;
+    function SearchBodyBtnHover(){dojo.toggleClass(this, "SearchBodyBtnHover");}
+    function SearchBodyBtnClick(){dojo.toggleClass(this, "SearchBodyBtnClick");}
+    dojo.addOnLoad(function() {
+    var hoverNode = dojo.query("#BodySearchBox input.SearchBodyBtn")[0];
+    dojo.connect(hoverNode, "onmouseover", SearchBodyBtnHover);
+    dojo.connect(hoverNode, "onmouseout", SearchBodyBtnHover);
+    dojo.connect(hoverNode, "onmousedown", SearchBodyBtnClick);
+    dojo.connect(hoverNode, "onmouseup", SearchBodyBtnClick);
+    }); 
+</script>
+<% 
+	String partmsg = (String) request.getAttribute(IPortletConstants.REQ_RESULTPARTIALMSG);
+	RenderRequest pReq = (RenderRequest) request.getAttribute("javax.portlet.request");
+	PortletPreferences pref = pReq.getPreferences();
+%>
+<div id="BodySearchBox">
+    <form class="keywordSearchForm" target="_self" action='<portlet:actionURL/>'>
+        <label for="searchString" lang='<fmt:message key="search.selected.lang.value"/>'><fmt:message key="search.searchbox.text.searchagain"/></label>
+        <input class="searchString" type="text" id="<%=IPortletConstants.SEARCHSTRING%>" name="<%=IPortletConstants.SEARCHSTRING%>" value="${srv.keyword}" maxlength="50" />
+        <input class="submitQuery" type="submit" id="submitQuery" name="submitQuery" alt="submit search by keyword"/>
+        <input type="hidden" name="<%=IPortletConstants.SEARCH_VIEW%>" value="<%=IPortletConstants.SEARCH_VIEW_RESULTSPAGE%>">
+          <%-- IE hack where IE doesn't submit form upon striking enter --%>
+                    <div style="display:none">
+                         <input type="text" name="hiddenText"/>
+                    </div>
+          <%-- end IE hack--%>
+    </form>
+</div>

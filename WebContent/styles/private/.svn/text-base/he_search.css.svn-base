@@ -1,0 +1,201 @@
+/* 
+   Member Guides Search
+   UI Developer: Ryan Pong, Eric Yeh
+   WPP Release 4 - 2.8.2011
+   
+   Modification logs:
+*/
+
+
+
+/* Annoucements - Member Guides Search (mgs) */
+div.mgs_regional_annoucement{background:#E9F0F8;padding:1px 10px 10px 10px;margin:0 10px 0 -10px;-moz-border-radius: 15px;border-radius: 15px;}
+div.mgs_regional_annoucement h5{font-weight:bold;padding:10px; margin:0px;font-size:1em;}
+div.mgs_regional_annoucement p{padding:0px 10px 10px 10px}
+div.mgs_global_annoucement{width:100%;}
+div.mgs_general_annoucement .mgs_general_container{margin:0px 0 25px 275px;}
+div.mgs_global_annoucement div.wppHeaderFragment{margin-top:0px} /* Margin-top from common style causing masthead defect with space about it*/
+div.mgs_main1 div.mgs_general_annoucement{padding:20px  0px 20px 0px}
+div.mgs_main1 div.mgs_global_annoucement{padding:20px  0px 20px 0px}
+#DivSymptomCheckerLinks a{font-size:1.1em;font-weight:bold;padding-left:5px;}
+
+/* Error message*/
+div.mgs_col_right div.mgsZipError{margin-left:37px}
+div.mgs_col_right div.mgsCityError{margin-left:220px}
+div.mgs_col_right div.mgsRegionError{margin-left:355px;height:11px;margin-left:355px;width:250px;}
+div.mgs_col_right div.mgsRegionError ul,div.mgs_col_right div.mgsRegionError li {height:11px}
+div.mgs_col_right div.wppInputErrorMessage, div.mgs_keyword_cont div.wppInputErrorMessage,div.facetBreadcrumb div.mgsZipError{background:none;}
+div.mgsErrorInput,form.mgsErrorInput{border:2px solid #b70e1e!important}
+div.mgs_main2 div.mgsKeywordError{margin-left:-15px}
+div.facetBreadcrumb div.mgsZipError{margin-left:5px;margin-top:7px}
+div.mgs_main2 div.wppInputErrorMessage li, div.mgs_main1 div.wppInputErrorMessage li,div.facetBreadcrumb div.mgsZipError li{text-decoration:none}
+
+/* Layout - Member Guides Search */
+div.mgs_avail_lbl,div.mgs_keyword_lbl,div.mgs_last_name_lbl,div.mgs_specialty_lbl{margin-bottom:22px}
+div.mgs_label_lbl{margin-bottom:52px}
+div.mgs_maincontent div.mgs_main2 div.mgs_area_lbl{margin-bottom:46px}
+div#AffiliatedProvidersDiv{margin-bottom:40px}
+div.mgs_maincontent{width:980px}
+div#riskMitigation div.mgs_general_annoucement div.cms-embedded_fragment-risk_mitigation{-moz-border-radius: 15px;border-radius: 15px;background:#E9F0F8 none repeat scroll 0 0;margin:0 10px 0 0px;padding:10px 20px 10px 20px;}
+div.mgs_keyword_cont form.mgs_landing_form{width:610px;background:url("images/mg_sprite.gif") no-repeat scroll -4px -903px;height:35px;}
+div.mgs_col_left{float:left;border-right:2px solid #CCCCCC;margin:12px 0 16px 0;height:22px; font-size:1.2em;padding-right:15px;text-align:right;width:236px;}
+div.mgs_col_left_1{margin:0 0 0 0;padding-right:15px;text-align:right;width:236px;font-size:1.5em;}
+div.mgs_col_right{float:right;margin:15px 0 0 0px;width:712px;text-align:left;}
+div.mgs_cont_left{float:left; width:345px;border-right:2px solid #CCCCCC;height:100px}
+div.mgs_cont_right{float:right;width:330px;height:100px}
+div.mgs_cont_left_select{float:left;margin:12px 0px 10px 0px;padding-right:15px;text-align:left;width:685px;}
+div.mgs_cont_left_select h1{ display:inline;}
+div.mgs_cont_left_select h1.mgs_cont_left_select_locations{ display:inline; padding-left:200px}
+div.mgs_doc_cont{float:left;margin-left:10px;}
+div.mgs_doc_loc_inline{display:inline}
+div.mgs_drop_down_doc, div.mgs_drop_down_loc{padding-left:10px; width:290px;height:40px;border-left:1px solid #e5e4e4; border-right:1px solid #e5e4e4;margin-top:10px;}
+div.mgs_drop_down_doc select, div.mgs_drop_down_loc select{margin-top:11px}
+div.mgs_drop_down_loc{margin-left:387px;}
+div.mgs_keyword_cont{float:left;margin:5px 0 0 15px;padding-top:0px;text-align:left;width:690px;}
+div.mgs_help_lbl{border-right:none;}
+div.zipcode_bg_select{margin:0 20px 0 10px}
+div.city_bg_select{margin:0px 20px}
+div.country_bg_select{margin-left:20px}
+div.mgs_area_cont p{display:inline; height:40px; vertical-align:middle;}
+div.mgs_area_cont{margin-top:0px}
+div.mgs_cms_padding{padding-left:32px}
+div.mgs_col_right div.searchQuickLink{width:354px;}
+div.mgs_col_right div.cms-embedded_fragment-related_links ul { padding-left:0px}
+div.mgs_col_right div.searchQuickLinkContainer {margin-top:15px;margin-left:-18px;margin-bottom:93px;}
+div.mgs_col_right  div.searchQuickLink ul {list-style-type:none;margin-left:12px;margin-top:-28px}
+div.keywordSearchContainer div#BodySearchBox{margin-top:30px;margin-left:15px;}
+span.mgs_accessibility{left:-999px;position:absolute;}
+.searchpath h6, .facetBreadcrumb strong h6{font-weight:bold}
+div.mgs_specialty_cont div.cms-embedded_fragment-related_links ul li{float:left;width:211px;display:inline}
+div.mgs_col_right div.searchQuickLinkContainer div.searchQuickLink div.cms-embedded_fragment-related_links{padding-top:10px}
+
+/* Search Quick Links */
+div.searchResult div.searchQuickLink ul, 
+div.mgs_col_right div.searchQuickLink ul{padding:7px 15px 0px 39px;}
+div.mgs_col_right div.cms-embedded_fragment-related_links ul{padding:0px 15px 0px 0px;}
+div.searchResult div.searchQuickLink li a , 
+div.mgs_col_right div.searchQuickLink li a,
+div.mgs_col_right div.mgsSpecialtyLink a,
+div.mgs_col_right div.cms-embedded_fragment-related_links li a {display:inline-block;padding:0 0 7px 19px;background:url(images/icons_all.gif) no-repeat 0 -899px;}
+div.searchResult div.searchQuickLink li a:hover, 
+div.mgs_col_right div.searchQuickLink li a:hover ,
+div.mgs_col_right div.cms-embedded_fragment-related_links a:hover,
+div.mgs_col_right div.mgsSpecialtyLink a:hover {background-position:0px -899px}
+div.searchResult div.searchQuickLink ul{margin-left:10px}
+
+/* Select Content */
+div.mgs_specialty_cont div.mgsSpecialtyLink a{text-decoration:none;}
+div.mgs_specialty_cont div.mgsSpecialtyLink a:hover{text-decoration:underline}
+div.mgs_specialty_cont div.mgsSpecialtyLink {float:left;width:211px;}
+div.zipcode_bg_select{width:115px}
+div.city_bg_select{ width:185px}
+div.country_bg_select{ width:160px}
+
+/* Labels / Help links- Member Guides  */    
+a.mgs_last_link{ padding:0px 6px;font-size:1.3em;}
+div.mgs_doc_lbl{height:94px;font-size:1.4em;line-height:25px;padding-top:10px;}
+div.mgs_start_search_lbl{line-height:25px;margin-bottom:5px;}
+.mgs_area_cont .zipcode_bg_select,.mgs_area_cont  .city_bg_select,.mgs_area_cont  .country_bg_select{display:inline-block; _display:inline;}
+.mgs_help_gloss{margin-top:35px;margin-bottom:25px;}
+.mgs_doc_cont h1{color:#ccccccc}
+
+/* error messages in search results page */
+div.SearchTechProblem,div.SearchBlank {margin:10px 0 39px 32px;}
+div.SearchNotFound {margin:10px 0 39px 32px}
+div.SearchBlank .error {color:#B70E1E; font-weight:bold;}
+div.SearchNotFound ul {position:relative;left:15px;padding:17px 0 0 10px;list-style:disc;}
+
+/* Font sizes / colors  - Member Guides*/
+div.mgs_doc_cont h1 {color:#626262;font-family:Avenir;font-size:2.5em;}
+div.mgs_doc_cont_on h1 {color:#d25d02;font-family:Avenir;font-size:2.5em;}   
+    
+/*  Background images*/
+a.mgs_cont_doc{background:url(images/mg_sprite.gif) no-repeat 0px -40px; display:inline-block; height:35px; width:250px;}
+a.mgs_cont_loc{background:url(images/mg_sprite.gif) no-repeat 0px -328px; display:inline-block; height:35px; width:280px;margin-left:130px;}
+a.mgs_cont_doc_selected{background:url(images/mg_sprite.gif) no-repeat 0px -184px; outline:none;display:inline-block; height:35px; width:250px}
+a.mgs_cont_loc_selected{background:url(images/mg_sprite.gif) no-repeat 0px -472px; outline:none;display:inline-block; height:35px; width:280px;margin-left:130px;}
+a.mgs_cont_doc:hover{background:url(images/mg_sprite.gif) no-repeat 0px -184px; display:inline-block; height:35px; width:250px}
+a.mgs_cont_loc:hover{background:url(images/mg_sprite.gif) no-repeat 0px -472px; display:inline-block; height:35px; width:280px;margin-left:130px;}
+div.mgs_drop_down_doc{background:url(images/mg_bg_slice.png) repeat-x 0px 0px;}
+div.mgs_drop_down_loc{background:url(images/mg_bg_slice.png) repeat-x 0px 0px;}
+div.mgs_doc_cont{background:url(images/mg_sprite.gif) no-repeat 365px -1858px; height:102px}
+div.mgs_keyword_cont input.mgsInputGo{text-indent:-999px;cursor:pointer;background:url(images/mg_sprite.gif) no-repeat scroll -7px -1044px;display:inline-block;height:35px;margin-left:-8px;border:none;vertical-align:top;width:25px;pointer:cursor;}
+div.mgs_keyword_cont input.mgsInputGo:hover{background:url(images/mg_sprite.gif) no-repeat scroll  -7px -1117px;}
+div.searchResultContainer div.keywordSearchContainer div.wppHeaderFragment div.wppIntroFragment .wppPageTool{margin-top:-5px; padding: 0px 14px 10px 10px;}
+div.mgs_keyword_cont input#searchString{border:none;width:520px;margin:8px 20px 0 20px;font-size:1.2em;vertical-align:top;}
+form.keywordSearchForm input.searchString{font-size:1.2em}
+form.keywordSearchForm label{font-size:1.1em}
+a.mgs_keyword_cont_go{background:url(images/mg_sprite.gif) no-repeat -4px -1044px; display:inline-block; height:35px; width:35px;margin-left:-8px;}
+a.mgs_keyword_cont_go:hover{background:url(images/mg_sprite.gif) no-repeat -4px -1117px; display:inline-block; height:35px; width:35px;margin-left:-8px;}
+div.zipcode_bg_select, div.city_bg_select, div.country_bg_select{height:40px; background:url(images/mg_bg_slice.png) repeat-x 0px 0px;border-left:1px solid #e5e4e4; border-right:1px solid #e5e4e4;}
+
+div.zipcode_bg_select input, div.city_bg_select select, div.country_bg_select select{margin:11px 0 0 10px;}    
+div.zipcode_bg_select input.mgsZipInputGo{text-indent:-999px;cursor:pointer;background:url(images/mg_sprite.gif) no-repeat scroll -7px -2063px;display:inline-block;height:22px;width:16px;margin:0px;vertical-align:bottom;border:none;pointer:cursor;}
+div.zipcode_bg_select input.mgsZipInputGo:hover{background:url(images/mg_sprite.gif) no-repeat scroll  -7px -2135px;}
+a.mgs_select_go{outline:none;background:transparent url(images/mg_sprite.gif) no-repeat scroll -7px -2063px;display:inline-block;height:22px;width:16px;margin:0px;vertical-align:bottom; }
+a.mgs_select_go:hover{background:transparent url(images/mg_sprite.gif) no-repeat scroll -7px -2135px;}
+
+/* Masthead */
+div.mgsPhoto{background:url(/static/health/images/masthead_large/member_guides/ml_mg_search.jpg) no-repeat 0 0;height:161px; width:551px;float:left;}
+div.mgsInfo{background:url(images/bg_mg_search.jpg) no-repeat 0 0;height:140px; width:399px;float:left;font-size:1.2em;padding-left:30px;padding-top:32px;}
+div.mgsNub{width:31px;height:161px;background:url(images/mg_nub.gif) no-repeat 0px 0px;float:right;}
+div.mgsMastheadContainer{width:1012px;}
+div.mgsMastheadContainer div.mgsInfo h1.mgsInfoTitle{font-size:1.6em; color:#D25D02;padding-bottom:18px;}
+
+/* Eric CSS */
+div.mgsMarginTopError{margin-top:220px;margin-bottom:15px;}
+div.mgsMarginTopErrorHCO{margin-top:137px;}
+div.searchResultContainer {padding-right:12px;}
+div.searchResult {position:relative;float:right;width:732px;}
+div.searchResultTotal {position:relative;margin:0px 6px -1px;padding:10px 0 10px 26px;background:#ebf4e1;}
+div.searchListing {margin:0 32px;padding:15px 0 10px;border-top:1px solid #dfdfdf;}
+div.searchListingHead, div.searchListingBody  {padding:0 0 10px;}
+div.searchListingMore {margin:30px 6px 2px;padding:8px 0 10px 10px;font-weight:bold;background:#ebf4e1;}
+
+div.keywordSearchContainer {position:absolute;top:0;left:0;width:100%;}
+div.keywordSearchLink {clear:left;margin:0 10px;}
+form.keywordSearchForm {margin-top:18px;position:relative;background:url(images/mg_sprite.gif) no-repeat 106px -760px;}
+form.keywordSearchForm label {position:absolute;top:7px;left:-10px;width:120px;text-align:right}
+form.keywordSearchForm input.searchString {position:absolute;top:7px;left:128px;width:400px;border:0;}
+form.keywordSearchForm input.submitQuery {text-indent:-999px;margin-left:545px;width:22px;height:32px;border:0;background:url(images/mg_sprite.gif) no-repeat -8px -1045px;}
+form.keywordSearchForm input.submitQuery:hover {background-position:-8px -1118px;cursor:pointer;}
+
+div.keywordSearchAid {margin:0px 0 -10px 32px}
+div.keywordSearchAid div {padding:0 0 33px;}
+div.searchListingHead a{font-weight:bold;}
+
+div.searchQuickLinkContainer {margin:0 -15px 25px 0;overflow:hidden;zoom:1;}
+div.searchQuickLink {float:left;padding:0 12px 0 6px;width:351px;}
+div.searchQuickLink h2 {padding:0 0 5px 10px;font-size:1.538em;line-height:1.4em;color:#757575;}
+div.searchQuickLink ul {position:relative;margin:-22px 5px 0 3px;list-style:none;color:#757575;}
+div.searchQuickLink div.cms-embedded_fragment-related_links ul{padding-left:0px; }
+.cms-embedded_fragment-disclaimer {clear:both;margin-top:0;padding:15px 0 0;border-top:1px solid #e7e7e7;}
+div.mgs_maincontent div.searchResultDisclaimer div.cms-embedded_fragment-disclaimer{margin-left:273px}
+div.searchFacet, div.facetSelection {float:left;width:254px;}
+.searchFacet a {text-decoration:none;}
+.searchFacet a:hover {text-decoration:underline;}
+.searchFacet strong {display:block;padding:15px 0 3px 30px;}
+form.keywordSearchForm label{font-size:1.1em;}
+div.searchResultContainer div.searchFacet div.facetBreadcrumb{background:transparent url(images/leftnavbg.gif) repeat-x scroll 0px 35px}
+
+div.searchResultContainer div.searchFacet div.facetSelection{background:transparent url(images/leftnavbg.gif) repeat-x scroll 0px 0px}
+div.newSearch a {background:#F1EADA url(images/icons_all.gif) no-repeat scroll 2px 8px;font-weight:bold;padding-left:30px;line-height:40px;display:block}
+div.facetBreadcrumb, div.facetSelection {padding:0 0 40px;}
+div.facetBreadcrumb h3 {border-top:1px solid #ffffff; border-bottom:1px solid #ffffff;position:relative;padding:9px 9px 9px 20px;font-weight:bold;background-color:#F4EDE1;}
+div.facetBreadcrumb div {position:relative;margin:0 60px 0 40px;}
+h2 a.facetClear {left:184px;font-weight:normal;}
+a.facetClear {position:absolute;left:164px;font-size:.846em;line-height:1.545em;text-decoration:underline;}
+div.facetSelection h3 {margin-bottom:-9px;padding:17px 0 9px 20px;font-weight:bold;}
+div.facetSelection div div {margin:3px 0 0 40px;}
+.searchResult .searchListing a.searchListingHead{font-weight:bold}
+div.facetBreadcrumb div.zipcode_bg_select{margin-right:0px;}
+#hc_wppPageToolContent .hcEspanolLink{background-position:3px -3673px;}
+#hc_wppPageToolContent .hcEnglishLink{background-position:3px -4326px;}
+td.mc_column{vertical-align:top}
+/* portlet specific styles */
+span.vivbold {font-weight:bold;}
+span.searchpath {font-weight:bold;}
+
+/* WPP overrides*/
+div.wppHeaderFragment h1.wppIntroNoIcon {padding-left:10px}
+ #hc_wppPageTool{margin-right: 10px;margin-top: -37px;}

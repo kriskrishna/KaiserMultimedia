@@ -1,0 +1,31 @@
+table.searchContainer .error {color:#b70e1e;font-weight:bold;}
+table.searchContainer .record {padding:5px;}
+td.searchResult {padding:20px 0 0 10px;width:734px;vertical-align:top;}
+td.searchResult h1 {padding:0 0 3px 20px;color:#e66600;font-size:2em;line-height:1.231em;}
+div.searchResultBody {padding:20px 20px 0;background:url(images/ctr_entry_header_curve.gif) no-repeat 0 0;}
+div.searchResultBody h4 {padding:10px 0 0;}
+div.searchResultBody h4 strong {font-weight:bold;}
+#BodySearchBox input.SearchBodyFld {float:left;margin:2px 10px 0 0;width:590px;}
+#BodySearchBox input.SearchBodyBtn {clear:right;width:70px;height:22px;border:0;background-image:url(images/btn_search.gif);background-repeat:no-repeat;background-position:0 0;text-indent:-9999px;}
+#BodySearchBox input.SearchBodyBtnHover {background-position:0 -22px;cursor:pointer;}
+#BodySearchBox input.SearchBodyBtnClick {background-position:0 100%;}
+#SearchResultsList {padding:35px 0 8px;}
+#SearchResultsList ol {margin:0 0 0 30px;list-style:decimal;}
+#SearchResultsList li {padding:0 15px 20px 0;}
+table.paginationContainer {margin:auto;}
+table.paginationContainer a {float:left;display:block;margin:0 3px;padding:2px 6px;border:1px solid #ccc;font-size:.846em;}
+table.paginationContainer a:hover {background:#ff760c;color:#fff;}
+table.paginationContainer a.paginationEdge {margin:0 12px;}
+div.paginationSelected {float:left;margin:0 3px;padding:2px 6px;border:1px solid #ccc;background:#ff760c;color:#fff;}
+div.SearchFilter {padding:30px 0 5px;}
+div.SearchTechProblem {padding:10px 0 5px;}
+div.SearchNotFound {padding:10px 0 5px;}
+div.SearchNotFound ul {position:relative;left:15px;padding:17px 0 0 10px;list-style:disc;}
+div.SearchBlank {}
+td.searchFacet {padding:0 20px;width:214px;background:url(images/ln_longgradient.gif) repeat-x 0 0;vertical-align:top;}
+td.searchFacet h4 {padding:20px 0 0;width:214px;}
+td.searchFacet div.NarrowDetail {padding:0 0 0 15px;}
+td.searchFacet div.NarrowDetail a {text-decoration:none;}
+td.searchFacet div.NarrowDetail span {color:#039;}
+span.vivbold {font-weight:bold;}
+span.searchpath {font-weight:bold;}

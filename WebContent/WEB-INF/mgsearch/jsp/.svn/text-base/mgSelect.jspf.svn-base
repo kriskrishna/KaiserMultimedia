@@ -1,0 +1,271 @@
+<script type="text/javascript"> <%-- link style sheets on demand --%>
+
+function <portlet:namespace/>updateView(selectedView){
+    
+
+    dojo.byId("<portlet:namespace/>MGSearchSelectionForm").<%=IPortletConstants.SEARCH_MGSELECTION%>.value=selectedView;
+    dojo.byId("riskMitigation").style.display='none';
+    dojo.byId("nationalAnnouncement").style.display='none';
+    document.<portlet:namespace/>MGsearchForm.submit();    
+   }
+   
+function toggleViewDoctorFacility(viewValue){
+	if(viewValue<1){
+		dojo.byId("mgSelectLocationsErrorContainer").style.display="none";
+		dojo.byId("mgSelectDoctorsErrorContainer").style.display="block";
+		dojo.byId("mgsDoctorMessage").style.display="block";
+		dojo.byId("mgsLocationMessage").style.display="none";
+		dojo.byId("mgsSearchDoctorsAnchor").title="active";
+		dojo.byId("mgsSearchLocationsAnchor").title="";
+		dojo.removeClass(dojo.byId('mgsSearchEnhancementMainContainerId'), 'mgsSearchLocationBG');
+		dojo.addClass(dojo.byId('mgsSearchEnhancementMainContainerId'), 'mgsSearchDoctorBG');
+		dojo.byId("mgSearchEnhancementDoctors").style.backgroundColor="#3C7BBA";
+		dojo.byId("mgSearchEnhancementLocations").style.backgroundColor="#999999";
+		dojo.addClass(dojo.byId('mgSearchEnhancementLocations'), 'mgsSearchHover');
+		dojo.removeClass(dojo.byId('mgSearchEnhancementDoctors'), 'mgsSearchHover');
+	}else{
+		dojo.byId("mgSelectLocationsErrorContainer").style.display="block";
+		dojo.byId("mgSelectDoctorsErrorContainer").style.display="none";
+		dojo.byId("mgsDoctorMessage").style.display="none";
+		dojo.byId("mgsLocationMessage").style.display="block";
+		dojo.byId("mgsSearchDoctorsAnchor").title="";
+		dojo.byId("mgsSearchLocationsAnchor").title="active";
+		dojo.removeClass(dojo.byId('mgsSearchEnhancementMainContainerId'), 'mgsSearchDoctorBG');
+		dojo.addClass(dojo.byId('mgsSearchEnhancementMainContainerId'), 'mgsSearchLocationBG');
+		dojo.byId("mgSearchEnhancementDoctors").style.backgroundColor="#999999";
+		dojo.byId("mgSearchEnhancementLocations").style.backgroundColor="#3C7BBA";
+		dojo.addClass(dojo.byId('mgSearchEnhancementDoctors'), 'mgsSearchHover');
+		dojo.removeClass(dojo.byId('mgSearchEnhancementLocations'), 'mgsSearchHover');
+	}
+}
+
+function onclickSwitchDoctorLocationTab(tabValue){
+		if(tabValue<1){
+			var regionIndex=dojo.byId("RegionDropDwnDoctors").options.selectedIndex;
+			if(regionIndex==0){
+			     toggleViewDoctorFacility(0);
+			}else{
+			 	<portlet:namespace/>updateView('<%=IPortletConstants.MGSELECTION_DOCTORS%>');
+			}
+		 
+		}else{
+			var regionIndexB=dojo.byId("RegionDropDwnLocations").options.selectedIndex;
+		 	if(regionIndexB==0){
+		 		 toggleViewDoctorFacility(1);
+		 	}else{
+		 		<portlet:namespace/>updateView('<%=IPortletConstants.MGSELECTION_LOCATIONS%>');
+		 	}
+		 
+		}
+
+}
+  
+function enableNCAviewSearch(){
+	    dojo.byId("mgsAllSearchOptionsContainer").style.display="block";
+		dojo.byId("mgsNCAContainer").style.display="none";
+		dojo.byId("mgsNCAhideContainer").style.display="none";
+}
+
+
+function onchangeToggleSearchOptions(){
+   dojo.byId("mgsAllSearchOptionsContainer").style.display="none";
+   dojo.byId("mgsNCAContainer").style.display="none";  
+}
+
+</script>
+<div class="mgs_main1" id="mgsSelectContainer">
+    <form name="<portlet:namespace/>MGsearchForm" target="_self" id="<portlet:namespace/>MGSearchSelectionForm" action='<portlet:actionURL/>'>
+  	<input value="<%=preSelectedMG%>" type="hidden" name="<%=IPortletConstants.SEARCH_MGSELECTION%>" id="<%=IPortletConstants.SEARCH_MGSELECTION%>">
+
+    <div class="mgsSearchEnhancementMainContainer">
+	  		<div id="mgsSearchEnhancementMainContainerId" class="mgsSearchDoctorBG">	
+	  			<div id="mgSearchEnhancementDoctors">
+	  				<div id="mgsSearchDoctorsBG"><a title="active" role="tab" id="mgsSearchDoctorsAnchor" href="javascript:onclickSwitchDoctorLocationTab(0)" style="color:#ffffff">Find a Doctor</a></div>
+	  			</div>
+	  			
+	  			<div id="mgSearchEnhancementLocations" class="mgsSearchHover">
+	  				<div id="mgsSearchLocationsBG"><a role="tab" style="color:#ffffff" id="mgsSearchLocationsAnchor" href="javascript:onclickSwitchDoctorLocationTab(1)">Find a Facility</a></div>
+	  			</div>
+  			</div>
+    </div>
+    <div class="mgsDoctorMessage" id="mgsDoctorMessage">
+         <!--<h1 class="mgsDoctorLocationMessageHeader">Meet Our Doctors</h1>-->
+         <p>${ac.doctorIntro}</p>
+    </div>
+    <div class="mgsLocationMessage" id="mgsLocationMessage" style="display:none;">
+         <!--<h1 class="mgsDoctorLocationMessageHeader">Search Our Facilities</h1>-->
+         <p>${ac.facilityIntro}</p>
+    </div>
+    <div>
+    <div id="mgSelectDoctorsErrorContainer">
+				<label class="wptheme-access" for="<%=IPortletConstants.SEARCH_DOC_FILTER%>">Find a doctor</label>
+				 <select onchange="onchangeToggleSearchOptions();" class="mgs_area_padding" style="width:250px" id="RegionDropDwnDoctors" name="<%=IPortletConstants.SEARCH_DOC_FILTER%>">
+                      <option value='<%=IPortletConstants.VAL_DEFAULT_AREA_SELECT%>'>Select an Area</option>
+                      <c:forEach var="region" items="<%=regions%>">
+                           <c:choose><c:when test="${region.regionCode eq preSelectedRop}">
+                             <option value='<c:out value="${region.regionCode}"/>' selected><c:out value="${region.regionNm}"/></option>
+                          </c:when><c:otherwise>
+                             <option value='<c:out value="${region.regionCode}"/>'><c:out value="${region.regionNm}"/></option>
+                          </c:otherwise></c:choose>
+                      </c:forEach>
+                    </select>
+                <input type="button" id="ConfirmRegionGoDoctors" class="mgs_select_go" title="Go to doctor search" value="Go" onclick="javascript:<portlet:namespace/>updateView('<%=IPortletConstants.MGSELECTION_DOCTORS%>')"> </input>
+      		</div>
+				 <% if (error != null && error.equals(IPortletConstants.ERROR_DOC_RGNCD)){ %>
+  						   <div id="MgCitySearchErrorDiv" class="wppInputErrorMessage mgsCityError">
+				           		 <ul><li>Select an area to continue.</li></ul>
+				           </div>
+				           <script>
+				           		<portlet:namespace/>addErrorClassInput("mgSelectDoctorsErrorContainer");
+				           </script>
+  				 <% } %>
+    
+    	<div id="mgSelectLocationsErrorContainer" style="display:none;">
+  				<label class="wptheme-access" for="<%=IPortletConstants.SEARCH_LOC_FILTER%>">Find a facility</label>
+  				 <select onchange="onchangeToggleSearchOptions();" class="mgs_area_padding" style="width:250px" id="RegionDropDwnLocations" name="<%=IPortletConstants.SEARCH_LOC_FILTER%>">
+                      <option value='<%=IPortletConstants.VAL_DEFAULT_AREA_SELECT%>'>Select an area</option>
+                      <c:forEach var="region" items="<%=regions%>">
+                          <c:choose><c:when test="${region.regionCode eq preSelectedRop}">
+                             <option value='<c:out value="${region.regionCode}"/>' selected><c:out value="${region.regionNm}"/></option>
+                          </c:when><c:otherwise>
+                             <option value='<c:out value="${region.regionCode}"/>'><c:out value="${region.regionNm}"/></option>
+                          </c:otherwise></c:choose>
+                      </c:forEach>
+                    </select>
+                  <input type="button" id="ConfirmRegionGoLocations" class="mgs_select_go" title="Go to location search" value="Go" onclick="javascript:<portlet:namespace/>updateView('<%=IPortletConstants.MGSELECTION_LOCATIONS%>')"> </input>
+       		</div>
+  				 <% if (error != null && error.equals(IPortletConstants.ERROR_LOC_RGNCD)){ %>
+  						   <div id="MgCitySearchErrorDiv" class="wppInputErrorMessage mgsCityError">
+				           		 <ul><li>Select an area to continue.</li></ul>
+				           </div>
+				           <script>
+				           		<portlet:namespace/>addErrorClassInput("mgSelectLocationsErrorContainer");
+				           	</script>
+  				 <% } %>
+    </div>
+ 
+ 	<%if(null!=preSelectedMG){%>
+	    <div>
+			<div class="" id="focusAfterSearchOptions" style="outline:0;padding-top:0px;" tabindex="-1"></div>
+		</div>
+	<%}%>
+    
+    <div id="riskMitigation" class="mgRiskMitigationContainer">
+     		<c:if test="${not empty ac.riskMitigationTest}">
+    			<div class="mgs_general_annoucement"><div class="mgs_general_container">
+   				  	   ${ac.riskMitigationTest}
+   				</div></div>
+   			</c:if>
+   </div>
+  
+
+
+<%--- NCA REGION SPECIFIC SEARCH ---%>     
+    <div id="mgsNCAContainer" style="display:none;">
+		    <c:if test="${not empty ac.regAnnouncement}">
+			    <div class="mgs_help_cont mgs_col_rightAnnouce">
+			        <div class="mgs_regional_annoucement">
+			           <h5>${ac.regAnnouncementTitle}</h5>
+			           ${ac.regAnnouncement}
+			        </div>
+			    </div>
+		    </c:if>
+		    <div class="mgsNCASearchOptions">   	
+		    		<div style="margin-top:40px;margin-bottom:25px;">
+		    				<a href="javascript:enableNCAviewSearch()">Search all doctors</a>
+		    		</div>
+		    		
+		    		<div style="padding-bottom:50px;">
+		    				<a href="https://mydoctor.kaiserpermanente.org/cyd/">Search doctors accepting new patients</a>
+		    		</div>
+    		</div>
+    		
+    		<%if((StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_LOCATIONS, preSelectedMG) || StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_DOCTORS, preSelectedMG))
+			    && StringUtils.isNotBlank(preSelectedRop) && !IPortletConstants.VAL_DEFAULT_AREA_SELECT.equalsIgnoreCase(preSelectedRop)){%>
+				<%-- START footer container conditional for region selection before it appears --%>
+				<div id="mgsFooterContainer">
+							<div class="mgs_area_cont mgs_col_right">
+								<div class="searchQuickLinkContainer">          
+								  <div class="searchQuickLink">
+								      <h2>${ac.linkBucket1Title}</h2>
+								      <div class="wppHeaderStroke"><div class="wppHeaderStrokeIcon"></div></div>
+								      ${ac.linkBucket1}
+								  </div>
+								  <div class="searchQuickLink">
+								      <h2>${ac.linkBucket2Title}</h2>
+								      <div class="wppHeaderStroke"><div class="wppHeaderStrokeIcon"></div></div>
+								      ${ac.linkBucket2}
+								  </div>
+								</div>      
+							</div>
+					
+					<%}%>
+					
+					<c:if test="${not empty ac.disclaimer}"><div class="searchResultDisclaimer">${ac.disclaimer}</div></c:if>
+					
+				<%if((StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_LOCATIONS, preSelectedMG) || StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_DOCTORS, preSelectedMG))
+					    && StringUtils.isNotBlank(preSelectedRop) && !IPortletConstants.VAL_DEFAULT_AREA_SELECT.equalsIgnoreCase(preSelectedRop)){%>
+				<div style="clear:both;padding-bottom:20px"></div>
+				</div>	<!--- END div mgsFooterContainer --->
+			<%}%>
+    		
+    </div>
+    
+ <%--- SEARCH CONTAINER START---%>
+     
+    <div id="mgsAllSearchOptionsContainer"> 
+       
+    <div style="clear:both;" tabindex=0 style="outline:0;border:0px" id="mgSelectFocus"></div>
+    <c:if test="${not empty ac.regAnnouncement}">
+	    <div class="mgs_help_cont mgs_col_rightAnnouce">
+	        <div class="mgs_regional_annoucement">
+	           <h5>${ac.regAnnouncementTitle}</h5>
+	           ${ac.regAnnouncement}
+	        </div>
+	    </div>
+    </c:if>
+    
+
+    <%
+    
+    
+    if(pcpGate!=null && pcpGate.booleanValue()){ 
+	%>
+	<%@include file="pcpGate.jspf"%>
+	<%}
+	%>
+	<%
+	if(gatedPlanProviderSearch!=null && gatedPlanProviderSearch.booleanValue() ){ 
+	%>
+	<%@include file="planAndProviderType.jspf"%>
+	<%
+	}
+	%>
+    <div style="clear:both;"></div>
+</form>
+
+
+<%if(IPortletConstants.MGSELECTION_DOCTORS.equalsIgnoreCase(preSelectedView)){%>
+	 <script>
+	 		dojo.byId("mgsSearchDoctorsBG").className=dojo.byId("mgsSearchDoctorsBG").className+" mgsDoctorSelect";
+	        dojo.removeClass("mgsSearchLocationsBG","mgsLocationSelect");
+	        document.title="Find Doctors & Locations - Doctor Search - Kaiser Permanente";
+	        toggleViewDoctorFacility(0);
+	 </script>
+<%}else if(IPortletConstants.MGSELECTION_LOCATIONS.equalsIgnoreCase(preSelectedView)){%>
+	 <script>
+	 		dojo.byId("mgsSearchLocationsBG").className=dojo.byId("mgsSearchLocationsBG").className+" mgsLocationSelect";
+	 		dojo.removeClass("mgsSearchDoctorsBG","mgsDoctorSelect");
+	 	    document.title="Find Doctors & Locations - Facility Search - Kaiser Permanente";
+	 	    toggleViewDoctorFacility(1);
+	 </script>
+<%}%>
+
+
+
+
+
+
+
+
+

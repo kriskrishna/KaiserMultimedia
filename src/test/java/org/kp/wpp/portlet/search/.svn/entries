@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2012-10-23T22:46:30.040657Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/test/java/org/kp/wpp/portlet/search"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="e949004"
+   committed-rev="39500"/>
+<entry
+   name="CreateTestParser.java"
+   committed-date="2010-09-17T19:05:02.898119Z"
+   text-time="2010-09-17T19:05:02.000000Z"
+   checksum="cc0a0df7fabf0234b4245c86d2e83033"
+   last-author="l525045"
+   committed-rev="13235"
+   kind="file"/>
+<entry
+   name="KaiserMGSearchPortletTest.java"
+   committed-date="2012-08-30T20:14:03.079133Z"
+   text-time="2012-08-30T20:14:03.000000Z"
+   checksum="841816154864ff3fbd49e00f6a1e8b78"
+   last-author="e949004"
+   committed-rev="37748"
+   kind="file"/>
+<entry
+   name="SearchMGTest.java"
+   committed-date="2012-09-05T16:54:02.761829Z"
+   text-time="2012-09-05T16:54:02.000000Z"
+   checksum="a055ed97484f0396ec45a277bd655da9"
+   last-author="e949004"
+   committed-rev="37820"
+   kind="file"/>
+<entry
+   name="SearchSpellCheckTest.java"
+   committed-date="2011-04-26T00:24:15.090459Z"
+   text-time="2011-04-26T00:24:15.000000Z"
+   checksum="336703725e4ab97a178933832a20657e"
+   last-author="l525045"
+   committed-rev="18861"
+   kind="file"/>
+<entry
+   name="SearchTest.java"
+   committed-date="2012-09-06T21:13:12.181252Z"
+   text-time="2012-09-06T21:13:12.000000Z"
+   checksum="45e8baf33742f07e4aae732450c4e1f8"
+   last-author="e949004"
+   committed-rev="37864"
+   kind="file"/>
+<entry
+   name="beans"
+   kind="dir"/>
+<entry
+   name="helpers"
+   kind="dir"/>
+<entry
+   name="service"
+   kind="dir"/>
+<entry
+   name="utils"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:45:03.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-27T22:55:57.414075Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent/WEB-INF"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45896"/>
+<entry
+   name="applicationContext.xml"
+   committed-date="2010-08-16T23:40:58.056624Z"
+   text-time="2010-08-16T23:40:58.000000Z"
+   checksum="2f26cf84e1d773fe584e88427f97220b"
+   last-author="l525045"
+   committed-rev="12405"
+   kind="file"/>
+<entry
+   name="ibm-web-ext.xmi"
+   committed-date="2009-06-15T17:02:22.074859Z"
+   text-time="2009-06-15T17:02:22.000000Z"
+   checksum="b86031a8dc5dfd566d04be812504a9c2"
+   last-author="x075666"
+   committed-rev="2957"
+   kind="file"/>
+<entry
+   name="jsp"
+   kind="dir"/>
+<entry
+   name="mgsearch"
+   kind="dir"/>
+<entry
+   name="portlet.xml"
+   committed-date="2013-08-22T15:59:25.606200Z"
+   text-time="2013-08-22T15:59:25.000000Z"
+   checksum="37cc63a4279841c0bbf1ee05a3b65e1a"
+   last-author="m504923"
+   committed-rev="45700"
+   kind="file"/>
+<entry
+   name="web.xml"
+   committed-date="2012-10-17T16:41:50.997051Z"
+   text-time="2012-10-17T16:41:50.000000Z"
+   checksum="59219401ad1e342bd8ee835171d516e9"
+   last-author="b306347"
+   committed-rev="39241"
+   kind="file"/>
+<entry
+   name="xsl"
+   kind="dir"/>
+</wc-entries>

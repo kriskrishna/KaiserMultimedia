@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-26T19:03:51.356644Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/java/org/kp/wpp/portlet/search/helpers"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45807"/>
+<entry
+   name="ContentRetriever.java"
+   committed-date="2013-08-09T17:43:14.155787Z"
+   text-time="2013-08-09T17:43:14.000000Z"
+   checksum="c2ad06621f126938289ec6113cbffd2c"
+   last-author="m504923"
+   committed-rev="45245"
+   kind="file"/>
+<entry
+   name="SearchHelper.java"
+   committed-date="2013-08-26T19:03:51.356644Z"
+   text-time="2013-08-26T19:03:51.000000Z"
+   checksum="b07b71115cc92a31a7e0ce6c259e7924"
+   last-author="m504923"
+   committed-rev="45807"
+   kind="file"/>
+<entry
+   name="SearchPortletHelper.java"
+   committed-date="2013-08-09T17:43:58.449211Z"
+   text-time="2013-08-09T17:43:58.000000Z"
+   checksum="fa4fa48d5ae68032dc7af993ee3a4833"
+   last-author="m504923"
+   committed-rev="45246"
+   kind="file"/>
+</wc-entries>

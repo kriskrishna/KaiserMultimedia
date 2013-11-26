@@ -1,0 +1,52 @@
+## Common key/value params used in Search Results page - SiteSearch, all Search Features
+search.selected.lang.value=en
+search.default.text.header=Search results
+search.default.text.header.doctor=Doctor Search Results
+search.default.text.header.facility=Facility Search Results
+search.default.link.startnewsearch=Start a new search
+search.default.link.glossary=Glossary
+search.default.link.help=Help with this feature
+search.default.link.print=Printer friendly
+search.summary.text.kwd.summary1={0} result found for <strong>{1}</strong>
+search.summary.text.kwd.summaryn={0} results found for <strong>{1}</strong>
+search.summary.text.nokwd.summary1={0} result found
+search.summary.text.nokwd.summaryn={0} results found
+search.summary.text.spelling=Did you mean
+search.nbpage.text.narrowby=Narrow results by
+search.nbpage.link.more=View more...
+search.nbpage.link.fewer=View fewer...
+search.nbpath.text.currentsearch=Current search
+search.nbpath.text.region=Region
+search.nbpath.link.clear=Clear
+search.nbpath.link.clearall=Clear all
+search.searchbox.button.search=Search
+search.searchbox.text.enterkeyword=Enter a keyword in the search box. 
+search.searchbox.text.enterkeyword.doctor=Enter a keyword or physician name in the search box.
+search.searchbox.text.enterkeyword.location=Enter a keyword in the search box. 
+search.searchbox.error.techfailure=We&#39;re having a technical problem. We apologize for the inconvenience.
+search.searchbox.error.helpdesk=Please try again later or call the help desk at 1-800-556-7677
+#search.searchbox.text.debug=Please configure the debug option for additional details.
+search.searchbox.error.noresults=We&#39;re sorry, but your search for <strong>{0}</strong> did not find any matches.
+search.searchbox.error.noresults.nokwd=We&#39;re sorry, but your search did not find any matches.
+search.searchbox.text.help1=Make sure all words are spelled correctly.
+search.searchbox.text.help2=Try using more general words.
+search.searchbox.text.help3=Try other, similar words.
+search.paging.link.viewmore=View more results
+search.searchbox.text.searchagain=Start a new search
+
+search.error.defaulttext=Search configuration is incomplete. Please contact the admin.
+search.error.sorry=We&#39;re sorry
+search.error.outage=Search isn&#39;t available right now. Try again later.
+
+## Following values are used on the landing page for different Search Features
+search.index.error.zipcd=Enter a valid U.S. ZIP code.
+search.index.error.city=Select a city to continue.
+search.index.error.specialty=Select a specialty to continue.
+search.index.error.hospital=Select a hospital affiliation to continue.
+search.index.error.plantype=Select a plan type to continue.
+search.index.error.provider=Select a provider type to continue.
+search.index.error.region=Select an area to continue.
+search.pcp.text.physicians= Search doctors accepting new patients
+search.all.text.physicians= Search all doctors
+search.pcp.accepting.newpatients=Personal physicians accepting new patients
+search.index.error.empty=Please choose at least one search option and try again.

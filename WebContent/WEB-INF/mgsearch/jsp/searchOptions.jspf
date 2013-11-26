@@ -1,0 +1,420 @@
+<script type="text/javascript"> <%-- link style sheets on demand --%>
+		function <portlet:namespace/>openTarget(selectedOption){
+		    var sUrl = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").value;
+		    var w = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").selectedIndex;
+		    var selected_city = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").options[w].text;
+		    if (sUrl != ""){window.open(sUrl,"_self");}
+		}
+		function allowOnlyNumbers(evt){
+		   var charCode = (evt.which) ? evt.which : event.keyCode
+		   if (charCode > 31 && (charCode < 48 || charCode > 57)){return false;}
+		   return true;
+		}
+		function toggleFoldOnError(mgsOptionId,focusId){
+		  	if(dojo.isIE){ //IE hack because IE7 isn't respect the addonload and it seems to parse before the dojo components are ready
+				setTimeout(function() {
+						 var accordion = dijit.byId("mgsEnhacementKPDJContainer");   
+						 dijit.byId("mgsEnhacementKPDJContainer").findFold(accordion.findFoldPos(mgsOptionId)).toggle(); 
+					     dojo.attr(mgsOptionId,"tabindex","0");
+					   	 dojo.byId(mgsOptionId).focus();
+				}, 500);
+		
+			}else{
+			    window.onload = function () {
+					 var accordion = dijit.byId("mgsEnhacementKPDJContainer");   
+					 dijit.byId("mgsEnhacementKPDJContainer").findFold(accordion.findFoldPos(mgsOptionId)).toggle();
+				   		     dojo.attr(mgsOptionId,"tabindex","0");
+						   	 dojo.byId(mgsOptionId).focus();
+				}
+			}   
+		
+		}
+		function toggleMoreSearchOptions(myBoolean){
+			if( dojo.byId("mgsOptionsContainerToggle").style.display=="block"){
+			     dojo.byId("mgsOptionsContainerToggle").style.display="none";
+			     dojo.byId("mgsOptionsLabel").innerHTML="More Search Options";
+			}else{
+			     dojo.byId("mgsOptionsContainerToggle").style.display="block";
+			     dojo.byId("mgsOptionsLabel").innerHTML="Fewer Search Options";
+			}
+		}
+
+</script>
+<a name="SearchCriteria"></a>
+
+<div>
+	<div class="" id="focusAfterSearchOptions" style="outline:0;padding-top:0px;" tabindex="-1"></div>
+</div>
+
+<div class="mgs_main2" id="mgsearchcriteriadiv">
+		<div class="mgsEnhancementsSearchLabelSearch" id="mgsEnhancementsSearchLabelFocus"></div>
+	 	<div style="clear:both;"></div>
+
+<% if(null!=mpFGroups ){%>		           
+		<%--- CITY OPTION ---%>
+		              <div class="mgsMoreDefaultContainer" style="float:left;" class="mgsOptionLeft">
+		              <span class="mgsOptionsLabels" id="mgsOptionsLabelCityId">City</span>
+		              
+		                         <%List<Facet> lCities = mpFGroups.get(IPortletConstants.FACET_TITLE_CITY);%>
+						         <div class="city_bg_select" id="citybgID"  tabindex="0">
+						            <select id="<portlet:namespace/>CityVal" name="CitySelect" class="mgsDoLocSearchOption" title="search by city">
+						            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTCITY%>"/></portlet:actionURL>">Select city</option>
+						            <c:forEach var="curFacet" items="<%=lCities%>">
+						            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="City|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+						            ${curFacet.title}</option>
+						            </c:forEach>
+						            </select>
+						        </div>
+		     
+		       		  </div>
+		<%--- END CITY OPTION ---%>
+		       
+		       		 <div style="float:left;margin-right:19px;padding-top:21px">OR</div>
+		<%--- ZIP CODE OPTION --%>
+					 <div class="mgsMoreDefaultContainer" style="float:left;" >
+				     <span class="mgsOptionsLabelsZip" id="mgsOptionsLabelZipId">ZIP Code</span>
+						 	<div class="zipcode_bg_select" id="zipcodeID"  tabindex="0">
+							        <form name="<portlet:namespace/>MGZCsearchForm" target="_self" id="<portlet:namespace/>MGZCsearchForm" action='<portlet:actionURL/>'>
+							            <label class="wptheme-access" for="<portlet:namespace/>ZipCodeInput">search by 5 digit zip code</label>
+							            <input id="<portlet:namespace/>ZipCodeInput" name="<%=IPortletConstants.SEARCH_ZIPCODE%>" onkeypress="return allowOnlyNumbers(event)" size="7" maxlength="5" class="mgs_area_padding mgs_zipcode">
+							          <!--
+							            <input class="mgsInputGo" type="submit" id="<%=IPortletConstants.ACTION_SUBMITZIPCD%>" value="Go" name="<%=IPortletConstants.ACTION_SUBMITZIPCD%>" alt="submit to search by zipcode"/>
+							          -->
+							            <input type="hidden" name="<%=IPortletConstants.SEARCH_VIEW%>" value="<%=IPortletConstants.SEARCH_VIEW_LANDINGPAGE%>">
+							            <%-- IE hack where IE doesn't submit form upon striking enter --%>
+							            <div style="display:none"><input type="text" name="hiddenText"/></div>
+							            <%-- end IE hack--%>
+							        </form>
+						    </div>
+		                
+		                 	 <%--- ZIP CODE ERROR --%>
+						 	 <% if (error != null && error.equals(IPortletConstants.ERROR_ZIPCD)){%>
+						      	 <div  tabindex="0" id="MgZipCdSearchErrorDiv" class="wppInputErrorMessage mgsZipError">
+						         		<ul><li><fmt:message key="search.index.error.zipcd"/></li></ul>
+						         </div>
+						         <script>
+						          		<portlet:namespace/>addErrorClassInput("zipcodeID");
+						          		toggleFoldOnError("msgKpdjAccZip","zipcodeID");           		
+						         </script>
+					       	 <% } %>
+		              </div>
+		              
+		         	  <div style="clear:both;height:20px"></div>
+		<%--- END ZIP CODE OPTION --%>
+		
+		    		 		
+					    		
+		<%--- KEYWORD OPTION---%>		
+				      <div class="mgsMoreDefaultContainer" style="float:left" class="mgsOptionLeft">
+					     <%if(IPortletConstants.MGSELECTION_DOCTORS.equalsIgnoreCase(preSelectedView)){%>
+					      <span class="mgsOptionsLabels" id="mgsOptionsLabelsKeywordIdDoc">Keyword or Doctor Name</span>
+					     <% }else{ %>
+					      <span class="mgsOptionsLabels" id="mgsOptionsLabelsKeywordIdLoc">Keyword or Hospital Name</span>
+					     <% }%>
+					            <div id="<portlet:namespace/>mgKeywordSearchboxContainer" class="mgsKeywordErrContainer"  tabindex="0">
+						                 <form class="mgs_landing_form" name="<portlet:namespace/>MGKWsearchForm" id="<portlet:namespace/>MGSearchKWForm" action='<portlet:actionURL/>' target="_self">
+									            <label class="wptheme-access" for="<%=IPortletConstants.SEARCHSTRING%>">search by keyword</label>
+									            <input class="mgsDoLocSearchOption" style="width:211px" size="25" type="text" maxlength="50" id="<%=IPortletConstants.SEARCHSTRING%>" name="<%=IPortletConstants.SEARCHSTRING%>" 
+									               onfocus="if (this.value==this.defaultValue) this.value='';" value=""/>
+									           
+									            <input style="float:left;" class="mgsInputGo" type="submit" id="<%=IPortletConstants.ACTION_SUBMITQUERY%>" value="Go" name="<%=IPortletConstants.ACTION_SUBMITQUERY%>" alt="submit search by keyword"/>
+									           
+									            <input type="hidden" name="<%=IPortletConstants.SEARCH_VIEW%>" value="<%=IPortletConstants.SEARCH_VIEW_LANDINGPAGE%>">
+									            <%-- IE hack where IE doesn't submit form upon striking enter --%>
+									            <div style="display:none"><input type="text" name="hiddenText"/></div>
+									            <%-- end IE hack--%>
+										  </form>
+							      </div>
+				      </div>     
+		<%---END KEYWORD OPTION---%>	
+		    			
+		    			
+		<%-- SERVICES OPTION--%>
+		    		  <%List<Facet> lServices = mpFGroups.get(IPortletConstants.FACET_TITLE_SERVICES);
+						    if(null!=lServices && lServices.size() > 0){%>
+						        <div class="mgsMoreDefaultContainer" style="float:left">
+			      				 <span class="mgsOptionsLabels" id="mgsOptionsLabelSpecialtyId">Services</span>
+			        			 <div id="servicesbgID"  tabindex="0">
+		                              <select id="<portlet:namespace/>ServicesVal" name="ServicesSelect" class="mgsDoLocSearchOption" title="search by Services">
+								            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTSERVICES%>"/></portlet:actionURL>">Select service</option>
+								            <c:forEach var="curFacet" items="<%=lServices%>">
+									            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Specialty|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+									            ${curFacet.title}</option>
+								            </c:forEach>
+							           </select>
+								 </div>
+				         	 	</div>
+			            		<div style="clear:both;"></div>
+						        
+						    <%}%>
+		<%-- END SERVICES OPTION--%>
+									    
+		<%--- SPECIALTY OPTION ---%>
+		    		 <%List<Facet> lSpecialty = mpFGroups.get(IPortletConstants.FACET_TITLE_SPECIALTY);
+		   			 	if(null!=lSpecialty && lSpecialty.size() > 0){%>
+		     				 <div class="mgsMoreDefaultContainer" style="float:left">
+			      				 <span class="mgsOptionsLabels" id="mgsOptionsLabelSpecialtyId">Specialty</span>
+			        			 <div id="specialtybgID"  tabindex="0">
+		                              <select id="<portlet:namespace/>SpecialtyVal" name="SpecialtySelect" class="mgsDoLocSearchOption" title="search by Specialty">
+								            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTSPECIALTY%>"/></portlet:actionURL>">Select specialty</option>
+								            <c:forEach var="curFacet" items="<%=lSpecialty%>">
+									            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Specialty|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+									            ${curFacet.title}</option>
+								            </c:forEach>
+							           </select>
+								 </div>
+				         	 </div>
+			            	<div style="clear:both;"></div>
+					    <%}%>
+		<%--- END SPECIALTY OPTION ---%>
+			
+		<%-- MORE OPTIONS DIV --%>	
+			
+				<div style="clear:both;"></div>	    
+					    <%if(IPortletConstants.MGSELECTION_DOCTORS.equalsIgnoreCase(preSelectedView)){%>
+							  <div class="mgsMoreOptionsLink" id="mgsMoreOptionsLinkOn">
+						            <a href="javascript:toggleMoreSearchOptions();" id="mgsOptionsLabel">More Search Options</a>
+						      </div>    
+						        
+						      <div class="mgsMoreOptionsLinkDisabled" style="display:none;" id="mgsMoreOptionsLinkOff">
+						            <a id="mgsOptionsLabelDisabled" href="#" style="color:#555555;pointer-events:none;cursor:default;">More Search Options</a>
+						      </div> 
+					     <% } %>
+		       
+		       <div class="mgsOptionsContainer" id="mgsOptionsContainerToggle" style="display:none;">
+					    
+		<%-- END MORE OPTIONS DIV --%>				    
+		
+		<%----  GENDER OPTION  ---%>
+		
+			   <%List<Facet> lGender = mpFGroups.get(IPortletConstants.FACET_TITLE_GENDER_LABEL);
+		   			 if(null!=lGender && lGender.size() > 0){%>
+		     		 <div class="mgsMoreOptionsContainer" style="float:left">
+				         <span class="mgsOptionsLabels" id="">Gender</span>
+				         <div id="genderbgID"  tabindex="0">
+				                      <select id="<portlet:namespace/>GenderVal" name="GenderSelect" class="mgsDoLocSearchOption" title="search by Gender">
+								            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTGENDER%>"/></portlet:actionURL>">Select gender</option>
+								            <c:forEach var="curFacet" items="<%=lGender%>">
+									            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Specialty|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+									            ${curFacet.title}</option>
+								            </c:forEach>
+							           </select>
+				          </div>
+				     </div>
+			         
+			   <%}%>
+			   
+		<%---- END GENDER OPTION  ---%>
+					   
+		<%--- HOSPITAL AFFILATION OPTION---%>
+		
+				    <%List<Facet> lHospital = mpFGroups.get(IPortletConstants.FACET_TITLE_HOSPITAL_LABEL);
+				    if(null!=lHospital && lHospital.size() > 0){%>
+						<div class="mgsMoreOptionsContainer" style="float:left;">
+					       <span class="mgsOptionsLabels" id="mgsOptionsLabelHospitalAffId">Hospital Affiliation</span>          
+				                 <div id="hospitalbgID"  tabindex="0">
+							            <select id="<portlet:namespace/>HospitalVal" name="HospitalSelect" class="mgsDoLocSearchOption" title="search by Hospital">
+								            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTHOSPITAL%>"/></portlet:actionURL>">Select hospital affiliation</option>
+								            <c:forEach var="curFacet" items="<%=lHospital%>">
+									            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Hospital|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+									            ${curFacet.title}</option>
+								            </c:forEach>
+							            </select>
+						        </div>
+					     </div>     
+						 <div style="clear:both;"></div>
+					 <%}%>
+					
+		<%--- END HOSPITAL AFFILATION OPTION---%>					   			      
+					    
+		<%----  LANGUAGE OPTION  ---%>
+		
+				 <%List<Facet> lLanguage = mpFGroups.get(IPortletConstants.FACET_TITLE_LANGUAGE_LABEL);
+		   			 if(null!=lLanguage && lLanguage.size() > 0){%>
+		     			 <div class="mgsMoreOptionsContainer" style="float:left">
+					     		 <span class="mgsOptionsLabels" id="mgsOptionsLabelLanguageId">Language</span>
+					             <div id="languagebgID"  tabindex="0">
+				                      <select id="<portlet:namespace/>LanguageVal" name="LanguageSelect" class="mgsDoLocSearchOption" title="search by Language">
+								            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTLANGUAGE%>"/></portlet:actionURL>">Select language</option>
+								            <c:forEach var="curFacet" items="<%=lLanguage%>">
+									            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Specialty|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+									            ${curFacet.title}</option>
+								            </c:forEach>
+							           </select>
+						          </div>
+				         </div>
+			     <%}%>
+			     
+		<%---- END LANGUAGE OPTION  ---%>   
+		
+		<%----  ISLAND OPTION  ---%>
+		
+				 <%List<Facet> lIsland = mpFGroups.get(IPortletConstants.FACET_TITLE_ISLAND_LABEL);
+		   			 if(null!=lIsland && lIsland.size() > 0){%>
+		     		 	<div class="mgsMoreOptionsContainer" style="float:left">
+					         <span class="mgsOptionsLabels" id="mgsOptionsLabelIslandId">Island</span>
+					         <div id="islandbgID"  tabindex="0">
+			                          <select id="<portlet:namespace/>IslandVal" name="IslandSelect" class="mgsDoLocSearchOption" title="search by Island">
+								            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTISLAND%>"/></portlet:actionURL>">Select island</option>
+								            <c:forEach var="curFacet" items="<%=lIsland%>">
+									            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Specialty|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+									            ${curFacet.title}</option>
+								            </c:forEach>
+							           </select>
+						      </div>
+					   </div>
+					   <div style="clear:both;"></div>
+			        <%}%>
+			        
+		<%---- END ISLAND OPTION  ---%>
+					   
+
+		
+		<%-- PROVIDER TYPE OPTION --%>
+		
+						    <%List<Facet> lProvider = mpFGroups.get(IPortletConstants.FACET_TITLE_PROVIDER_TYPE_LABEL);
+						    if(null!=lProvider && lProvider.size() > 0 && providerGateAcion==null){%>
+							 	 <div class="mgsMoreOptionsContainer" style="float:left">
+								       	<span class="mgsOptionsLabels" id="mgsOptionsLabelProviderMedId">Provider Type or Medical Group</span>
+						                <div id="ProviderbgIDoption"  tabindex="0">
+										            <select id="<portlet:namespace/>ProviderVal2" name="ProviderSelect" class="mgsDoLocSearchOption" title="search by provider type">
+											            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTPROVIDER%>"/></portlet:actionURL>">Select a provider type</option>
+											            <c:forEach var="curFacet" items="<%=lProvider%>">
+												            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Provider|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+												            ${curFacet.title}</option>
+											            </c:forEach>
+										            </select>
+										</div>
+							      </div>
+						    <%}%>
+		 					<div style="clear:both;"></div>
+		 					
+		 <%-- END PROVIDER TYPE OPTION --%>					
+		 					
+		<%-- PLAN TYPE OPTION --%>
+		
+						    <%List<Facet> lPlan = mpFGroups.get(IPortletConstants.FACET_TITLE_PLAN_TYPE);
+						    if(null!=lPlan && lPlan.size() > 0 && planGateAcion==null){%>
+							 	 <div class="mgsMoreOptionsContainer" style="float:left">
+								      <span class="mgsOptionsLabels" id="mgsOptionsLabelPlanTypeId"> Plan Type</span>
+							                       <div id="PlanbgIDoption"  tabindex="0">
+												            <select id="<portlet:namespace/>PlanVal" name="PlanSelect" class="mgsDoLocSearchOption" title="search by plan type">
+														            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="<%=IPortletConstants.VALUE_SELECTPLANTYPE%>"/></portlet:actionURL>">Select a plan type</option>
+														            <c:forEach var="curFacet" items="<%=lPlan%>">
+																            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Provider|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+																            ${curFacet.title}</option>
+														            </c:forEach>
+												            </select>
+											        </div>	  
+							         </div>
+						    <%}%>
+		 					<div style="clear:both;"></div>
+		 					
+		 				</div>
+		 				<div style="clear:both"></div>
+		
+		<%-- END PLAN TYPE OPTION --%>
+		
+		<%-- SEARCH BUTTON --%>
+							
+		  				<div class="mgsMoreOptions" id="mgsMoreOptionsId">
+							    <a href="javascript:<portlet:namespace/>openTarget('City')" class="wppButton">
+										<span class="ieAnchorButtonWrap"><span class="ieAnchorButton">Search</span></span>
+								</a>
+						</div>	   
+		<%-- END SEARCH BUTTON --%>   
+				           
+<%}%>
+
+</div>  <%-- end lass="mgs_main2" id="mgsearchcriteriadiv" --%>
+
+<% if (error != null && error.equals(IPortletConstants.ERROR_PROVIDER)){ %>			
+       <script>
+	      if (dojo.byId("<portlet:namespace/>ProviderVal").selectedIndex == 0){
+  			disableOnPlanProviderChange();
+    	 }
+       	</script>
+<% } %>
+<% if (error == null){%>
+	<script>
+		if(dojo.isIE || dojo.isSafari){ //IE hack because IE7 doesn't respect the addonload and it seems to parse before the dojo components are ready
+				
+				//execute if not NCA and Locations.  Do not execute if NCA && Doctors because NCA hides DIV id and throws an error  when trying to focus.
+				if (dojo.byId("RegionDropDwnDoctors").value!="NCA" && <%=IPortletConstants.MGSELECTION_LOCATIONS.equalsIgnoreCase(preSelectedView)%>){
+					setTimeout(function() {
+					   dojo.byId("focusAfterSearchOptions").focus();	 
+					}, 500);
+				}
+		}else{
+		    
+			dojo.addOnLoad(function() {
+	   				dojo.byId("focusAfterSearchOptions").focus();	 
+			});
+		}   
+	</script>
+<% } %> 
+
+<% if (gatedPlanProviderSearch!=null && GatedProviderSearch!=null && providerGateAcion==null){ %>
+  <script>
+
+  		if(dojo.byId("<portlet:namespace/>CityVal")){
+  			dojo.byId("<portlet:namespace/>CityVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>ZipCodeInput")){
+  			dojo.byId("<portlet:namespace/>ZipCodeInput").disabled=true;
+  		}
+  		if(dojo.byId("searchString")){
+  			dojo.byId("searchString").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>SpecialtyVal")){
+  			dojo.byId("<portlet:namespace/>SpecialtyVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>GenderVal")){
+  			dojo.byId("<portlet:namespace/>GenderVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>LanguageVal")){
+  			dojo.byId("<portlet:namespace/>LanguageVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>HospitalVal")){
+  			dojo.byId("<portlet:namespace/>HospitalVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>ProviderVal2")){
+  			dojo.byId("<portlet:namespace/>ProviderVal2").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>PlanVal")){
+  			dojo.byId("<portlet:namespace/>PlanVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>islandbgID")){
+  			dojo.byId("<portlet:namespace/>islandbgID").disabled=true;
+  		}
+  		dojo.byId("mgsMoreOptionsLinkOn").style.display="none";
+  	  	dojo.byId("mgsMoreOptionsLinkOff").style.display="block";
+
+  </script>
+  
+<% } %>
+
+
+<% if(IPortletConstants.MGSELECTION_DOCTORS.equalsIgnoreCase(preSelectedView)){%>
+	<script>
+		if (dojo.byId("RegionDropDwnDoctors").value=="NCA"){
+		    dojo.byId("mgsAllSearchOptionsContainer").style.display="none";
+		    dojo.byId("mgsNCAContainer").style.display="block";
+		}
+	</script> 
+<% } %>
+
+   
+    
+
+
+
+
+
+  
+
+  
+
+
+
+

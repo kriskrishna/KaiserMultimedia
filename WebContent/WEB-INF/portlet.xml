@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+    version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+    id="org.kp.wpp.portlets.kaisersearchportlet">
+    <portlet>
+        <portlet-name>KaiserSearchPortlet</portlet-name>
+        <display-name>Kaiser Search Portlet</display-name>
+        <display-name xml:lang="en">Kaiser Search Portlet</display-name>
+        <portlet-class>org.kp.wpp.portlet.search.KaiserSearchPortlet</portlet-class>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>edit_defaults</portlet-mode>
+        </supports>
+        <supported-locale>en</supported-locale>
+        <resource-bundle>org.kp.wpp.search.properties.KaiserSearchPortlet</resource-bundle>
+        <portlet-info>
+            <title>Kaiser Search Portlet</title>
+        </portlet-info>
+        <portlet-preferences>
+            <preference>
+                <name>searchXMLProject</name>
+                <value>kp-consumernet</value>
+            </preference>
+            <preference>
+                <name>searchXMLSources</name>
+                <value>kp-consumernet-bundle</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayClone</name>
+                <value>xml-feed-display-wpp-mg</value>
+            </preference>
+            <preference>
+                <name>searchTotalResults</name>
+                <value>200</value>
+            </preference>
+            <preference>
+                <name>searchResultsPerPage</name>
+                <value>25</value>
+            </preference>
+            <preference>
+                <name>searchTimeout</name>
+                <value>10000</value>
+            </preference>
+            <preference>
+                <name>searchRegion</name>
+                <value></value>
+            </preference>
+            <preference>
+                <name>DefaultToROP</name>
+                <value>Yes</value>
+            </preference>
+            <preference>
+                <name>customFacetOrder</name>
+                <value>region</value>
+                <value>language</value>
+                <value>category</value>
+            </preference>
+            <!--
+                References to style files; syntax: [/][path/]fileName.css[,...];
+                comma separated list, entries can include (multi-node) path if path
+                starts with / then it is from the domain ('external'), otherwise it
+                is relative to the web context root ('internal').
+            -->
+            <preference>
+                <name>styles</name>
+                <value>./styles/private/search^*^ie^.css</value>
+            </preference>
+        </portlet-preferences>
+        <supported-public-render-parameter>searchString</supported-public-render-parameter>
+        <supported-public-render-parameter>submitQuery</supported-public-render-parameter>
+    </portlet>
+    <portlet>
+        <portlet-name>KaiserMGSearchPortlet</portlet-name>
+        <display-name>Kaiser Member Guides Search Portlet</display-name>
+        <display-name xml:lang="en">Kaiser Member Guides Search Portlet</display-name>
+        <portlet-class>org.kp.wpp.portlet.search.KaiserMGSearchPortlet</portlet-class>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>edit_defaults</portlet-mode>
+        </supports>
+        <supported-locale>en</supported-locale>
+        <resource-bundle>org.kp.wpp.search.properties.KaiserMGSearchPortlet</resource-bundle>
+        <portlet-info>
+            <title>Kaiser Member Guides Search Portlet</title>
+        </portlet-info>
+        <portlet-preferences>
+            <preference>
+                <name>facdir-project</name>
+                <value>kp-mg-facdir-project</value>
+            </preference>
+            <preference>
+                <name>facdir-source</name>
+                <value>kp-mg-facdir-keyword</value>
+            </preference>
+            <preference>
+                <name>facdir-proximity-source</name>
+                <value>kp-mg-facdir-proximity</value>
+            </preference>
+            <preference>
+                <name>doctor-project</name>
+                <value>kp-doctor-project</value>
+            </preference>
+            <preference>
+                <name>doctor-source</name>
+                <value>kp-doctor</value>
+            </preference>
+            <preference>
+                <name>doctor-proximity-source</name>
+                <value>kp-doctor-proximity</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayClone</name>
+                <value>xml-feed-display-wpp-mg</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayBinsClone</name>
+                <value>xml-feed-display-wpp-mg-bins</value>
+            </preference>
+            <preference>
+                <name>searchTotalResults</name>
+                <value>200</value>
+            </preference>
+            <preference>
+                <name>searchResultsPerPage</name>
+                <value>25</value>
+            </preference>
+            <preference>
+                <name>searchTimeout</name>
+                <value>10000</value>
+            </preference>
+            <preference>
+                <name>ncaPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>scaPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>dbPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>ncPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>csPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>knwPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>ohiPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>ggaPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>hawPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>midPlanProviderType</name>
+                <value>false</value>
+            </preference>
+            <preference>
+                <name>help-url</name>
+                <value><![CDATA[/health/poc?uri=content:ancillary&ctype=help&tname=site_context&tid=WPP::LAWR8Y8RR&rtype=rop]]></value>
+            </preference>
+            <preference>
+                <name>glossary-url</name>
+                <value><![CDATA[/health/poc?uri=content:ancillary&ctype=glossary&tname=site_context&tid=WPP::LAWRA0N6U&rtype=rop]]></value>
+            </preference>            
+            <preference>
+                <name>searchLandingPage</name>
+                <value>/WEB-INF/mgsearch/jsp/index.jsp</value>
+            </preference>
+            <preference>
+                <name>facdir-facet-order</name>
+                <value>Located within</value>
+                <value>city</value>
+                <value>services</value>
+                <value>department type</value>
+            </preference>
+            <preference>
+                <name>doctor-facet-order</name>
+                <value>Located within</value>
+                <value>Doctors accepting new patients</value>
+                <value>Medical specialty</value>
+                <value>Gender</value>
+                <value>Spoken language</value>
+				<value>City</value>
+				<value>Island</value>
+                <value>Hospital affiliation</value>
+                <value>Provider type or medical group</value>
+                <value>Health plan</value>
+            </preference>
+            <!--
+                References to style files; syntax: [/][path/]fileName.css[,...];
+                comma separated list, entries can include (multi-node) path if path
+                starts with / then it is from the domain ('external'), otherwise it
+                is relative to the web context root ('internal').
+            -->
+            <preference>
+                <name>styles</name>
+                <value>./styles/private/search^*^ie^.css</value>
+            </preference>
+        </portlet-preferences>
+    </portlet>
+    <portlet>
+        <portlet-name>KaiserHCSearchPortlet</portlet-name>
+        <display-name>Kaiser Health Classes Search Portlet</display-name>
+        <display-name xml:lang="en">Kaiser Health Classes Search Portlet</display-name>
+        <portlet-class>org.kp.wpp.portlet.search.KaiserSearchPortlet</portlet-class>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>edit_defaults</portlet-mode>
+        </supports>
+        <supported-locale>en</supported-locale>
+        <supported-locale>es</supported-locale>
+        <resource-bundle>org.kp.wpp.search.properties.KaiserHCSearchPortlet</resource-bundle>
+        <portlet-info>
+            <title>Kaiser Health Classes Search Portlet</title>
+        </portlet-info>
+        <portlet-preferences>
+            <preference>
+                <name>searchXMLProject</name>
+                <value>kp-classes-project</value>
+            </preference>
+            <preference>
+                <name>searchXMLSources</name>
+                <value>kp-classes-keyword</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayClone</name>
+                <value>xml-feed-display-wpp-mg</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayBinsClone</name>
+                <value>xml-feed-display-wpp-mg-bins</value>
+            </preference>
+            <preference>
+                <name>searchTotalResults</name>
+                <value>200</value>
+            </preference>
+            <preference>
+                <name>searchResultsPerPage</name>
+                <value>25</value>
+            </preference>
+            <preference>
+                <name>searchTimeout</name>
+                <value>10000</value>
+            </preference>
+            <preference>
+                <name>DefaultLocale</name>
+                <value>en-us</value>
+            </preference>
+            <preference>
+                <name>searchLandingPage</name>
+                <value>/WEB-INF/jsp/hcindex.jsp</value>
+            </preference>
+            <preference>
+                <name>customFacetOrder</name>
+                <value>city</value>
+                <value>program type</value>
+                <value>language</value>
+                <value>health topic</value>
+            </preference>
+            <!--
+                References to style files; syntax: [/][path/]fileName.css[,...];
+                comma separated list, entries can include (multi-node) path if path
+                starts with / then it is from the domain ('external'), otherwise it
+                is relative to the web context root ('internal').
+            -->
+            <preference>
+                <name>styles</name>
+                <value>./styles/private/hc_search^*^ie^.css</value>
+            </preference>
+        </portlet-preferences>
+    </portlet>
+    <portlet>
+        <portlet-name>KaiserHESearchPortlet</portlet-name>
+        <display-name>Kaiser Health Encyclopedia Search Portlet</display-name>
+        <display-name xml:lang="en">Kaiser Health Encyclopedia Search Portlet</display-name>
+        <portlet-class>org.kp.wpp.portlet.search.KaiserSearchPortlet</portlet-class>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>edit_defaults</portlet-mode>
+        </supports>
+        <supported-locale>en</supported-locale>
+        <supported-locale>es</supported-locale>
+        <resource-bundle>org.kp.wpp.search.properties.KaiserHESearchPortlet</resource-bundle>
+        <portlet-info>
+            <title>Kaiser Health Encyclopedia Search Portlet</title>
+        </portlet-info>
+        <portlet-preferences>
+            <preference>
+                <name>DefaultLocale</name>
+                <value>en-us</value>
+            </preference>
+            <preference>
+                <name>BrowseWithoutRegionGate</name>
+                <value>Yes</value>
+            </preference>
+            <preference>
+                <name>searchXMLProject</name>
+                <value>kp-healthency-project</value>
+            </preference>
+            <preference>
+                <name>searchXMLSources</name>
+                <value>kp-healthency-bundle</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayClone</name>
+                <value>xml-feed-display-wpp-mg</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayBinsClone</name>
+                <value>xml-feed-display-wpp-mg-bins</value>
+            </preference>
+            <preference>
+                <name>searchTotalResults</name>
+                <value>200</value>
+            </preference>
+            <preference>
+                <name>searchResultsPerPage</name>
+                <value>25</value>
+            </preference>
+            <preference>
+                <name>searchTimeout</name>
+                <value>10000</value>
+            </preference>
+            <preference>
+                <name>SymptomCheckerURL</name>
+                <value><![CDATA[/health/poc?uri=content:health-encyclopedia&hwid=kp100000&locale=en-us&ctype=kb]]></value>
+            </preference>
+            <preference>
+                <name>searchLandingPage</name>
+                <value>/WEB-INF/jsp/heindex.jsp</value>
+            </preference>
+            <preference>
+                <name>customFacetOrder</name>
+                <value>language</value>
+                <value>article type</value>
+                <value>health topic</value>
+            </preference>
+            <!--
+                References to style files; syntax: [/][path/]fileName.css[,...];
+                comma separated list, entries can include (multi-node) path if path
+                starts with / then it is from the domain ('external'), otherwise it
+                is relative to the web context root ('internal').
+            -->
+            <preference>
+                <name>styles</name>
+                <value>./styles/private/he_search^*^ie^.css</value>
+            </preference>
+        </portlet-preferences>
+        <supported-public-render-parameter>searchString</supported-public-render-parameter>
+        <supported-public-render-parameter>submitQuery</supported-public-render-parameter>
+        <supported-public-render-parameter>searchLabel</supported-public-render-parameter>
+        <supported-public-render-parameter>fromFeature</supported-public-render-parameter>
+    </portlet>
+    <portlet>
+        <portlet-name>KaiserDESearchPortlet</portlet-name>
+        <display-name>Kaiser Drug Encyclopedia Search Portlet</display-name>
+        <display-name xml:lang="en">Kaiser Drug Encyclopedia Search Portlet</display-name>
+        <portlet-class>org.kp.wpp.portlet.search.KaiserSearchPortlet</portlet-class>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>view</portlet-mode>
+            <portlet-mode>edit_defaults</portlet-mode>
+        </supports>
+        <supported-locale>en</supported-locale>
+        <supported-locale>es</supported-locale>
+        <resource-bundle>org.kp.wpp.search.properties.KaiserDESearchPortlet</resource-bundle>
+        <portlet-info>
+            <title>Kaiser Drug Encyclopedia Search Portlet</title>
+        </portlet-info>
+        <portlet-preferences>
+            <preference>
+                <name>DefaultLocale</name>
+                <value></value>
+            </preference>
+            <preference>
+                <name>BrowseWithoutRegionGate</name>
+                <value></value>
+            </preference>
+            <preference>
+                <name>searchXMLProject</name>
+                <value>kp-drugency-project</value>
+            </preference>
+            <preference>
+                <name>searchXMLSources</name>
+                <value>kp-drugency-feature-keyword</value>
+            </preference>
+            <preference>
+                <name>AlphabetSearchSource</name>
+                <value>kp-drugency-feature-alpha</value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayClone</name>
+                <value>xml-feed-display-wpp-mg</value>
+            </preference>
+            <preference>
+                <name>NMCDURL</name>
+                <value><![CDATA[/health/poc?uri=center:natural-medicines]]></value>
+            </preference>
+            <preference>
+                <name>help-url</name>
+                <value><![CDATA[/health/poc?uri=content:ancillary&ctype=informational&tname=site_context&tid=WPP::LSS2KW3AP]]></value>
+            </preference>
+            <preference>
+                <name>searchXMLDisplayBinsClone</name>
+                <value></value>
+            </preference>
+            <preference>
+                <name>searchTotalResults</name>
+                <value>200</value>
+            </preference>
+            <preference>
+                <name>searchResultsPerPage</name>
+                <value>25</value>
+            </preference>
+            <preference>
+                <name>searchTimeout</name>
+                <value>10000</value>
+            </preference>
+            <preference>
+                <name>searchLandingPage</name>
+                <value>/WEB-INF/jsp/deindex.jsp</value>
+            </preference>
+            <preference>
+                <name>customFacetOrder</name>
+                <value>letter range</value>
+                <value>language</value>
+                <value>availability</value>
+                <value><![CDATA[brand/generic]]></value>
+                <value>dosage form</value>
+                <value>how taken</value>
+            </preference>
+            <preference>
+                <name>SearchIntroIcon</name>
+                <value>/static/health/images/spotlight_icons/health_wellness/si_drug_enc.jpg</value>
+            </preference>
+            <!--
+                References to style files; syntax: [/][path/]fileName.css[,...];
+                comma separated list, entries can include (multi-node) path if path
+                starts with / then it is from the domain ('external'), otherwise it
+                is relative to the web context root ('internal').
+            -->
+            <preference>
+                <name>styles</name>
+                <value>./styles/private/de_search^*^ie^.css</value>
+            </preference>
+        </portlet-preferences>
+    </portlet>
+    <custom-portlet-mode>
+        <description>edit_defaults mode</description>
+        <portlet-mode>edit_defaults</portlet-mode>
+    </custom-portlet-mode>
+    <default-namespace>http://kaisersearchportlet/</default-namespace>
+    <public-render-parameter>
+       <identifier>searchString</identifier>
+       <name>searchString</name>
+    </public-render-parameter>
+    <public-render-parameter>
+       <identifier>submitQuery</identifier>
+       <name>submitQuery</name>
+    </public-render-parameter>
+    <public-render-parameter>
+       <identifier>searchLabel</identifier>
+       <name>searchLabel</name>
+    </public-render-parameter>
+    <public-render-parameter>
+       <identifier>fromFeature</identifier>
+       <name>fromFeature</name>
+     </public-render-parameter>
+</portlet-app>

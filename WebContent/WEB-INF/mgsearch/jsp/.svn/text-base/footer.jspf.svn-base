@@ -1,0 +1,28 @@
+<%if((StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_LOCATIONS, preSelectedMG) || StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_DOCTORS, preSelectedMG))
+    && StringUtils.isNotBlank(preSelectedRop) && !IPortletConstants.VAL_DEFAULT_AREA_SELECT.equalsIgnoreCase(preSelectedRop)){%>
+	<%-- START footer container conditional for region selection before it appears --%>
+	<div id="mgsFooterContainer">
+				<div class="mgs_area_cont mgs_col_right">
+					<div class="searchQuickLinkContainer">          
+					  <div class="searchQuickLink">
+					      <h2>${ac.linkBucket1Title}</h2>
+					      <div class="wppHeaderStroke"><div class="wppHeaderStrokeIcon"></div></div>
+					      ${ac.linkBucket1}
+					  </div>
+					  <div class="searchQuickLink">
+					      <h2>${ac.linkBucket2Title}</h2>
+					      <div class="wppHeaderStroke"><div class="wppHeaderStrokeIcon"></div></div>
+					      ${ac.linkBucket2}
+					  </div>
+					</div>      
+				</div>
+		
+		<%}%>
+		
+		<c:if test="${not empty ac.disclaimer}"><div class="searchResultDisclaimer">${ac.disclaimer}</div></c:if>
+		
+	<%if((StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_LOCATIONS, preSelectedMG) || StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_DOCTORS, preSelectedMG))
+		    && StringUtils.isNotBlank(preSelectedRop) && !IPortletConstants.VAL_DEFAULT_AREA_SELECT.equalsIgnoreCase(preSelectedRop)){%>
+	<div style="clear:both;padding-bottom:20px"></div>
+	</div>	<!--- END div mgsFooterContainer --->
+	<%}%>

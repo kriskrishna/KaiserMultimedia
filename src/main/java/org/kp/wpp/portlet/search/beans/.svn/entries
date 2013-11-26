@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-16T18:01:00.361659Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/java/org/kp/wpp/portlet/search/beans"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45467"/>
+<entry
+   name="AuxiliaryContent.java"
+   committed-date="2013-08-09T17:42:14.119951Z"
+   text-time="2013-08-09T17:42:14.000000Z"
+   checksum="edec51140c557e9315b30bd1995a6afa"
+   last-author="m504923"
+   committed-rev="45244"
+   kind="file"/>
+<entry
+   name="Content.java"
+   committed-date="2013-07-26T20:40:33.327878Z"
+   text-time="2013-07-26T20:40:33.000000Z"
+   checksum="7c04a7f22be82dbf047312d8a19f6e1c"
+   last-author="e679942"
+   committed-rev="44982"
+   kind="file"/>
+<entry
+   name="Distance.java"
+   committed-date="2013-08-16T18:01:00.361659Z"
+   text-time="2013-08-16T18:01:00.000000Z"
+   checksum="822945ea3618a7f9030ef580551cb7d2"
+   last-author="m504923"
+   committed-rev="45467"
+   kind="file"/>
+<entry
+   name="Facet.java"
+   committed-date="2011-03-17T20:58:59.427011Z"
+   text-time="2011-03-17T20:58:59.000000Z"
+   checksum="6e275a44a377e250ceda9f255b91e158"
+   last-author="l525045"
+   committed-rev="17571"
+   kind="file"/>
+<entry
+   name="FacetGroup.java"
+   committed-date="2011-03-17T20:58:59.427011Z"
+   text-time="2011-03-17T20:58:59.000000Z"
+   checksum="9e51b9f1d9a488725a3031067d9c091d"
+   last-author="l525045"
+   committed-rev="17571"
+   kind="file"/>
+<entry
+   name="PageLink.java"
+   committed-date="2011-10-03T19:59:11.218605Z"
+   text-time="2011-10-03T19:59:11.000000Z"
+   checksum="c661c269f40c60130e32031bbe6ac906"
+   last-author="l525045"
+   committed-rev="26126"
+   kind="file"/>
+<entry
+   name="Region.java"
+   committed-date="2011-04-19T22:41:11.812560Z"
+   text-time="2011-04-19T22:41:11.000000Z"
+   checksum="d3b63fb18a43fc3374805a43c539b29d"
+   last-author="l525045"
+   committed-rev="18713"
+   kind="file"/>
+<entry
+   name="SearchCriteria.java"
+   committed-date="2011-11-17T20:52:59.920060Z"
+   text-time="2011-11-17T20:52:59.000000Z"
+   checksum="0b239bc8c20df5f3db4d0a028873e76c"
+   last-author="l525045"
+   committed-rev="29186"
+   kind="file"/>
+<entry
+   name="SearchResultsView.java"
+   committed-date="2011-04-19T22:41:11.812560Z"
+   text-time="2011-04-19T22:41:11.000000Z"
+   checksum="3596005b9eabe0aac3a14960217f8756"
+   last-author="l525045"
+   committed-rev="18713"
+   kind="file"/>
+</wc-entries>

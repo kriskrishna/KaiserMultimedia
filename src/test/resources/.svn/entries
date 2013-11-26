@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:44:51.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-09T18:22:19.302415Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/test/resources"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45248"/>
+<entry
+   name="log4j.properties"
+   committed-date="2013-08-09T18:22:19.302415Z"
+   text-time="2013-08-09T18:22:19.000000Z"
+   checksum="8daa1be32c35916c1b455fe1e679e1ea"
+   last-author="m504923"
+   committed-rev="45248"
+   kind="file"/>
+<entry
+   name="mgsearch-locations-facets.xml"
+   committed-date="2011-05-03T17:24:55.927186Z"
+   text-time="2011-05-03T17:24:55.000000Z"
+   checksum="c06bed7485cd18ef31629e7fb334435f"
+   last-author="l525045"
+   committed-rev="19080"
+   kind="file"/>
+<entry
+   name="org"
+   kind="dir"/>
+<entry
+   name="sample-spellcheck-noresults.xml"
+   committed-date="2011-01-12T22:37:22.842150Z"
+   text-time="2011-01-12T22:37:22.000000Z"
+   checksum="79807d14103f9fb518c006745e50a012"
+   last-author="l525045"
+   committed-rev="15258"
+   kind="file"/>
+<entry
+   name="sample-spellcheck-withresults.xml"
+   committed-date="2011-01-12T22:37:22.842150Z"
+   text-time="2011-01-12T22:37:22.000000Z"
+   checksum="229ea85d5c04b43ee838452cd5276815"
+   last-author="l525045"
+   committed-rev="15258"
+   kind="file"/>
+<entry
+   name="sample_mgsearch_locations.xml"
+   committed-date="2011-01-07T00:04:47.091237Z"
+   text-time="2011-01-07T00:04:47.000000Z"
+   checksum="edbdbf2d068414759b4eedb2ae348c01"
+   last-author="l525045"
+   committed-rev="15107"
+   kind="file"/>
+<entry
+   name="sample_search_response.xml"
+   committed-date="2010-11-29T23:12:59.166197Z"
+   text-time="2010-11-29T23:12:59.000000Z"
+   checksum="9dac1653f2f134c5670309dca63ae5ad"
+   last-author="l525045"
+   committed-rev="14272"
+   kind="file"/>
+</wc-entries>

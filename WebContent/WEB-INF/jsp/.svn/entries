@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:45:03.000000Z"
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-27T22:55:57.414075Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent/WEB-INF/jsp"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45896"/>
+<entry
+   name="Default_Edit.jsp"
+   committed-date="2011-09-26T20:39:48.119761Z"
+   text-time="2011-09-26T20:39:48.000000Z"
+   checksum="ed72671d5aac0ac1debafe8561ef3184"
+   last-author="l525045"
+   committed-rev="25665"
+   kind="file"/>
+<entry
+   name="Default_View.jsp"
+   committed-date="2013-08-16T18:55:28.929494Z"
+   text-time="2013-08-16T18:55:28.000000Z"
+   checksum="6393b64fd4db5be175bbeb7281f76dd6"
+   last-author="m504923"
+   committed-rev="45473"
+   kind="file"/>
+<entry
+   name="HCOCustom_View.jsp"
+   committed-date="2012-08-06T23:13:07.581694Z"
+   text-time="2012-08-06T23:13:07.000000Z"
+   checksum="f6b47a7f2e7216d561a2b05270099a12"
+   last-author="e949004"
+   committed-rev="37305"
+   kind="file"/>
+<entry
+   name="KillSearchError.jsp"
+   committed-date="2011-01-12T04:31:49.781948Z"
+   text-time="2011-01-12T04:31:49.000000Z"
+   checksum="cd5c4e865ce7512918f3964532cdd4fd"
+   last-author="l525045"
+   committed-rev="15247"
+   kind="file"/>
+<entry
+   name="NCECustom_View.jsp"
+   committed-date="2013-02-27T02:12:37.946396Z"
+   text-time="2013-02-27T02:12:37.000000Z"
+   checksum="dc4ab2615469221b7dbe7dcebd13b3d1"
+   last-author="k228674"
+   committed-rev="41333"
+   kind="file"/>
+<entry
+   name="NC_searchOptions.jspf"
+   committed-date="2012-05-14T18:52:17.801925Z"
+   text-time="2012-05-14T18:52:17.000000Z"
+   checksum="e3115b1568bdc00daee4a3843da1ff3c"
+   last-author="f525302"
+   committed-rev="36316"
+   kind="file"/>
+<entry
+   name="NarrowByPage.jspf"
+   committed-date="2013-08-19T18:28:25.941865Z"
+   text-time="2013-08-19T18:28:25.000000Z"
+   checksum="0da49f90083e392c539120d78880d1a9"
+   last-author="m504923"
+   committed-rev="45548"
+   kind="file"/>
+<entry
+   name="NarrowByPath.jspf"
+   committed-date="2013-08-27T22:55:57.414075Z"
+   text-time="2013-08-27T22:55:57.000000Z"
+   checksum="3facd47cc19a8105e74fe2ab4a2ae579"
+   last-author="l523788"
+   committed-rev="45896"
+   kind="file"/>
+<entry
+   name="Paging.jspf"
+   committed-date="2013-08-10T00:21:48.133804Z"
+   text-time="2013-08-10T00:21:48.000000Z"
+   checksum="1927f961b763d5b959fb9f39d4e9957e"
+   last-author="l523788"
+   committed-rev="45284"
+   kind="file"/>
+<entry
+   name="ResultsMGPage.jspf"
+   committed-date="2013-08-27T00:07:03.155300Z"
+   text-time="2013-08-27T00:07:03.000000Z"
+   checksum="d066b4291161cef599ef50ca5ab24ff5"
+   last-author="l523788"
+   committed-rev="45861"
+   kind="file"/>
+<entry
+   name="ResultsPage.jspf"
+   committed-date="2013-08-16T06:47:41.729675Z"
+   text-time="2013-08-16T06:47:41.000000Z"
+   checksum="6b14dfbfcd65240d6a4bfb73746eb7fd"
+   last-author="l523788"
+   committed-rev="45458"
+   kind="file"/>
+<entry
+   name="SearchBox.jspf"
+   committed-date="2011-08-31T21:19:39.239627Z"
+   text-time="2011-08-31T21:19:39.000000Z"
+   checksum="f6e7f9a0de2e3b2351cd5d508de32f74"
+   last-author="l525045"
+   committed-rev="24332"
+   kind="file"/>
+<entry
+   name="Summary.jspf"
+   committed-date="2013-08-16T06:47:41.729675Z"
+   text-time="2013-08-16T06:47:41.000000Z"
+   checksum="f9504aedec90d82dc295551944d3f7c2"
+   last-author="l523788"
+   committed-rev="45458"
+   kind="file"/>
+<entry
+   name="TrackEvents.jspf"
+   committed-date="2011-08-31T21:24:19.719150Z"
+   text-time="2011-08-31T21:24:19.000000Z"
+   checksum="d65b7ef4a193b0943e579bb13327f1f8"
+   last-author="l525045"
+   committed-rev="24335"
+   kind="file"/>
+<entry
+   name="deindex.jsp"
+   committed-date="2012-12-10T17:24:37.192242Z"
+   text-time="2012-12-10T17:24:37.000000Z"
+   checksum="a72abad5034c7edf2f0428a7ce99f273"
+   last-author="b306347"
+   committed-rev="40299"
+   kind="file"/>
+<entry
+   name="error.jsp"
+   committed-date="2012-10-17T16:42:21.920695Z"
+   text-time="2012-10-17T16:42:21.000000Z"
+   checksum="7f9db057762ae4f09319dba354c130cc"
+   last-author="b306347"
+   committed-rev="39242"
+   kind="file"/>
+<entry
+   name="hcindex.jsp"
+   committed-date="2012-12-10T17:24:37.192242Z"
+   text-time="2012-12-10T17:24:37.000000Z"
+   checksum="ac2ab883fc3e094f3b6b3637ad74d685"
+   last-author="b306347"
+   committed-rev="40299"
+   kind="file"/>
+<entry
+   name="heindex.jsp"
+   committed-date="2012-12-10T17:24:37.192242Z"
+   text-time="2012-12-10T17:24:37.000000Z"
+   checksum="4a815b047dfc99e8c2d87772b1c5fabb"
+   last-author="b306347"
+   committed-rev="40299"
+   kind="file"/>
+</wc-entries>

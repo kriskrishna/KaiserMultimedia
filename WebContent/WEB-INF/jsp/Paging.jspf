@@ -1,0 +1,69 @@
+<%List<PageLink> lstN = (List<PageLink>) request.getAttribute("PAGINATION_LIST");
+pageContext.setAttribute("lstN", lstN);%>
+<script type="text/javascript">
+<%--
+function <p:ns/>init(){ return
+ {myState1: null
+ ,myState2: null
+ ,getResoure: function(resourecePath, resourceName){ ...
+    var _this = this;
+    xhr...
+
+     ,load: function(result) { _this.processResult(result) }
+       }
+   }
+ ,processResult
+ `   
+   }
+ };
+}
+var <p:ns/>PtltJSSingleton=<p:ns/>init();
+--%>
+function getResource(resourcePath, resourceName) {
+    var thisObj = this;
+    dojo.xhrGet({
+        url: resourcePath,
+        handleAs: "text",
+        sync: true,
+        load:function(result) {thisObj[resourceName] = result;},
+        error:function(data) {console.debug("fail to get the resource" + resourceName);}
+    });
+}
+function makeResourceCall(serveResourceURL, pagetitle){
+     getResource(serveResourceURL, 'viewMoreContent');
+     dojo.byId(pagetitle+"_viewmore_results").style.display='block';
+     dojo.byId(pagetitle+"_viewmore_link").style.display='none';
+     var moreResults = this.viewMoreContent;
+     moreResults = moreResults.replace(/(\r\n|\n|\r)/gm,"");
+     if(moreResults == "<%=IPortletConstants.ERROR_PAGING%>"){
+        dojo.byId(pagetitle+"_viewmore_results").innerHTML = '<div class="SearchTechProblem"><p><fmt:message key="search.searchbox.error.techfailure"/></p><p><fmt:message key="search.searchbox.error.helpdesk"/><br/></p></div>';
+     }else{
+        dojo.byId(pagetitle+"_viewmore_results").innerHTML = this.viewMoreContent;
+        var nxtPg = parseInt(pagetitle) + 1;
+        if(dojo.byId(nxtPg+"_viewmore_link")){
+        	dojo.byId(nxtPg+"_viewmore_link").style.display='block';
+        	<%-- DE3564  -Accessibility Defect: View More (ajax based) results not on focus after progressive reveal
+             Description: Added javascript call to set page focus to first anchor in *_viewmore_results ID.--%>
+	        var myViewMoreInt=parseInt(pagetitle);
+	        document.getElementById(myViewMoreInt+"_viewmore_results").getElementsByTagName('a')[0].focus();
+        }
+     }
+     if(dojo.byId("searchResultMG") && (dojo.byId("searchResultMG").offsetHeight > dojo.byId("searchFacetMG").offsetHeight)){
+		dojo.byId("searchFacetMG").style.height=dojo.byId("searchResultMG").offsetHeight-dojo.byId("newSearchMG").offsetHeight-dojo.byId("BreadcrumbsDiv").offsetHeight-40+"px";
+	 }
+}
+</script>
+<c:forEach var="page" items="${lstN}" begin="1">
+    <div style="display:none" id="${page.title}_viewmore_link" class="searchListingMore">
+    <a href="javascript:void(0)" 
+       onClick='javascript:makeResourceCall("<portlet:resourceURL><portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${page.href}"/></portlet:resourceURL>","${page.title}")'>
+    <fmt:message key="search.paging.link.viewmore"/>
+    </a>
+    </div>
+    <div style="display:none" class="printArea" id="${page.title}_viewmore_results"></div>
+</c:forEach>
+<c:if test="${not empty lstN}">
+<script type="text/javascript">
+   dojo.byId("2_viewmore_link").style.display='block';
+</script>
+</c:if>

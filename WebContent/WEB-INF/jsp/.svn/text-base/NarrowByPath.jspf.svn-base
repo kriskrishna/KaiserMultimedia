@@ -1,0 +1,111 @@
+<%
+List<FacetGroup> lstSelectedFGroups =  (List<FacetGroup>)request.getAttribute("BREADCRUMBS_LIST");
+pageContext.setAttribute("lstSelectedFacets", lstSelectedFGroups);
+%>
+<div id="BreadcrumbsDiv" class="facetBreadcrumb">
+<c:if test="${not empty pLandingPage || not empty lstSelectedFacets}">
+<h3><fmt:message key="search.nbpath.text.currentsearch"/></h3>
+</c:if>
+<c:if test="${not empty srv}">
+<c:if test="${not empty srv.project}">
+<c:choose>
+<c:when test="${srv.project == 'Doctors' || srv.project == 'Locations'}">
+<script type="text/javascript"> <%-- link style sheets on demand --%>
+<%-- dojo.publish('kaiser/wiMetaParam',['-',['search_collection','${srv.project}'}]]); --%>
+if(dojo.isIE){
+	var newMeta = document.createElement('META');
+	newMeta.setAttribute('name', 'DCSExt.search_collection');
+	newMeta.setAttribute('content', '${srv.project}');
+	var h = document.getElementsByTagName('head')[0];
+	h.appendChild(newMeta);
+}else{
+	document.getElementsByTagName('head')[0].innerHTML += '<META  name="DCSExt.search_collection" content="${srv.project}">';
+}
+</script>
+<!--
+<strong><h6>Doctors or Locations</h6></strong>
+<div>${srv.project}</div>
+-->
+</c:when>
+<c:otherwise>
+<strong><h6>${srv.project}</h6></strong>
+</c:otherwise>
+</c:choose>
+<%if (!thisIsMGSearch) {%>
+<c:if test="${not empty srv.regionFilter}">
+<strong><h6><fmt:message key="search.nbpath.text.region"/></h6></strong>
+<div>${srv.regionFilter}</div>
+</c:if>
+<%}%>
+</c:if>
+<c:if test="${not empty srv.searchAlphabet}">
+<strong><h6>Letter</h6></strong>
+<div>${srv.searchAlphabet}</div>
+</c:if>
+</c:if>
+<%if (thisIsMGSearch && (lstSelectedFGroups!=null)) {%>
+<c:if test="${not empty srv.userZipCode}">
+<strong><h6>ZIP Code</h6></strong>
+<div>${srv.userZipCode}</div>
+</c:if>
+<%}%>
+<c:forEach var="curfG" items="${lstSelectedFacets}">
+        <c:forEach var="curFacet" items="${curfG.facets}">
+            <c:if test="${curFacet.selected}">
+                <strong><span class="searchpath">${curfG.facetKey}</span></strong>
+                <div>${curFacet.title}
+                <a class="facetClear" href='<portlet:actionURL>
+                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value"${curFacet.deSelectHref}"/>
+                    <portlet:param name="<%=IPortletConstants.FACETREFRESH%>" value="<%=IPortletConstants.FACETREFRESH%>"/>
+                    </portlet:actionURL>'>
+                    <c:choose>
+                    <c:when test="${curFacet.title == 'yes'}">
+                    <%
+                    if(pcpGateYes!=null && pcpGateYes.length()>0){ %>
+					<%}else{%>
+					<fmt:message key="search.nbpath.link.clear"/>
+					<%} %>
+                    </c:when>
+                    <c:when test="${curFacet.title == planGateAcion}">
+                    </c:when>
+                    
+                    <c:when test="${curFacet.title == providerGateAcion}">
+                    </c:when>
+                    
+                    <c:otherwise><fmt:message key="search.nbpath.link.clear"/>
+					</c:otherwise>
+					</c:choose>
+					
+                </a>
+                </div>
+            </c:if>
+        </c:forEach>
+</c:forEach>
+<%if (!thisIsMGSearch) {%>
+<c:if test="${not empty srv.userZipCode || requestScope.rsltError == 'ERR002'}">
+<strong><h6>ZIP Code</h6></strong>
+<div class="zipcode_bg_select" id="zipcodeMGS">
+<form name="<portlet:namespace/>MGZCsearchForm" target="_self" id="<portlet:namespace/>MGZCsearchForm" action='<portlet:actionURL/>'>
+    <label class="wptheme-access" for="<portlet:namespace/>ZipCodeInput">enter 5 digit zip code to search</label>
+    <input id="<portlet:namespace/>ZipCodeInput" name="<%=IPortletConstants.SEARCH_ZIPCODE%>" value="${srv.userZipCode}" onkeypress="return allowOnlyNumbers(event)" size="7" maxlength="5" class="mgs_area_padding">
+    <input type="hidden" name="<%=IPortletConstants.SEARCH_VIEW%>" value="<%=IPortletConstants.SEARCH_VIEW_RESULTSPAGE%>">
+    <input class="mgsZipInputGo" type="submit" id="<%=IPortletConstants.ACTION_SUBMITZIPCD%>" value="submit to search by zip code" name="<%=IPortletConstants.ACTION_SUBMITZIPCD%>" alt="submit to search by zip code"/>
+        <%-- IE hack where IE doesn't submit form upon striking enter --%>
+                <div style="display:none"><input type="text" name="hiddenText"/></div>
+        <%-- end IE hack--%>
+</form>
+</div>
+<c:if test="${requestScope.rsltError == 'ERR002'}">
+<div id="MgSearchErrorDiv" class="wppInputErrorMessage mgsZipError">
+  <ul><li><fmt:message key="search.index.error.zipcd"/></li></ul>
+</div>
+<script>dojo.byId("zipcodeMGS").className=dojo.byId("zipcodeMGS").className+" mgsErrorInput";</script>
+</c:if>
+</c:if>
+<%} %>
+</div>
+<%-- breadcrumb ends --%>
+
+
+
+

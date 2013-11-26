@@ -1,0 +1,16 @@
+# __KP_DEPLOY__ !!log4j.rootCategory=@@LOG4J_ROOT_LOG_LEVEL@@,console,file!!
+log4j.rootCategory=info,console
+#log4j.rootCategory=DEBUG,console,file
+
+log4j.appender.console=org.apache.log4j.ConsoleAppender
+log4j.appender.console.layout=org.apache.log4j.PatternLayout
+log4j.appender.console.layout.ConversionPattern=%-5p [%c]: %m%n
+
+log4j.appender.file=org.apache.log4j.RollingFileAppender
+log4j.appender.file.File=logs/searchportlet.log
+# __KP_DEPLOY__ !!MaxFileSize=@@LOG4J_FILE_SIZE@@!!
+log4j.appender.file.MaxFileSize=5MB
+
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n
+

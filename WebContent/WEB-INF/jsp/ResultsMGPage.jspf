@@ -1,0 +1,125 @@
+<div class="printArea searchResultTotal"><c:if
+    test="${not empty srv}">
+    <c:if test="${srv.summaryDisplayFlag}">
+        <h4 lang='<fmt:message key="search.selected.lang.value"/>'><c:choose>
+            <c:when test="${srv.resultsCount == '1'}">
+                <c:choose>
+                <c:when test="${not empty srv.keyword}">
+                <fmt:message key="search.summary.text.kwd.summary1">
+                    <fmt:param value="${srv.resultsCount}"/>
+                    <fmt:param value="${srv.keyword}"/>
+                </fmt:message>
+                </c:when>
+                <c:otherwise>
+                <fmt:message key="search.summary.text.nokwd.summary1">
+                    <fmt:param value="${srv.resultsCount}"/>
+                </fmt:message>
+                </c:otherwise>
+                </c:choose>
+            </c:when>
+            <c:otherwise>
+                <c:choose>
+                <c:when test="${not empty srv.keyword}">
+                <fmt:message key="search.summary.text.kwd.summaryn">
+                    <fmt:param value="${srv.resultsCount}"/>
+                    <fmt:param value="${srv.keyword}"/>
+                </fmt:message>
+                </c:when>
+                <c:otherwise>
+                <fmt:message key="search.summary.text.nokwd.summaryn">
+                    <fmt:param value="${srv.resultsCount}"/>
+                </fmt:message>
+                </c:otherwise>
+                </c:choose>
+            </c:otherwise>
+        </c:choose></h4>
+    </c:if>
+</c:if></div>
+<%List<Content> lstC = (List<Content>) request.getAttribute("RESULTS_LIST");%>
+<div id="SearchResultsList" class="printArea">
+    <c:forEach var="content" items="<%=lstC%>">
+        <div class="searchMGListing">
+        	<!-- Commenting the doctor photo code for this iteration.
+	        <c:set var="noPhoto" value="/static/consumer/consumernet/mydoctor/styles/private/images/photo_none.jpg"/>
+	        <c:if test="${not empty content.photoUrl}">
+	        	<div id="searchMGImage">
+	        		<c:choose>
+	            	<c:when test="${content.photoUrl != 'none'}">
+	            		<img src="${content.photoUrl}" height="199" alt="${content.title}" title="${content.title}"/><br>
+	            	</c:when>
+	            	<c:otherwise>
+	            		<img src="${noPhoto}" height="199" alt="${content.title}" title="${content.title}"/><br>
+	            	</c:otherwise>
+	            	</c:choose>
+	            </div>
+	        </c:if>
+	        -->
+        	<div id="searchMGContent">
+	            <div class="searchListingHead">
+	            <%-- extra if condition checking for ? to conditionally add WebTrends parameter --%>
+	            <c:choose>
+	            <c:when test='${fn:indexOf(content.linkValue, "?") > 0}'>
+	                <a onclick="dojo.publish('kaiser/wiEvent',['clickSearchResult',['${srv.keyword}',${content.index}]]);"
+	                href="${content.linkValue}&kpSearch=${srv.keyword}">${content.title}</a><br>
+	            </c:when>
+	            <c:otherwise>
+	                <a onclick="dojo.publish('kaiser/wiEvent',['clickSearchResult',['${srv.keyword}',${content.index}]]);"
+	                href="${content.linkValue}?kpSearch=${srv.keyword}">${content.title}</a><br>
+	            </c:otherwise>
+	            </c:choose>
+	            <%-- extra if condition checking for ? to conditionally add WebTrends parameter --%>
+	            <c:if test="${not empty content.medSpecialty}">Specialty: ${content.medSpecialty}<br/></c:if>
+	            <c:if test="${not empty content.planList}">Plans: ${content.planList}<br/></c:if>
+	            </div>
+		        <div class="searchListingBody">
+	                <c:if test="${not empty content.programType}">${content.programType}<br/></c:if>
+	                <c:if test="${not empty content.medOffice}">${content.medOffice}<br/></c:if>
+	                <c:if test="${content.kpAffiliated}">
+	                	<c:choose>
+	                	<c:when test="${content.planHospital}">Kaiser Permanente Plan Hospital<br/>
+	                	</c:when>
+	        			<c:otherwise>
+	                		Kaiser Permanente Affiliate<br/>
+	                	</c:otherwise>
+	      				</c:choose>
+	                </c:if>
+	                <c:if test="${not empty content.description}">${content.description}<br/></c:if>
+	                <c:if test="${not empty content.facility}">${content.facility}, ${content.city}<br/></c:if>
+	                <c:if test="${not empty content.distance}">
+	                    <% if(StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_DOCTORS, preSelectedMG)){ %>
+	                    <c:choose>
+	                    	<c:when test="${content.distance == '1'}">
+		                    ${content.distance} mile<br/>
+		                    </c:when>
+		                    <c:otherwise>
+		                    ${content.distance} miles<br/>
+		                    </c:otherwise>
+		                </c:choose>
+	                    <% }else if(StringUtils.equalsIgnoreCase(IPortletConstants.MGSELECTION_LOCATIONS, preSelectedMG)){ %>
+	                    <c:choose>
+	                    	<c:when test="${content.distance == '1'}">
+		                    <b>${content.distance} mile</b><br/>
+		                    </c:when>
+		                    <c:otherwise>
+		                    <b>${content.distance} miles</b><br/>
+		                    </c:otherwise>
+		                </c:choose>
+	                    <% } %>
+	                </c:if>
+	                <c:if test="${not empty content.directionsLink}">
+	                	<a href="${content.directionsLink}">Map and directions</a><br>
+	                </c:if>
+	            </div>
+	            <div class="searchListingFoot">
+	            	<c:if test="${not empty content.acceptingNewPatients}">
+	            		<c:if test="${fn:containsIgnoreCase(content.acceptingNewPatients, 'yes')}"><b>Accepting new patients</b><br/></c:if>
+	                </c:if>
+	                <c:if test="${not empty content.svcsList}">Services: ${content.svcsList}<br/></c:if>
+	                <c:if test="${not empty content.phoneNumber}"><SPAN id="phone_n">${content.phoneNumber}</SPAN><br/></c:if>
+	                <c:if test="${not empty content.snippet}">${content.snippet}<br/></c:if>
+	            </div>
+            </div>
+	        <div id="searchMGSpace"></div>
+        </div>
+    </c:forEach>
+</div>

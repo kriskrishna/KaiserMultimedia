@@ -1,0 +1,19 @@
+# Set root category priority to INFO and its only appender to CONSOLE.
+log4j.rootCategory=INFO,ROLLINGFILE
+#log4j.rootCategory=INFO, CONSOLE, LOGFILE
+
+# CONSOLE is set to be a ConsoleAppender using a PatternLayout.
+log4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender
+log4j.appender.CONSOLE.Threshold=INFO
+log4j.appender.CONSOLE.layout=org.kp.wpp.common.core.logging.impl.Log4JPatternLayout
+log4j.appender.CONSOLE.layout.ConversionPattern=- %m%n
+
+log4j.appender.ROLLINGFILE=org.apache.log4j.RollingFileAppender
+log4j.appender.ROLLINGFILE.File=/logs/kaisersearchportlet-test.log
+
+log4j.appender.ROLLINGFILE.MaxFileSize=100KB
+# Keep one backup file
+log4j.appender.ROLLINGFILE.MaxBackupIndex=1
+
+log4j.appender.ROLLINGFILE.layout=org.kp.wpp.common.core.logging.impl.Log4JPatternLayout
+log4j.appender.ROLLINGFILE.layout.ConversionPattern=%-5p %C %M - %m%n

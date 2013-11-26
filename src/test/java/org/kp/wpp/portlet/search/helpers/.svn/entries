@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2012-10-23T22:46:30.040657Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/test/java/org/kp/wpp/portlet/search/helpers"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="e949004"
+   committed-rev="39500"/>
+<entry
+   name="ContentTest.java"
+   committed-date="2012-10-23T22:46:30.040657Z"
+   text-time="2012-10-23T22:46:30.000000Z"
+   checksum="3e3cfd7d89bed6ffff89d5b48bdca97e"
+   last-author="e949004"
+   committed-rev="39500"
+   kind="file"/>
+<entry
+   name="SearchPortletHelperTest.java"
+   committed-date="2012-10-11T21:46:54.402719Z"
+   text-time="2012-10-11T21:46:54.000000Z"
+   checksum="a9a78aa314342b54a838fdf40fca2b66"
+   last-author="f702672"
+   committed-rev="39108"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,16 @@
+  <div class="mgs_main2" id="DivSearchCriteria">
+        <div class="mgs_start_search_lbl  mgs_col_left_1" lang='<fmt:message key="search.selected.lang.value"/>'> <fmt:message key="search.index.text.start"/> <div class="mgs_pipe"></div>
+  </div>
+   
+   <div class="mgs_col_right mgs_nc_right"> 	 
+		<content:taxonomy taxonomyName="site_context"
+				  		  taxonomyValue="WPP::M3TTL0LUL" 
+				  		  contentType="instructional" 
+				  		  assetType="embedded_fragment" 
+				  		  missingMessage="Content not found."
+				  		  region="CCO" 
+				  		  channel="web" 
+				  		  language="en-us" 
+				  		  errorMessage="An exception has occurred" />
+		</div>
+   </div>

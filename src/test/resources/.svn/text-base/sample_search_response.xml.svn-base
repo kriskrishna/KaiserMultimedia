@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<vce>
+  <param name="v:project" value="kp-consumernet"/>
+  <param name="query" value="pregnancy"/>
+  <param name="render.function" value="xml-feed-display"/>
+  <param name="content-type" value="text/xml"/>
+  <binning base-url="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?&amp;v:project=kp-consumernet&amp;query=pregnancy&amp;binning-state=">
+    <binning-set label="region" bs-id="region_label">
+      <bin label="California - Northern" ndocs="1767" token="region_label==California - Northern"/>
+      <bin label="California - Southern" ndocs="1571" token="region_label==California - Southern"/>
+      <bin label="Colorado - Colorado Springs" ndocs="1449" token="region_label==Colorado - Colorado Springs"/>
+      <bin label="Colorado - Denver / Boulder" ndocs="1443" token="region_label==Colorado - Denver / Boulder"/>
+      <bin label="Hawaii" ndocs="1472" token="region_label==Hawaii"/>
+      <bin label="Georgia" ndocs="1447" token="region_label==Georgia"/>
+      <bin label="Maryland / Virginia / Washington D.C." ndocs="1497" token="region_label==Maryland / Virginia / Washington D.C."/>
+      <bin label="Ohio" ndocs="1444" token="region_label==Ohio"/>
+      <bin label="Oregon / Washington" ndocs="1450" token="region_label==Oregon / Washington"/>
+      <bin label="Unknown" ndocs="9" token="region_label==Unknown"/>
+    </binning-set>
+    <binning-set label="language" bs-id="kp_language">
+      <bin label="English" ndocs="1932" token="kp_language==English"/>
+      <bin label="Spanish" ndocs="87" token="kp_language==Spanish"/>
+      <bin label="Cantonese" ndocs="1" token="kp_language==Cantonese"/>
+    </binning-set>
+    <binning-set label="category" bs-id="category">
+      <bin label="Health articles" ndocs="1439" token="category==Health articles"/>
+      <bin label="Classes" ndocs="530" token="category==Classes"/>
+      <bin label="Drug articles" ndocs="24" token="category==Drug articles"/>
+      <bin label="Facilities" ndocs="4" token="category==Facilities"/>
+    </binning-set>
+    <binning-state separator="%0A%0A">
+      <binning-state-token bst-id="0" bs-id="region_label" token="region_label==Colorado - Denver / Boulder"/>
+    </binning-state>
+  </binning>
+  <added-source max-elt-id="27" elt-id="10" maintainers="cheryl.j.rucks" name="kp-consumernet-bundle" type="bundle" modified="1275566919" modified-by="D110386" aggregate="aggregate" max-passes="3" sort="sort" over-request="1.3" num="200" retrieved="200" discarded="137">
+    <added-source maintainers="cheryl.j.rucks" name="kp-facdir-site" test-strictly="test-strictly" modified="1271778941" modified-by="Z431772@Kaiser Permanente" max-elt-id="38" elt-id="22" max-passes="3" sort="sort" status="queried" requested="52" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="0" admin-url="://:-1/search/cgi-bin/admin" stem="porterf+depluralize" stem2="none" stoplist="none" cached="cached" search-ms="1" retrieval-ms="3" total-results-with-duplicates="0">
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;binning-config=%3cbinning-set%20bs-id%3d%22city%22%20%2f%3e%3cbinning-set%20bs-id%3d%22department_typeID%22%20%2f%3e%3cbinning-set%20bs-id%3d%22department_type%22%20%2f%3e%3cbinning-set%20bs-id%3d%22department_label_text%22%20%2f%3e%3cbinning-set%20bs-id%3d%22servicearea_name%22%20%2f%3e&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=52&amp;staging=0&amp;collection=kp-facdir&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="238" end-time="474" http-status="200 OK" status="fetched processed parsed"/>
+    </added-source>
+    <added-source maintainers="cheryl.j.rucks" name="kp-drugency-site" modified="1271778941" modified-by="Z431772@Kaiser Permanente" max-elt-id="36" elt-id="23" max-passes="3" sort="sort" status="queried" requested="52" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="24" admin-url="://:-1/search/cgi-bin/admin" stem="porterf+depluralize" stem2="none" stoplist="none" cached="cached" search-ms="104" retrieval-ms="54" total-results-with-duplicates="24" discarded="24">
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=52&amp;staging=0&amp;collection=kp-drugency&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="237" end-time="522" http-status="200 OK" status="fetched processed parsed"/>
+    </added-source>
+    <added-source maintainers="cheryl.j.rucks" name="kp-consumernet-site" modified="1271778941" modified-by="Z431772@Kaiser Permanente" max-elt-id="51" elt-id="24" max-passes="3" sort="sort" status="queried" requested="200" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="1399" admin-url="://:-1/search/cgi-bin/admin" stem="porterf+depluralize" stem2="none" stoplist="none" cached="cached" search-ms="6" retrieval-ms="367" total-results-with-duplicates="1399" retrieved="132" discarded="68">
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=52&amp;staging=0&amp;collection=kp-consumernet&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="237" end-time="798" http-status="200 OK" status="fetched processed parsed" retrieved="52"/>
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=52&amp;num=148&amp;staging=0&amp;collection=kp-consumernet&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="995" end-time="1514" http-status="200 OK" status="fetched processed parsed" retrieved="80"/>
+    </added-source>
+    <added-source maintainers="cheryl.j.rucks" name="kp-healthPortal-site" test-strictly="test-strictly" modified="1271778941" modified-by="Z431772@Kaiser Permanente" max-elt-id="30" elt-id="25" max-passes="3" sort="sort" status="queried" requested="52" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="78" admin-url="://:-1/search/cgi-bin/admin" stem="depluralize" stem2="none" stoplist="none" cached="cached" search-ms="9" retrieval-ms="360" total-results-with-duplicates="78" retrieved="11" discarded="41">
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=52&amp;staging=0&amp;collection=kp-healthPortal&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="237" end-time="876" http-status="200 OK" status="fetched processed parsed" retrieved="11"/>
+    </added-source>
+    <added-source name="kp-classes-site" type="vse" modified="1271778941" modified-by="Z431772@Kaiser Permanente" elt-id="26" max-elt-id="39" max-passes="3" sort="sort" status="queried" requested="61" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="530" admin-url="://:-1/search/cgi-bin/admin" stem="depluralize" stem2="none" stoplist="none" cached="cached" search-ms="4" retrieval-ms="13" total-results-with-duplicates="530" retrieved="57" discarded="4">
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=52&amp;staging=0&amp;collection=kp-classes&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="237" end-time="486" http-status="200 OK" status="fetched processed parsed" retrieved="49"/>
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=52&amp;num=5&amp;staging=0&amp;collection=kp-classes&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="1691" end-time="1779" http-status="200 OK" status="fetched processed parsed" retrieved="4"/>
+      <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=double&amp;force-binning=0&amp;max=300&amp;start=57&amp;num=4&amp;staging=0&amp;collection=kp-classes&amp;r-o-p=0&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=1&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="1830" end-time="1880" http-status="200 OK" status="fetched processed parsed" retrieved="4"/>
+    </added-source>
+  </added-source>
+  <added-source name="kp-consumernet-spelling-corrector" maintainers="Q944458, Z431772 , D110386" test-strictly="test-strictly" type="ref" elt-id="2" max-elt-id="6" modified="1276856506" modified-by="Q944458@Kaiser Permanente" requested="1">
+    <parse url="https://kpvc1003.crdc.kp.org:8443/search/cgi-bin/spelling-corrector?xml=%3coperator%20logic%3d%22and%22%3e%3cterm%20field%3d%22query%22%20str%3d%22pregnancy%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22user%22%2f%3e%3c%2foperator%3e&amp;dict=%3c%3fxml%20version%3d%221.0%22%20encoding%3d%22UTF-8%22%3f%3e%0a%3cspelling-corrector-configuration%3e%3cspelling-corrector-field%20field%3d%22query%22%20dictionary%3d%22kp-consumernet-dictionary%22%20stemmer%3d%22delanguage%2bdepluralize%22%2f%3e%3c%2fspelling-corrector-configuration%3e%0a&amp;" start-time="238" end-time="2522" http-status="200 OK" status="fetched processed parsed"/>
+  </added-source>
+  <list start="0" per="10" num="200">
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/027healthency/en-us/special/hw197814/hw197816.html" score="27.6514" rank="0" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc0&amp;v%3asubsearch=1&amp;">
+      <content type="html" name="title">&lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt;</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/healthency.do?hwid=hw197814</content>
+      <content name="snippet" type="html">Snippet for the first result</content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/200pregnancy/scal_topic_overview.html" score="25.8594" rank="1" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc1&amp;v%3asubsearch=1&amp;">
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/Link.do?html=/htmlapp/feature/200pregnancy/scal_topic_overview.html</content>
+      <content name="snippet" type="html">Snippet for the second result</content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/200pregnancy/nat_topic_overview.html" score="25.8438" rank="2" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc2&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Featured health topic: &lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; and newborn care</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/Link.do?html=/htmlapp/feature/200pregnancy/nat_topic_overview.html</content>
+      <content name="snippet" type="html"> ... for pregnant women.  Find a clinic near you.      &lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; primer         Due date calculator    &lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; podcasts    Gestational diabetes and newborn care videos    Fetal  ... </content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/027healthency/en-us/decisionpoint/tn10007/tn10007.html" score="23.3418" rank="3" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc3&amp;v%3asubsearch=1&amp;">
+      <content type="html" name="title">Multiple &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;: Should I consider a multifetal &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt; reduction?</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/healthency.do?hwid=tn10007</content>
+      <content name="snippet" type="html"> ... decide.
+                     Read More                close     Personal stories about multifetal &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt; reduction  These stories are based on information gathered  ... </content>
+    </document>
+    <document url="file:///data/WEB/qa/health/content/en-us/topic_overview/pregnancy/during_pregnancy.xml" score="22.998" rank="4" source="kp-healthPortal-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc4&amp;v%3asubsearch=1&amp;">
+      <content type="html" name="title">During &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;</content>
+      <content name="p_url" type="html">/wps/portal/&lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;/during-&lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;</content>
+      <content name="snippet" type="html"> ... pregnant! We can help guide you through your &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;, with information about your baby's development week  ... </content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/027healthency/en-us/actionset/uz2107/uz2108.html" score="22.9961" rank="5" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc5&amp;v%3asubsearch=1&amp;">
+      <content type="html" name="title">&lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; and diabetes: Planning for &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/healthency.do?hwid=uz2107</content>
+      <content name="snippet" type="html"> ... kidney disease. These problems can get worse during &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;.         What is planning for &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt; when you have diabetes?        Why should you plan for &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt; when you have diabetes?        How can you get  ... Where to go from here    Return to topic:    &lt;span class="vivbold qt0"&gt;Pregnancy    &lt;/span&gt;Type 1 Diabetes: Living With the Disease    Type  ... </content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/METADATA/newkp/htmlapp/feature/cfe_search/nat_pregnancycenter.html" score="22.3438" rank="6" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc6&amp;v%3asubsearch=1&amp;">
+      <content name="title" type="html">&lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; Center</content>
+      <content name="p_url" type="html">https://kpvc1011.kaiserpermanente.org:9191/health/care/&lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;</content>
+      <content name="snippet" type="html">Learn what to expect during &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt; and childbirth and how to care for your new baby, once he or she comes into the world.</content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/228colds/nat_pregnancy.html" score="21.9277" rank="7" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc7&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Colds &amp; flu featured health topic: Colds and flu during &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/Link.do?html=/htmlapp/feature/228colds/nat_&lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;.html</content>
+      <content name="snippet" type="html"> ... be    About the flu and babies    More information                             &lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; and the flu—frequently asked questions Getting sick  ... &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;.                Q.        Which medications should I avoid during &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;? 
+           A.     Doctors usually tell women to avoid taking  ... </content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/200pregnancy/nat_healthy_beginnings_newsletters.html" score="21.7188" rank="8" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc8&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">&lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; and newborn care featured health topic: Healthy Beginnings newsletters</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/Link.do?html=/htmlapp/feature/200pregnancy/nat_healthy_beginnings_newsletters.html</content>
+      <content name="snippet" type="html"> ... Beginnings  newsletters will keep you informed about your &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt; every step of the way. You'll find  ... new baby, and much more.   Preconception  (preparing for &lt;span class="vivbold qt0"&gt;pregnancy&lt;/span&gt;)  ♦    6 to 10 weeks   ♦    10 to 12 weeks   ♦     ... Postpartum (after your baby is born)   ♦    Diabetes and &lt;span class="vivbold qt0"&gt;pregnancy  &lt;/span&gt; ♦     Learn about  prenatal screening tests .      ♦    You will need  ... </content>
+    </document>
+    <document url="file:///data/WEB/kporg/dev3/htmlapp/feature/200pregnancy/ncal_prenatal_screening.html" score="20" rank="9" source="kp-consumernet-site" context="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc9&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">&lt;span class="vivbold qt0"&gt;Pregnancy&lt;/span&gt; and newborn care featured health topic: Prenatal screening tests (Northern California)</content>
+      <content name="p_url" type="html">https://members.kaiserpermanente.org/kpweb/Link.do?html=/htmlapp/feature/200pregnancy/ncal_prenatal_screening.html</content>
+      <content name="snippet" type="html">Snippet for the tenth result</content>
+    </document>
+  </list>
+  <navigation base-url="http://kpvc1003.crdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_uMRnCA&amp;v:state=root|root-">
+    <link start="0" end="10">0-10|0</link>
+    <link start="10" end="20">10-10|0</link>
+    <link start="20" end="30">20-10|0</link>
+    <link start="30" end="40">30-10|0</link>
+    <link start="40" end="50">40-10|0</link>
+    <link start="50" end="60">50-10|0</link>
+    <link start="60" end="70">60-10|0</link>
+    <link start="70" end="80">70-10|0</link>
+    <link start="80" end="90">80-10|0</link>
+    <link start="90" end="100">90-10|0</link>
+    <link type="next" start="10" end="20">10-10|0</link>
+  </navigation>
+</vce>

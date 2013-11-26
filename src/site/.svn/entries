@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:44:55.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2010-07-07T22:18:27.535424Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/site"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="g250184"
+   committed-rev="11322"/>
+<entry
+   name="apt"
+   kind="dir"/>
+<entry
+   name="site.xml"
+   committed-date="2010-07-07T22:18:27.535424Z"
+   text-time="2010-07-07T22:18:27.000000Z"
+   checksum="132c1ec38012c267b67034fcbc46ba9f"
+   last-author="g250184"
+   committed-rev="11322"
+   kind="file"/>
+</wc-entries>

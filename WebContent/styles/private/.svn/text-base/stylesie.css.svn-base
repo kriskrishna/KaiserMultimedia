@@ -1,0 +1,7 @@
+div.searchResultBody {width:694px;}
+#BodySearchBox input.SearchBodyBtn {display:block;font-size:0;line-height:0;}
+#SearchResultsList li {word-wrap:break-word;}
+div.paginationContainer {width:101%;}
+
+/* Ie hack where IE doesn't support text-indent on submit buttos */
+div.mgs_keyword_cont input.mgsInputGo,div.mgs_keyword_cont input.mgsZipInputGo{color: transparent;text-transform: capitalize;}

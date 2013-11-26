@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-07-29T17:38:36.557441Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/resources/org/kp/wpp/search/properties"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="e679942"
+   committed-rev="45000"/>
+<entry
+   name="KaiserDESearchPortlet.properties"
+   committed-date="2011-11-18T18:30:29.480815Z"
+   text-time="2011-11-18T18:30:29.000000Z"
+   checksum="2bcf1a7dd9f59172efbbd4f16025bcd5"
+   last-author="l525045"
+   committed-rev="29255"
+   kind="file"/>
+<entry
+   name="KaiserDESearchPortlet_en.properties"
+   committed-date="2011-09-22T21:22:01.653935Z"
+   text-time="2011-09-22T21:22:01.000000Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="l525045"
+   committed-rev="25526"
+   kind="file"/>
+<entry
+   name="KaiserHCSearchPortlet.properties"
+   committed-date="2011-10-19T18:41:13.574177Z"
+   text-time="2011-10-19T18:41:13.000000Z"
+   checksum="61aea23440ed9771bf27a8609bfb0072"
+   last-author="l525045"
+   committed-rev="27142"
+   kind="file"/>
+<entry
+   name="KaiserHCSearchPortlet_en.properties"
+   committed-date="2011-10-19T18:41:13.574177Z"
+   text-time="2011-10-19T18:41:13.000000Z"
+   checksum="61aea23440ed9771bf27a8609bfb0072"
+   last-author="l525045"
+   committed-rev="27142"
+   kind="file"/>
+<entry
+   name="KaiserHCSearchPortlet_es.properties"
+   committed-date="2011-10-19T18:41:13.574177Z"
+   text-time="2011-10-19T18:41:13.000000Z"
+   checksum="dd8e9a9ca8946e922c36b4cf20b6b2b3"
+   last-author="l525045"
+   committed-rev="27142"
+   kind="file"/>
+<entry
+   name="KaiserHESearchPortlet.properties"
+   committed-date="2011-09-01T21:01:01.764614Z"
+   text-time="2011-09-01T21:01:01.000000Z"
+   checksum="296bb2d88242be9be30ec02c249e4198"
+   last-author="f525302"
+   committed-rev="24429"
+   kind="file"/>
+<entry
+   name="KaiserHESearchPortlet_en.properties"
+   committed-date="2011-09-01T21:01:01.764614Z"
+   text-time="2011-09-01T21:01:01.000000Z"
+   checksum="296bb2d88242be9be30ec02c249e4198"
+   last-author="f525302"
+   committed-rev="24429"
+   kind="file"/>
+<entry
+   name="KaiserHESearchPortlet_es.properties"
+   committed-date="2012-09-19T00:12:12.378050Z"
+   text-time="2012-09-19T00:12:12.000000Z"
+   checksum="3c61ffed2c52807c4a596c7f30ed473b"
+   last-author="k228674"
+   committed-rev="38320"
+   kind="file"/>
+<entry
+   name="KaiserMGSearchPortlet.properties"
+   committed-date="2011-11-10T00:09:19.991823Z"
+   text-time="2011-11-10T00:09:19.000000Z"
+   checksum="d41d8cd98f00b204e9800998ecf8427e"
+   last-author="l525045"
+   committed-rev="28618"
+   kind="file"/>
+<entry
+   name="KaiserMGSearchPortlet_en.properties"
+   committed-date="2013-07-29T17:38:36.557441Z"
+   text-time="2013-07-29T17:38:36.000000Z"
+   checksum="a41aefe37460977876a51951d98039b9"
+   last-author="e679942"
+   committed-rev="45000"
+   kind="file"/>
+<entry
+   name="KaiserSearchPortlet.properties"
+   committed-date="2013-03-18T18:34:30.415529Z"
+   text-time="2013-03-18T18:34:30.000000Z"
+   checksum="0e6cfb1953d169a37039fa8f06ccefc4"
+   last-author="f525302"
+   committed-rev="41694"
+   kind="file"/>
+<entry
+   name="KaiserSearchPortlet_en.properties"
+   committed-date="2013-03-18T18:34:30.415529Z"
+   text-time="2013-03-18T18:34:30.000000Z"
+   checksum="0e6cfb1953d169a37039fa8f06ccefc4"
+   last-author="f525302"
+   committed-rev="41694"
+   kind="file"/>
+<entry
+   name="KaiserSearchPortlet_es.properties"
+   committed-date="2011-08-04T22:43:47.778883Z"
+   text-time="2011-08-04T22:43:47.000000Z"
+   checksum="1f3fc223676db8cc25208e137ad745d3"
+   last-author="l525045"
+   committed-rev="22966"
+   kind="file"/>
+</wc-entries>

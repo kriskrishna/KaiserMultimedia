@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exceptions>
+	<exception name="org.kp.wpp.frameworkdemo.exceptions.UserNotFoundException">
+		<display>true</display>
+		<layer>BUSINESS</layer>
+		<log>true</log>
+		<logLevel>ERROR</logLevel>
+		<errorCode>5100010</errorCode>
+		<errorType>CRITICAL</errorType>
+		<resourceBundleKey>51010</resourceBundleKey>
+	</exception>
+	<exception name="org.kp.wpp.common.core.exception.WrappedSystemException">
+		<display>true</display>
+		<layer>BUSINESS</layer>
+		<log>true</log>
+		<logLevel>WARN</logLevel>
+		<errorCode>50003</errorCode>
+		<errorType>CRITICAL</errorType>
+		<resourceBundleKey>51011</resourceBundleKey>
+	</exception>
+</exceptions>

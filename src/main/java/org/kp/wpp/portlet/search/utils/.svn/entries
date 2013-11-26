@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-16T18:01:44.143818Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/java/org/kp/wpp/portlet/search/utils"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45468"/>
+<entry
+   name="ConfigMBeanUtil.java"
+   committed-date="2011-08-02T00:03:22.999693Z"
+   text-time="2011-08-02T00:03:22.000000Z"
+   checksum="2fce31a117868b548f4a23ea2b5b962d"
+   last-author="l525045"
+   committed-rev="22633"
+   kind="file"/>
+<entry
+   name="FacetCountComparator.java"
+   committed-date="2011-01-25T21:42:02.047036Z"
+   text-time="2011-01-25T21:42:02.000000Z"
+   checksum="8cebfe8f709a2340de864f853ade63a8"
+   last-author="l525045"
+   committed-rev="15647"
+   kind="file"/>
+<entry
+   name="FacetTitleComparator.java"
+   committed-date="2011-09-20T17:24:37.883530Z"
+   text-time="2011-09-20T17:24:37.000000Z"
+   checksum="f6a7319ad44513851155e3d3a5e20dcd"
+   last-author="l525045"
+   committed-rev="25342"
+   kind="file"/>
+<entry
+   name="FormatUtil.java"
+   committed-date="2012-12-10T17:24:37.192242Z"
+   text-time="2012-12-10T17:24:37.000000Z"
+   checksum="61a83107051c95bb175d7a03a7786337"
+   last-author="b306347"
+   committed-rev="40299"
+   kind="file"/>
+<entry
+   name="ROPMap.java"
+   committed-date="2012-05-04T22:42:05.188528Z"
+   text-time="2012-05-04T22:42:05.000000Z"
+   checksum="d359a254aa685780100adcf396ddf546"
+   last-author="u712866"
+   committed-rev="36168"
+   kind="file"/>
+<entry
+   name="RadiusMap.java"
+   committed-date="2013-08-16T18:01:44.143818Z"
+   text-time="2013-08-16T18:01:44.000000Z"
+   checksum="22a6022fb9c6555ef64e25a1ae371f7c"
+   last-author="m504923"
+   committed-rev="45468"
+   kind="file"/>
+<entry
+   name="SearchStringValidator.java"
+   committed-date="2011-07-05T19:26:17.126939Z"
+   text-time="2011-07-05T19:26:17.000000Z"
+   checksum="1c05489b77d5fcc654e87b512efc6961"
+   last-author="l525045"
+   committed-rev="21623"
+   kind="file"/>
+<entry
+   name="SearchUtil.java"
+   committed-date="2013-07-12T00:26:49.454973Z"
+   text-time="2013-07-12T00:26:49.000000Z"
+   checksum="f1fe2f41217fdd97b2b48c72759245f0"
+   last-author="l175335"
+   committed-rev="44622"
+   kind="file"/>
+</wc-entries>

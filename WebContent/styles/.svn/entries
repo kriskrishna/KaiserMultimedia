@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:45:01.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-27T18:35:56.182544Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent/styles"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45877"/>
+<entry
+   name="private"
+   kind="dir"/>
+</wc-entries>

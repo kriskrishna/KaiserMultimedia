@@ -1,0 +1,79 @@
+/******************************************************************************************
+NOTE: Many of these styles may change based on Phillip and Brenna's review
+*******************************************************************************************/
+body,p,a {
+	font-size: 13px;
+	line-height: 15px;
+	font-family: verdana;
+}
+#body,h1 {
+	font-size: 20px;
+	color: orange;	
+}
+#body,h2 {
+	font-size: 16px;
+}
+#body,h3 {
+	font-size: 12px;
+}
+#body,h4 {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 0;
+	border-bottom: 1px solid #ccc; 
+	margin: 5px 0;
+}
+#body,h5 {
+	font-size: 12px;
+}
+
+#SearchContainer {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+}
+#NarrowByContainer {
+	width: 20%;
+	float: left;
+} 
+#NarrowBy {
+	width: 95%;
+	float: left;
+	padding-right: 20px;
+} 
+#NarrowBy .NarrowTitle {
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px 0;
+	border-bottom: 1px solid #ccc; 
+	margin: 5px 0;
+}
+#NarrowBy .NarrowDetail a {
+	font-size: 11px;
+	padding: 0 0 5px 0;
+}
+#NarrowBy .NarrowDetailAmount {
+	color: blue; 
+}
+#NarrowByNav {
+	padding-right: 10px;
+}
+#SearchBodyContainer {
+	width: 70%;
+	margin: 10px;
+	float: left;
+} 
+#BodySearchBox {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+.record {
+	padding: 5px;
+}
+.error {
+	color: red;
+}
+/******* KAY ADDED FOR TEMPORARY HIGHLIGHTING*******/
+.TBD, #TBD {
+	border: 3px dotted red;
+}

@@ -1,0 +1,15 @@
+<%
+String contentRegion = (String) portletSession.getAttribute(IPortletConstants.SEARCH_CONTENTREGION);
+%>
+
+<div class="mgs_main2" id="mgsearchcriteriadivmid">
+  <div class="mgs_specialty_cont  mgsmidatl">
+		<content:taxonomy 
+		    taxonomyName="site_context" 
+		    taxonomyValue="WPP::LW7NQLX3" 
+		    assetType="embedded_fragment"
+		    contentType="related_links"
+		    region="<%= contentRegion %>"
+		    missingMessage="No content found."/>
+    </div>
+</div>

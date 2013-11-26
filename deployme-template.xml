@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="update" xsi:noNamespaceSchemaLocation="PortalConfig_6.0.1.xsd">
+   <portal action="locate">
+      <web-app action="update" active="true" uid="org.kp.wpp.portlets.kaisersearchportlet.webmod">
+         <url>file://///opt/IBM/WebSphere/PortalServer/installableApps/@ARTIFACT@-@VERSION@.war</url>
+         <display-name>PA_KP_Kaiser_Search_Portlet</display-name>
+         <servlet action="update" referenceid="KaiserSearchPortlet.servlet"/>
+         <portlet-app action="update" name="org.kp.wpp.portlets.kaisersearchportlet" uid="org.kp.wpp.portlets.kaisersearchportlet">
+            <portlet action="update" name="KaiserSearchPortlet"/>
+            <portlet action="update" name="KaiserMGSearchPortlet"/>
+         </portlet-app>
+      </web-app>
+   </portal>
+</request>

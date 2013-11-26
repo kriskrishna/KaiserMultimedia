@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:45:03.000000Z"
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-27T22:55:57.414075Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45896"/>
+<entry
+   name="WEB-INF"
+   kind="dir"/>
+<entry
+   name="searchdefault.css"
+   committed-date="2009-02-06T22:26:10.896545Z"
+   text-time="2009-02-06T22:26:10.000000Z"
+   checksum="2b7087078205ad96b2caa9d7be5e696f"
+   last-author="x075666"
+   committed-rev="1681"
+   kind="file"/>
+<entry
+   name="styles"
+   kind="dir"/>
+</wc-entries>

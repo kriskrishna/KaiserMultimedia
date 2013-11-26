@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:45:01.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-27T18:35:56.182544Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent/styles/private"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45877"/>
+<entry
+   name="de_search.css"
+   committed-date="2013-07-12T00:38:38.903251Z"
+   text-time="2013-07-12T00:38:38.000000Z"
+   checksum="1cb0b14c4cdfbf3a0c8d421fed79fdee"
+   last-author="l175335"
+   committed-rev="44626"
+   kind="file"/>
+<entry
+   name="de_searchie.css"
+   committed-date="2012-09-27T20:58:48.495975Z"
+   text-time="2012-09-27T20:58:48.000000Z"
+   checksum="935329a23b55f72c4f3f6289391194c0"
+   last-author="f525302"
+   committed-rev="38685"
+   kind="file"/>
+<entry
+   name="hc_search.css"
+   committed-date="2013-07-12T00:40:49.943298Z"
+   text-time="2013-07-12T00:40:49.000000Z"
+   checksum="fd95c3aa3f42be44df31b21df82f2d0b"
+   last-author="l175335"
+   committed-rev="44627"
+   kind="file"/>
+<entry
+   name="hc_searchie.css"
+   committed-date="2012-09-27T20:58:48.495975Z"
+   text-time="2012-09-27T20:58:48.000000Z"
+   checksum="f4d8c3e06620c830c97ae7127ae0363d"
+   last-author="f525302"
+   committed-rev="38685"
+   kind="file"/>
+<entry
+   name="he_search.css"
+   committed-date="2013-07-12T00:42:41.130175Z"
+   text-time="2013-07-12T00:42:41.000000Z"
+   checksum="8528896672c1bb8b6f06c6099fea1306"
+   last-author="l175335"
+   committed-rev="44628"
+   kind="file"/>
+<entry
+   name="he_searchie.css"
+   committed-date="2012-09-27T20:58:48.495975Z"
+   text-time="2012-09-27T20:58:48.000000Z"
+   checksum="427bb741f6723e4cfa93029c247caeae"
+   last-author="f525302"
+   committed-rev="38685"
+   kind="file"/>
+<entry
+   name="images"
+   kind="dir"/>
+<entry
+   name="search.css"
+   committed-date="2013-08-27T18:35:56.182544Z"
+   text-time="2013-08-27T18:35:56.000000Z"
+   checksum="47d41d29ccb9d7b867365bad1686ad3b"
+   last-author="l523788"
+   committed-rev="45877"
+   kind="file"/>
+<entry
+   name="searchie.css"
+   committed-date="2013-07-12T01:31:47.130347Z"
+   text-time="2013-07-12T01:31:47.000000Z"
+   checksum="7cbff52ce636fab5fd2e57048481932a"
+   last-author="l175335"
+   committed-rev="44634"
+   kind="file"/>
+<entry
+   name="styles.css"
+   committed-date="2011-08-01T18:16:07.537899Z"
+   text-time="2011-08-01T18:16:07.000000Z"
+   checksum="13ce2381a09a6e5e272702ce56292472"
+   last-author="l525045"
+   committed-rev="22609"
+   kind="file"/>
+<entry
+   name="stylesie.css"
+   committed-date="2011-02-02T19:18:55.759717Z"
+   text-time="2011-02-02T19:18:55.000000Z"
+   checksum="de7a73a8e7ae2b50c8793c853cacbf83"
+   last-author="f525302"
+   committed-rev="16066"
+   kind="file"/>
+</wc-entries>

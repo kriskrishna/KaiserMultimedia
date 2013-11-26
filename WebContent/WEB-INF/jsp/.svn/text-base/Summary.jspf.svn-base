@@ -1,0 +1,49 @@
+<%if(thisIsSiteSearch){%>
+	<div class="mgsSiteMarginTopError">
+<% } else{ %>
+	<div class="mgsMarginTopError">
+<%}%>
+<c:if test="${not empty srv.spellCorrectedKeyword}">
+    <div class="keywordSearchAid">
+    <div id="DivSpellCheck"><fmt:message key="search.summary.text.spelling"/>&nbsp;<a href='<portlet:actionURL>
+               <portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${srv.spellCorrectedHref}"/>
+               <portlet:param name="<%=IPortletConstants.FACETREFRESH%>" value="<%=IPortletConstants.FACETREFRESH%>"/>
+           </portlet:actionURL>'>${srv.spellCorrectedKeyword}</a>?
+    </div>
+    </div>
+</c:if>
+<%if (error != null){
+        if (error.equals(IPortletConstants.ERROR_FAILURE))
+        {%>
+            <div class="SearchTechProblem">
+            <p><fmt:message key="search.searchbox.error.techfailure"/></p>
+            <p><fmt:message key="search.searchbox.error.helpdesk"/><br/></p>
+            </div>
+       <%}else if (error.equals(IPortletConstants.ERROR_NORESULTS)){%>
+            <div class="SearchNotFound" lang='<fmt:message key="search.selection.lang.value"/>'>
+            <c:choose>
+            <c:when test="${not empty srv.keyword}">
+                <h4><fmt:message key="search.searchbox.error.noresults">
+                        <fmt:param value="${srv.keyword}"/>
+                </fmt:message></h4>
+            </c:when>
+            <c:otherwise>
+                <h4><fmt:message key="search.searchbox.error.noresults.nokwd"/></h4>
+            </c:otherwise>
+            </c:choose>
+            <%if (preSelectedMG==null)
+        		{%>
+            <ul>
+                <li><fmt:message key="search.searchbox.text.help1"/></li>
+                <li><fmt:message key="search.searchbox.text.help2"/></li>
+                <li><fmt:message key="search.searchbox.text.help3"/></li>
+            </ul>
+            <%}%>
+            </div>
+        <%}else if (error.equals(IPortletConstants.ERROR_EMPTYSEARCH)){%>
+            <div class="SearchBlank">
+            <h4 class="error"><fmt:message key="search.searchbox.text.enterkeyword"/></h4>
+            </div>
+        <%}
+}%>
+</div>

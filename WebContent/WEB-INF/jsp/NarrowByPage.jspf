@@ -1,0 +1,112 @@
+<%List<FacetGroup> lstSelectableFGroups =  (List<FacetGroup>)request.getAttribute("FACETS_LIST");
+pageContext.setAttribute("lstSelectableFGroups", lstSelectableFGroups);
+%>
+<script type="text/javascript">
+function <portlet:namespace/>UpdateFacets(facet, flag){
+  var divMoreId = facet + "_View_More";
+  var divFewId = facet + "_View_Fewer";
+  if(flag == 'more')
+  {
+      dojo.byId(divMoreId).style.display='none';
+      dojo.byId(divFewId).style.display='block';
+  }
+  else{
+      dojo.byId(divMoreId).style.display='block';
+      dojo.byId(divFewId).style.display='none';
+  } 
+}
+
+dojo.addOnLoad(function(){
+	var divLanguageFacetGroupId = "Language_FacetGroup";
+	var disableLanguageFacet = '<%=request.getAttribute("useLanguageFromRequest")%>'
+	if(disableLanguageFacet != null && disableLanguageFacet == 'true'){
+		var langFacetGroupNode = dojo.byId(divLanguageFacetGroupId);
+		if(langFacetGroupNode != null){
+			langFacetGroupNode.style.display = 'none';
+		}
+	}
+});
+
+if(dojo.isIE){
+	setTimeout(function() {
+		if(dojo.byId("searchResultMG") && (dojo.byId("searchResultMG").offsetHeight > dojo.byId("searchFacetMG").offsetHeight)){
+			dojo.byId("searchFacetMG").style.height=dojo.byId("searchResultMG").offsetHeight-dojo.byId("newSearchMG").offsetHeight-dojo.byId("BreadcrumbsDiv").offsetHeight-40+"px";
+		}
+	}, 500);
+}else{
+	dojo.addOnLoad(function() {
+		if(dojo.byId("searchResultMG") && (dojo.byId("searchResultMG").offsetHeight > dojo.byId("searchFacetMG").offsetHeight)){
+			dojo.byId("searchFacetMG").style.height=dojo.byId("searchResultMG").offsetHeight-dojo.byId("newSearchMG").offsetHeight-dojo.byId("BreadcrumbsDiv").offsetHeight-40+"px";
+		}
+	});
+}
+</script>
+
+<%if(thisIsMGSearch){%>
+	<div id="AvailableFacetsDivMG" class="facetSelection">
+<% } else{ %>
+	<div id="AvailableFacetsDiv" class="facetSelection">
+<%}%>
+<h3><fmt:message key="search.nbpage.text.narrowby"/></h3>
+<c:forEach var="fG" items="${lstSelectableFGroups}">
+<c:if test="${not empty fG.facets}">
+	<div id="${fG.facetKey}_FacetGroup">
+	    <a name="${fG.facetKey}_Facet"></a>
+	    <strong><span class="searchpath"><h6>${fG.facetKey}</h6></span></strong>
+	    <div id="${fG.facetKey}_FacetsDiv" lang='<fmt:message key="search.selected.lang.value"/>'>
+	        <c:if test="${fn:length(fG.facets) > 15}">
+	            <c:forEach varStatus="curIndex" var="facet" items="${fG.facets}">
+	                <c:if test="${curIndex.index + 1 < 10}">
+	                <a href='<portlet:actionURL>
+	                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value="${facet.selectHref}"/>
+	                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="${fG.facetKey}|${facet.title}"/>
+	                    <portlet:param name="<%=IPortletConstants.FACETREFRESH%>" value="<%=IPortletConstants.FACETREFRESH%>"/>
+	                    </portlet:actionURL>'>${facet.title}&nbsp;(${facet.count})</a><br/>
+	                </c:if>
+	                <c:if test="${curIndex.index + 1 == 10}">
+	                <a href='<portlet:actionURL>
+	                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value"${facet.selectHref}"/>
+	                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="${fG.facetKey}|${facet.title}"/>
+	                    <portlet:param name="<%=IPortletConstants.FACETREFRESH%>" value="<%=IPortletConstants.FACETREFRESH%>"/>
+	                    </portlet:actionURL>'>${facet.title}&nbsp;(${facet.count})</a><br/>
+	                <span id="${fG.facetKey}_View_More">
+	                <a id="${fG.facetKey}_View_More_Link" onClick='javascript:<portlet:namespace/>UpdateFacets("${fG.facetKey}", "more")'>
+	                    <fmt:message key="search.nbpage.link.more"/>
+	                </a>
+	                <br/>
+	                </span>
+	                <span id="${fG.facetKey}_View_Fewer" style="display:none">
+	                </c:if>
+	                <c:if test="${curIndex.index + 1 > 10}">
+	                <a href='<portlet:actionURL>
+	                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value"${facet.selectHref}"/>
+	                    <portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="${fG.facetKey}|${facet.title}"/>
+	                    <portlet:param name="<%=IPortletConstants.FACETREFRESH%>" value="<%=IPortletConstants.FACETREFRESH%>"/>
+	                    </portlet:actionURL>'>${facet.title}&nbsp;(${facet.count})</a><br/>
+	                </c:if>
+	                <c:if test="${curIndex.last}">
+	                <a id="${fG.facetKey}_View_Fewer_Link" href='#${fG.facetKey}_Facet' onClick='javascript:<portlet:namespace/>UpdateFacets("${fG.facetKey}", "few")'>
+	                    <fmt:message key="search.nbpage.link.fewer"/>
+	                </a>
+	                <br/>
+	                </span>
+	                </c:if>
+	            </c:forEach>
+	        </c:if>
+	        <c:if test="${fn:length(fG.facets) <= 15}">
+	        <c:forEach var="facet" items="${fG.facets}">
+	            <a href='<portlet:actionURL>
+	                <portlet:param name="<%=IPortletConstants.SEARCHREFRESHURL%>" value"${facet.selectHref}"/>
+	                <portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="${fG.facetKey}|${facet.title}"/>
+	                <portlet:param name="<%=IPortletConstants.FACETREFRESH%>" value="<%=IPortletConstants.FACETREFRESH%>"/>
+	                </portlet:actionURL>'>
+	                <c:choose><c:when test="${fG.facetKey == 'Located Within'}">${facet.title}&nbsp;</c:when>
+	                <c:otherwise>${facet.title}&nbsp;(${facet.count})</c:otherwise></c:choose>
+	            </a><br/>
+	        </c:forEach>
+	        </c:if>
+	    </div>
+    </div>
+</c:if>
+</c:forEach>
+</div>

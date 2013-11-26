@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:44:55.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-26T19:04:44.876118Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/resources"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45808"/>
+<entry
+   name="ExceptionMetaData.xml"
+   committed-date="2010-08-16T23:40:58.056624Z"
+   text-time="2010-08-16T23:40:58.000000Z"
+   checksum="686ce4c6113b22f247d6db1ea0b11dd5"
+   last-author="l525045"
+   committed-rev="12405"
+   kind="file"/>
+<entry
+   name="log4j.properties"
+   committed-date="2013-08-26T19:04:44.876118Z"
+   text-time="2013-08-26T19:04:44.000000Z"
+   checksum="3ca6981e0e615d49dae01068aeb289d5"
+   last-author="m504923"
+   committed-rev="45808"
+   kind="file"/>
+<entry
+   name="org"
+   kind="dir"/>
+</wc-entries>

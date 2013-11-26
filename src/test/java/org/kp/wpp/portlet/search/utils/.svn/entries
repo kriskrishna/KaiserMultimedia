@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2012-09-06T20:59:03.725188Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/test/java/org/kp/wpp/portlet/search/utils"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="e949004"
+   committed-rev="37861"/>
+<entry
+   name="FacetCountComparatorTest.java"
+   committed-date="2010-06-29T06:13:36.338580Z"
+   text-time="2010-06-29T06:13:36.000000Z"
+   checksum="e6a7a5a13ddb22e472a0956c0cafed23"
+   last-author="l525045"
+   committed-rev="11194"
+   kind="file"/>
+<entry
+   name="FacetTitleComparatorTest.java"
+   committed-date="2010-06-29T06:13:36.338580Z"
+   text-time="2010-06-29T06:13:36.000000Z"
+   checksum="3a0da116d923c6b33432318f2f6320a2"
+   last-author="l525045"
+   committed-rev="11194"
+   kind="file"/>
+<entry
+   name="FormatUtilTest.java"
+   committed-date="2011-01-19T00:15:15.088371Z"
+   text-time="2011-01-19T00:15:15.000000Z"
+   checksum="20242d85e5a589b62f2a6b1005857b6f"
+   last-author="l525045"
+   committed-rev="15437"
+   kind="file"/>
+<entry
+   name="ROPMapTest.java"
+   committed-date="2012-05-07T16:14:42.759663Z"
+   text-time="2012-05-07T16:14:42.000000Z"
+   checksum="2598fa2fa9a9a3c5572beca8618f745f"
+   last-author="u712866"
+   committed-rev="36184"
+   kind="file"/>
+<entry
+   name="SearchStringValidatorTest.java"
+   committed-date="2012-09-06T20:59:03.725188Z"
+   text-time="2012-09-06T20:59:03.000000Z"
+   checksum="de7b22de981a80ab0b8aba7d00628a41"
+   last-author="e949004"
+   committed-rev="37861"
+   kind="file"/>
+</wc-entries>

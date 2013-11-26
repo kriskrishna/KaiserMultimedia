@@ -1,0 +1,15 @@
+<div id="nationalAnnouncement">
+<c:if test="${not empty ac.natAnnouncement}">
+	<div class="wppHeaderFragment">
+		<h1 class="wppIntroNoIcon">${ac.natAnnouncementTitle}</h1>
+		<div class="wppIntroFragment">
+			<div class="wppIntroNoIcon"></div>
+			<h1 class="subhead"></h1>
+			<div class="wppIntroContent">
+				<p>${ac.natAnnouncement}</p>
+			</div>
+		</div>
+	</div>
+</c:if>
+</div>
+

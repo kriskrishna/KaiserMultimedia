@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-27T00:07:03.155300Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent/WEB-INF/xsl"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45861"/>
+<entry
+   name="vivisimo-viewmore-mg-results.xsl"
+   committed-date="2013-08-27T00:07:03.155300Z"
+   text-time="2013-08-27T00:07:03.000000Z"
+   checksum="fd175f8ba91da5503f31b56a2ff5fcdb"
+   last-author="l523788"
+   committed-rev="45861"
+   kind="file"/>
+<entry
+   name="vivisimo-viewmore-results.xsl"
+   committed-date="2012-09-14T20:45:23.927009Z"
+   text-time="2012-09-14T20:45:23.000000Z"
+   checksum="3f08de04980f62719b2c3354cbb1f548"
+   last-author="e949004"
+   committed-rev="38147"
+   kind="file"/>
+</wc-entries>

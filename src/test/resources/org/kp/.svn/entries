@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:44:51.000000Z"
+   revision="45983"
+   name=""
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2009-10-21T19:20:08.857459Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/test/resources/org/kp"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="o977150"
+   committed-rev="6175"/>
+<entry
+   name="wpp"
+   kind="dir"/>
+</wc-entries>

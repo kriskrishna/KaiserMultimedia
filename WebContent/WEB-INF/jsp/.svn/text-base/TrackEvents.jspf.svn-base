@@ -1,0 +1,7 @@
+<%String wiEvent = renderRequest.getParameter(IPortletConstants.SEARCHREFRESH_USERACTION);
+String wiValue = renderRequest.getParameter(IPortletConstants.SEARCHREFRESH_USERACTION_VALUE);
+if(null!= wiEvent){%>
+<script type="text/javascript"> <%-- link style sheets on demand --%>
+dojo.publish('kaiser/wiEvent',['clickSearch',['<%=wiValue%>','<%=wiEvent%>']]);
+</script>
+<%}%>

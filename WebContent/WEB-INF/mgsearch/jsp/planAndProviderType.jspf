@@ -1,0 +1,228 @@
+<script type="text/javascript">
+function <portlet:namespace/>openTarget(selectedOption){
+	
+    var sUrl = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").value;
+    
+    
+    var w = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").selectedIndex;
+    var selected_city = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").options[w].text;
+    if (sUrl != ""){window.open(sUrl,"_self");}  
+    
+}
+function getResource(resourcePath, resourceName) {
+    var thisObj = this;
+    dojo.xhrGet({
+        url: resourcePath,
+        handleAs: "text",
+        sync: true,
+        load:function(result) {thisObj[resourceName] = result;},
+        error:function(data) {console.debug("fail to get the resource" + resourceName);}
+    });
+}
+
+function disableOnPlanProviderChange(){
+
+  		if(dojo.byId("<portlet:namespace/>CityVal")){
+  			dojo.byId("<portlet:namespace/>CityVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>ZipCodeInput")){
+  			dojo.byId("<portlet:namespace/>ZipCodeInput").disabled=true;
+  		}
+  		if(dojo.byId("searchString")){
+  			dojo.byId("searchString").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>SpecialtyVal")){
+  			dojo.byId("<portlet:namespace/>SpecialtyVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>GenderVal")){
+  			dojo.byId("<portlet:namespace/>GenderVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>LanguageVal")){
+  			dojo.byId("<portlet:namespace/>LanguageVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>HospitalVal")){
+  			dojo.byId("<portlet:namespace/>HospitalVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>ProviderVal2")){
+  			dojo.byId("<portlet:namespace/>ProviderVal2").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>PlanVal")){
+  			dojo.byId("<portlet:namespace/>PlanVal").disabled=true;
+  		}
+  		if(dojo.byId("<portlet:namespace/>islandbgID")){
+  			dojo.byId("<portlet:namespace/>islandbgID").disabled=true;
+  		}
+  		dojo.byId("mgsMoreOptionsLinkOn").style.display="none";
+  	  	dojo.byId("mgsMoreOptionsLinkOff").style.display="block";
+        dojo.addClass(dojo.byId('submitQuery'), 'wppButtonDisable');
+        dojo.byId("submitQuery").disabled=true
+}
+
+function <portlet:namespace/>makeProviderTypeResourceCall(selectedOption){
+	var sUrl = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").value;
+    var w = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").selectedIndex;
+    var planType = dojo.byId("<portlet:namespace/>"+selectedOption+"Val").options[w].text;
+    
+    getResource(sUrl, 'getProviderType');
+    dojo.byId("mgGatedSearchProviderTypeContainer").style.display='block';
+    
+    var providerTypeResults = this.getProviderType;
+
+     if(providerTypeResults == "<%=IPortletConstants.ERROR_PLAN_TYPE%>"){
+
+     }else{
+        dojo.byId("mgsErrorMessagePlan").style.display="none";
+        dojo.byId("mgGatedSearchProviderTypeContainer").innerHTML = providerTypeResults;
+        disableOnPlanProviderChange();
+     }
+
+     if (dojo.byId("<portlet:namespace/>ProviderVal").selectedIndex == 0){
+  			disableOnPlanProviderChange();
+     }
+      if (dojo.byId("<portlet:namespace/>PlanTypeVal").selectedIndex == 0){
+	      dojo.byId("<portlet:namespace/>ProviderVal").disabled=true;  
+	      //dojo.byId("ConfirmProviderGo").disabled="true";
+	      //dojo.byId("ConfirmProviderGo").className="mgsInputGoProviderDisable";
+	      disableOnPlanProviderChange();
+	      
+	  /*	try{
+         dojo.byId("mgsearchcriteriadiv").style.display="none";
+        }catch(e){}
+	  */
+	  }
+}
+
+
+</script>
+
+ 
+<div id="PlanProviderFocusId" tabindex="0" style="outline:0;border:0px"></div>
+<%
+    if((null!=planType && planType.size() > 0) && (GatedPlanSearch!=null && GatedPlanSearch.booleanValue()) ){
+    %>
+    <div style="float:left;margin-left:70px;">
+       <div class="mgsEnhancementsGatedLabel" style="margin-bottom:8px">Plan Type</div>
+       <div class="mgs_col_rightGatedSearch">
+       		<div id="mgsPlanErrorContainer">
+       		    <label class="wptheme-access" for="<portlet:namespace/>PlanTypeValName">Select a plan type</label>
+                <select onchange="javascript:<portlet:namespace/>makeProviderTypeResourceCall('PlanType')" name="<portlet:namespace/>PlanTypeValName" id="<portlet:namespace/>PlanTypeVal" class="mgGatedSearchDropDown">
+                        <option value="<portlet:resourceURL><portlet:param name="<%=IPortletConstants.GATED_PLAN_SEARCH_URL%>" value="<%=IPortletConstants.VALUE_SELECTPLANTYPE%>"/></portlet:resourceURL>">Select a Plan Type</option>
+                        <c:forEach var="curFacet" items="<%=planType%>">
+			            <c:choose><c:when test="${curFacet.title eq planGateAcion}">
+                             <option selected="selected" value="<portlet:resourceURL><portlet:param name="<%=IPortletConstants.GATED_PLAN_SEARCH_URL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="PlanType|${curFacet.title}"/></portlet:resourceURL>">${curFacet.title}</option>
+				            ${curFacet.title}</option>
+                          </c:when><c:otherwise>
+				            <option value="<portlet:resourceURL><portlet:param name="<%=IPortletConstants.GATED_PLAN_SEARCH_URL%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="PlanType|${curFacet.title}"/></portlet:resourceURL>">${curFacet.title}</option>
+				            ${curFacet.title}</option>
+                          </c:otherwise></c:choose>
+                          
+            </c:forEach>
+                </select>
+     
+       		</div>
+       		<div id="mgsErrorMessagePlan" class="wppInputErrorMessage mgsZipError">
+				      
+			</div>
+        </div>
+    </div>
+        
+
+
+    <%
+    	} 
+    %>	
+    <%
+    String disabled="";
+	if(null!=lProviderUpdate && lProviderUpdate.size() > 0 && ((GatedProviderSearch!=null && GatedProviderSearch.booleanValue()) && (GatedPlanSearch!=null && GatedPlanSearch.booleanValue() ))){
+		disabled ="disabled=disabled";
+	}
+	if(providerGateAcion!=null){
+		disabled="";
+	}
+	
+	if((planType == null) || (null!=planType && planType.size() <= 0)){
+	%>
+	<div style="margin-left:70px">
+	<%
+	}
+
+	
+    if((null!=lProviderUpdate && lProviderUpdate.size() > 0 && ((GatedProviderSearch!=null && GatedProviderSearch.booleanValue()) && (GatedPlanSearch!=null && !GatedPlanSearch.booleanValue() )) ) || (null!=lProviderUpdate && lProviderUpdate.size() > 0 && ((GatedProviderSearch!=null && GatedProviderSearch.booleanValue()) && (GatedPlanSearch!=null && GatedPlanSearch.booleanValue() )))) {
+    %>
+      
+        <div id="mgGatedSearchProviderTypeContainer" style="display:block;outline:0;border:0px;float:left;" tabindex="0"> 
+  		<div class="mgsEnhancementsGatedLabel">Provider Type or Medical Group</div>
+              <div dojoType="kpdj.Fold" heading="provider type" openOneAtTime="true" closeHeading="close heading" openButtonLabel="" closeButtonLabel="" printClosedHeading="true">
+                    <div class="mgs_col_rightGatedSearch">
+                       <div id="ProviderbgID">
+				            <select onchange='javascript:<portlet:namespace/>openTarget("Provider")' id="<portlet:namespace/>ProviderVal" name="ProviderSelect" <%=disabled %> class="mgs_area_padding" title="Select a provider type or medical group, selecting a provider type or medical group with cause a page refresh.">
+				            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.GATED_PROVIDER_TYPE_VALUE%>" value="<%=IPortletConstants.VALUE_SELECTPROVIDER%>"/></portlet:actionURL>">Select a Provider Type</option>
+				            <c:forEach var="curFacet" items="<%=lProviderUpdate%>">
+				            <c:choose><c:when test="${curFacet.title eq providerGateAcion}">
+                             <option selected="selected" value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.GATED_PROVIDER_TYPE_VALUE%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Provider|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+				            ${curFacet.title}</option>
+                          </c:when><c:otherwise>
+				            <option value="<portlet:actionURL><portlet:param name="<%=IPortletConstants.GATED_PROVIDER_TYPE_VALUE%>" value="${curFacet.selectHref}"/><portlet:param name="<%=IPortletConstants.SEARCHREFRESH_USERACTION%>" value="Provider|${curFacet.title}"/></portlet:actionURL>">${curFacet.title}</option>
+				            ${curFacet.title}</option>
+                          </c:otherwise></c:choose>
+				            </c:forEach>
+				            </select>
+				       
+				        </div>
+				          
+
+                    </div>
+               </div>
+          </div>      
+    
+    <%
+    	if((planType == null) || (null!=planType && planType.size() <= 0)){
+	%>
+		</div>
+	<%
+	}
+    %>	    
+ 
+   <%}%>
+    <div id="mgGatedSearchProviderTypeContainer" style="display:block;outline:0;float:left;" tabindex="0"></div>
+    <div style="clear:both;"></div>
+    <div class="mgsPlanContentContainer">
+			  <content:taxonomy taxonomyName="site_context" 
+              taxonomyValue="WPP::MAKKCIC1M" 
+              assetType="embedded_fragment" 
+              contentType="instructional" 
+              region="<%=ROPMap.updateRegionCodeForContentAPIs(preSelectedRop) %>" 
+              missingMessage="No content found."/> 
+   </div>
+  
+   <script>
+	/*
+	  if (dojo.byId("<portlet:namespace/>PlanTypeVal") != null && dojo.byId("<portlet:namespace/>PlanTypeVal").selectedIndex == 0){
+	 	   dojo.byId("ConfirmProviderGo").disabled=true;
+	 	   dojo.byId("ConfirmProviderGo").className="mgsInputGoProviderDisable";
+	   }else{
+	  	   dojo.byId("ConfirmProviderGo").disabled=false;
+	  	   dojo.byId("ConfirmProviderGo").className="mgsInputGoProvider";
+	   }
+	   */
+	   <% if(ppGate==null){%>
+	         <% if (error != null && error.equals(IPortletConstants.ERROR_PROVIDER)){ %>
+		   		setTimeout(function() {
+					  kaiser.wpp.scrollTo("mgGatedSearchProviderTypeContainer");
+					}, 200);
+		   	<% }else{ %>	
+		   		setTimeout(function() {
+					  kaiser.wpp.scrollTo("RegionDropDwnDoctors");
+					}, 200);
+	         <% } %>
+                  
+                  
+           <% } %>
+         </script>
+    
+    
+    
+    
+    
+                    
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2011-10-03T19:59:11.218605Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/test/java/org/kp/wpp/portlet/search/beans"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l525045"
+   committed-rev="26126"/>
+<entry
+   name="TestAllBeans.java"
+   committed-date="2011-10-03T19:59:11.218605Z"
+   text-time="2011-10-03T19:59:11.000000Z"
+   checksum="2055a77403f5af9da07407fa2ce385fe"
+   last-author="l525045"
+   committed-rev="26126"
+   kind="file"/>
+</wc-entries>

@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vce>
+  <param name="v:sources" value="kp-mg-facdir"/>
+  <param name="v:project" value="kp-mg-facdir-project"/>
+  <param name="query" value="optometry"/>
+  <param name="rop" value="SCA"/>
+  <param name="binning-state" value="department_type==Internal Medicine"/>
+  <param name="render.function" value="xml-feed-display-wpp-mg"/>
+  <param name="content-type" value="text/xml"/>
+  <binning base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?&amp;v:sources=kp-mg-facdir&amp;v:project=kp-mg-facdir-project&amp;query=optometry&amp;binning-state=">
+    <binning-state separator="%0A%0A">
+      <binning-state-token bst-id="0" bs-id="department_type" token="department_type==Internal Medicine"/>
+    </binning-state>
+    <binning-set label="city" bs-id="city">
+      <bin label="Aurora" ndocs="1" token="city==Aurora"/>
+      <bin label="Baldwin Park" ndocs="1" token="city==Baldwin Park"/>
+      <bin label="Baltimore" ndocs="1" token="city==Baltimore"/>
+      <bin label="Bonita" ndocs="1" token="city==Bonita"/>
+      <bin label="Carlsbad" ndocs="1" token="city==Carlsbad"/>
+      <bin label="Centennial" ndocs="1" token="city==Centennial"/>
+      <bin label="Daly City" ndocs="1" token="city==Daly City"/>
+      <bin label="Escondido" ndocs="1" token="city==Escondido"/>
+      <bin label="Fairfield" ndocs="1" token="city==Fairfield"/>
+      <bin label="Fontana" ndocs="1" token="city==Fontana"/>
+      <bin label="Fremont" ndocs="1" token="city==Fremont"/>
+      <bin label="Fresno" ndocs="1" token="city==Fresno"/>
+      <bin label="Gardena" ndocs="1" token="city==Gardena"/>
+      <bin label="Gilroy" ndocs="1" token="city==Gilroy"/>
+      <bin label="Harbor City" ndocs="1" token="city==Harbor City"/>
+      <bin label="Highlands Ranch" ndocs="1" token="city==Highlands Ranch"/>
+      <bin label="Hilo" ndocs="1" token="city==Hilo"/>
+      <bin label="Honolulu" ndocs="1" token="city==Honolulu"/>
+      <bin label="Kailua" ndocs="1" token="city==Kailua"/>
+      <bin label="Kailua-Kona" ndocs="1" token="city==Kailua-Kona"/>
+      <bin label="La Mesa" ndocs="1" token="city==La Mesa"/>
+      <bin label="Lafayette" ndocs="1" token="city==Lafayette"/>
+      <bin label="Lancaster" ndocs="1" token="city==Lancaster"/>
+      <bin label="Largo" ndocs="1" token="city==Largo"/>
+      <bin label="Long Beach" ndocs="1" token="city==Long Beach"/>
+      <bin label="Los Angeles" ndocs="2" token="city==Los Angeles"/>
+      <bin label="Milpitas" ndocs="1" token="city==Milpitas"/>
+      <bin label="Moreno Valley" ndocs="1" token="city==Moreno Valley"/>
+      <bin label="Mountain View" ndocs="1" token="city==Mountain View"/>
+      <bin label="Novato" ndocs="1" token="city==Novato"/>
+      <bin label="Oakland" ndocs="1" token="city==Oakland"/>
+      <bin label="Ontario" ndocs="1" token="city==Ontario"/>
+      <bin label="Panorama City" ndocs="1" token="city==Panorama City"/>
+      <bin label="Petaluma" ndocs="1" token="city==Petaluma"/>
+      <bin label="Pleasanton" ndocs="1" token="city==Pleasanton"/>
+      <bin label="Rancho Cucamonga" ndocs="1" token="city==Rancho Cucamonga"/>
+      <bin label="Redlands" ndocs="1" token="city==Redlands"/>
+      <bin label="Redwood City" ndocs="1" token="city==Redwood City"/>
+      <bin label="Reston" ndocs="1" token="city==Reston"/>
+      <bin label="Richmond" ndocs="1" token="city==Richmond"/>
+      <bin label="Riverside" ndocs="1" token="city==Riverside"/>
+      <bin label="Roseville" ndocs="1" token="city==Roseville"/>
+      <bin label="San Diego" ndocs="3" token="city==San Diego"/>
+      <bin label="San Francisco" ndocs="1" token="city==San Francisco"/>
+      <bin label="San Jose" ndocs="1" token="city==San Jose"/>
+      <bin label="San Rafael" ndocs="2" token="city==San Rafael"/>
+      <bin label="Santa Clara" ndocs="1" token="city==Santa Clara"/>
+      <bin label="Santa Clarita" ndocs="1" token="city==Santa Clarita"/>
+      <bin label="Silver Spring" ndocs="1" token="city==Silver Spring"/>
+      <bin label="Stockton" ndocs="1" token="city==Stockton"/>
+      <bin label="Thousand Oaks" ndocs="1" token="city==Thousand Oaks"/>
+      <bin label="Union City" ndocs="1" token="city==Union City"/>
+      <bin label="Vacaville" ndocs="1" token="city==Vacaville"/>
+      <bin label="Waipahu" ndocs="1" token="city==Waipahu"/>
+      <bin label="Woodland Hills" ndocs="1" token="city==Woodland Hills"/>
+      <bin label="Yorba Linda" ndocs="1" token="city==Yorba Linda"/>
+    </binning-set>
+    <binning-set label="department type" bs-id="department_type">
+      <bin label="Internal Medicine" ndocs="60" active="active" token="department_type==Internal Medicine"/>
+      <bin label="Laboratory" ndocs="60" token="department_type==Laboratory"/>
+      <bin label="Pharmacy" ndocs="60" token="department_type==Pharmacy"/>
+      <bin label="Pediatrics/Teenage Medicine" ndocs="57" token="department_type==Pediatrics/Teenage Medicine"/>
+      <bin label="Other Clinical Services" ndocs="56" token="department_type==Other Clinical Services"/>
+      <bin label="Optometry" ndocs="49" token="department_type==Optometry"/>
+      <bin label="Radiology" ndocs="46" token="department_type==Radiology"/>
+      <bin label="Obstetrics/Gynecology" ndocs="45" token="department_type==Obstetrics/Gynecology"/>
+      <bin label="Eye Care Services" ndocs="39" token="department_type==Eye Care Services"/>
+      <bin label="Family Practice" ndocs="39" token="department_type==Family Practice"/>
+      <bin label="Ophthalmology " ndocs="37" token="department_type==Ophthalmology "/>
+      <bin label="Dermatology" ndocs="36" token="department_type==Dermatology"/>
+      <bin label="Physical, Occupational, Speech Therapy" ndocs="36" token="department_type==Physical, Occupational, Speech Therapy"/>
+      <bin label="Allergy" ndocs="35" token="department_type==Allergy"/>
+      <bin label="Surgery" ndocs="34" token="department_type==Surgery"/>
+      <bin label="Orthopedics/Podiatry" ndocs="33" token="department_type==Orthopedics/Podiatry"/>
+      <bin label="Occupational Health" ndocs="29" token="department_type==Occupational Health"/>
+      <bin label="Gastroenterology" ndocs="28" token="department_type==Gastroenterology"/>
+      <bin label="Audiology" ndocs="26" token="department_type==Audiology"/>
+      <bin label="Cardiology" ndocs="26" token="department_type==Cardiology"/>
+      <bin label="Neurology" ndocs="26" token="department_type==Neurology"/>
+      <bin label="Psychiatry" ndocs="25" token="department_type==Psychiatry"/>
+      <bin label="Urology" ndocs="25" token="department_type==Urology"/>
+      <bin label="Diagnostic Imaging/Radiology" ndocs="23" token="department_type==Diagnostic Imaging/Radiology"/>
+      <bin label="Head and Neck Surgery" ndocs="21" token="department_type==Head and Neck Surgery"/>
+      <bin label="Hearing " ndocs="21" token="department_type==Hearing "/>
+      <bin label="Physical Medicine and Rehabilitation" ndocs="21" token="department_type==Physical Medicine and Rehabilitation"/>
+      <bin label="Endocrinology/Diabetes" ndocs="20" token="department_type==Endocrinology/Diabetes"/>
+      <bin label="Emergency Department" ndocs="18" token="department_type==Emergency Department"/>
+      <bin label="Home Health" ndocs="18" token="department_type==Home Health"/>
+      <bin label="Injection Clinics" ndocs="16" token="department_type==Injection Clinics"/>
+      <bin label="Infectious Disease" ndocs="15" token="department_type==Infectious Disease"/>
+      <bin label="General" ndocs="14" token="department_type==General"/>
+      <bin label="Pulmonary Function Laboratory" ndocs="13" token="department_type==Pulmonary Function Laboratory"/>
+      <bin label="Genetics" ndocs="12" token="department_type==Genetics"/>
+      <bin label="Nuclear Medicine" ndocs="12" token="department_type==Nuclear Medicine"/>
+      <bin label="Pulmonary Rehabilitation" ndocs="12" token="department_type==Pulmonary Rehabilitation"/>
+      <bin label="Social Medicine" ndocs="12" token="department_type==Social Medicine"/>
+      <bin label="Pain Management Center" ndocs="9" token="department_type==Pain Management Center"/>
+      <bin label="Addiction Medicine" ndocs="8" token="department_type==Addiction Medicine"/>
+      <bin label="Other Administrative Services" ndocs="8" token="department_type==Other Administrative Services"/>
+      <bin label="Vision Essentials" ndocs="8" token="department_type==Vision Essentials"/>
+      <bin label="Food and Nutrition" ndocs="6" token="department_type==Food and Nutrition"/>
+      <bin label="Hospice Home Care" ndocs="6" token="department_type==Hospice Home Care"/>
+      <bin label="Long-term Care" ndocs="5" token="department_type==Long-term Care"/>
+      <bin label="Outpatient Infusion Center" ndocs="5" token="department_type==Outpatient Infusion Center"/>
+      <bin label="Radiation Oncology" ndocs="5" token="department_type==Radiation Oncology"/>
+      <bin label="Member services" ndocs="4" token="department_type==Member services"/>
+      <bin label="Neurosurgery" ndocs="4" token="department_type==Neurosurgery"/>
+      <bin label="Dialysis Unit" ndocs="3" token="department_type==Dialysis Unit"/>
+      <bin label="Health Education" ndocs="2" token="department_type==Health Education"/>
+      <bin label="Travel Services" ndocs="2" token="department_type==Travel Services"/>
+      <bin label="Blood Donor" ndocs="1" token="department_type==Blood Donor"/>
+      <bin label="Cardiac Catheterization Laboratory" ndocs="1" token="department_type==Cardiac Catheterization Laboratory"/>
+      <bin label="Cardiac Surgery" ndocs="1" token="department_type==Cardiac Surgery"/>
+      <bin label="Gastroenterology/Hepatology " ndocs="1" token="department_type==Gastroenterology/Hepatology "/>
+      <bin label="Gift Shop" ndocs="1" token="department_type==Gift Shop"/>
+      <bin label="Gynecologic Oncology" ndocs="1" token="department_type==Gynecologic Oncology"/>
+      <bin label="Sigmoidoscopy" ndocs="1" token="department_type==Sigmoidoscopy"/>
+    </binning-set>
+  </binning>
+  <added-source test-strictly="test-strictly" name="kp-mg-facdir" type="vse" modified="1289947449" elt-id="10" max-elt-id="200" modified-by="Q944458" over-request="1.3" num="200" status="queried" requested="200" query-xml-supported="query-xml-supported" vse-vse="vse-vse" total-results="60" admin-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/admin" stem="depluralize" stem2="none" stoplist="none" cached="cached" search-ms="1" retrieval-ms="9" total-results-with-duplicates="60" retrieved="60">
+    <parse url="http://127.0.0.1:7205/search?query-xml=%3cterm%20field%3d%22query%22%20str%3d%22optometry%22%20processing%3d%22strict%22%20input-type%3d%22user%22%20%2f%3e&amp;la-score-xpath=%24score&amp;binning-mode=normal&amp;binning-state=department_type%3d%3dInternal%20Medicine&amp;force-binning=0&amp;max=300&amp;start=0&amp;num=200&amp;staging=0&amp;collection=kp-mg-facdir&amp;r-o-p=0&amp;output-contents=title%0aaffiliated_facility%0a-snippet%0aphone_number%0adept_list%0ap_url%0astreet_address%0acity%0astate&amp;sort-keys=1&amp;shingles=1&amp;summarize=1&amp;cache=1&amp;cache-data=0&amp;score=1&amp;show-duplicates=0&amp;gen-key=0&amp;n-collapse=0&amp;collapsed-binning=0" start-time="51" end-time="72" http-status="200 OK" status="fetched processed parsed" retrieved="60"/>
+  </added-source>
+  <added-source name="kp-mg-facdir-spelling-corrector" maintainers="Q944458" test-strictly="test-strictly" type="ref" elt-id="2" max-elt-id="6" modified="1286318605" modified-by="Q944458" requested="1">
+    <parse url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/spelling-corrector?xml=%3coperator%20logic%3d%22and%22%3e%3cterm%20field%3d%22binningstate%22%20str%3d%22department_type%3d%3dInternal%20Medicine%22%20position%3d%220%22%20processing%3d%22strict%22%20input-type%3d%22system%22%2f%3e%3cterm%20field%3d%22query%22%20str%3d%22optometry%22%20position%3d%221%22%20processing%3d%22strict%22%20input-type%3d%22user%22%2f%3e%3c%2foperator%3e&amp;dict=%3c%3fxml%20version%3d%221.0%22%20encoding%3d%22UTF-8%22%3f%3e%0a%3cspelling-corrector-configuration%3e%3cspelling-corrector-field%20field%3d%22query%22%20dictionary%3d%22kp-mg-facdir-dictionary%22%20stemmer%3d%22delanguage%2bdepluralize%22%2f%3e%3c%2fspelling-corrector-configuration%3e%0a&amp;" start-time="51" end-time="314" http-status="200 OK" status="fetched processed parsed"/>
+  </added-source>
+  <list path="" num="60" level="0" start="0" per="25">
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100163" score="9.9375" rank="0" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc0&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Bonita Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100163</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">3955 Bonita Rd.</content>
+      <content name="city" type="html">Bonita</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">619-528-5000</content>
+      <content name="services_list" type="html">Advice Nurse, Laboratory, Laboratory - EKG, Nurses Clinic, Pediatrics, Pharmacy, Primary Care - Family Medicine, Primary Care - Internal Medicine, Radiology/Diagnostic Imaging, Radiology/Diagnostic Imaging - Mammography, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, HEARx West Hearing Care Center, </content>
+      <content name="snippet" type="html">3955 Bonita Rd., Bonita, CA  91902</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100358" score="9.48438" rank="1" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc1&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Union City Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100358</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">3555 Whipple Road</content>
+      <content name="city" type="html">Union City</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local TTY">711 (TTY for the hearing/speech impaired)</content>
+      <content name="services_list" type="html">Adult injection, Audiology, Electrocardiography (EKG), Head and Neck Surgery, Hearing Center, Internal Medicine, Internal Medicine - After-hours and weekend care, Laboratory, Ophthalmology, Optical Center, &lt;span class="vivbold qt0"&gt;Optometry, Optometry&lt;/span&gt; - after-hours and weekend, Pharmacies - Pharmacy 2, Physical Therapy Wound Care, Podiatry, Speech Therapy, Business Office/Insurance Claims, Cosmetic services, Dermatology, Occupational Health Services, Orthopedics - Medical, Orthopedics - Surgical, Pharmacies - Pharmacy 1, Physical Medicine and Rehabilitation, Psychiatry, Rehabilitation Services, </content>
+      <content name="snippet" type="html">3555 Whipple Road, Union City, CA  94587</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/HAW/facilities/100445" score="8.9375" rank="2" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc2&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Hilo Clinic</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100445</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1292 Waianuenue Ave.</content>
+      <content name="city" type="html">Hilo</content>
+      <content name="state" type="html">HI</content>
+      <content name="phone_number" type="Local">808-934-4000</content>
+      <content name="services_list" type="html">Allergy, Audiology, Behavioral Health Services, Blood Pressure Clinics, Cardiology, Dermatology, Diabetic Eye Care, Diagnostic Imaging, Ear, Nose &amp; Throat, Echocardiology, Family Medicine, Gastroenterology, General Surgery, Internal Medicine, Laboratory, Mammography - Mobile Health Vehicle, Nephrology, Neurology, Obstetrics/Gynecology, Occupational Health Services, Oncology, Ophthalmology, Optical Dispensing, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Orthopedics, Pediatrics, Pharmacy, Physical Therapy, Podiatry, Pulmonology, Rheumatology, Telemedicine, Travel Medicine, Urology, Women's Health - Mobile Health Vehicle, </content>
+      <content name="snippet" type="html">1292 Waianuenue Ave., Hilo, HI  96720</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/HAW/facilities/100446" score="8.9375" rank="3" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc3&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Honolulu Clinic</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100446</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1010 Pensacola St.</content>
+      <content name="city" type="html">Honolulu</content>
+      <content name="state" type="html">HI</content>
+      <content name="phone_number" type="Local">808-432-2000</content>
+      <content name="services_list" type="html">Adult Medicine, Aesthetic Center (Cosmetic Dermatology), Allergy, Ambulatory Surgery Center, Audiology, Cosmetic Eye Surgery, Dermatology, Diagnostic Imaging, Endocrinology, General Surgery, Geriatrics, Hearing Center, Laboratory, Laser Vision Correction, Neurology, Obstetrics/Gynecology, Occupational Health Services, Ophthalmology, Optical Dispensing, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Pediatrics and Young Adults, Pharmacy, Physical Therapy, Sports Medicine Clinic, Travel Medicine, Urgent Care, </content>
+      <content name="snippet" type="html">1010 Pensacola St., Honolulu, HI  96814</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/HAW/facilities/100439" score="8.9375" rank="4" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc4&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kona Clinic</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100439</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">75-184 Hualalai Road</content>
+      <content name="city" type="html">Kailua-Kona</content>
+      <content name="state" type="html">HI</content>
+      <content name="phone_number" type="Local">808-334-4400</content>
+      <content name="services_list" type="html">Allergy, Audiology, Behavioral Health Services, Diagnostic Imaging, Ear, Nose &amp; Throat, Family Medicine, Gastroenterology, General Surgery, Internal Medicine, Laboratory, Mammography - Mobile Health Vehicle, Nephrology, Neurology, Obstetrics/Gynecology, Occupational Health Services, Ophthalmology, Optical Dispensing, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Orthopedics, Pediatrics, Pharmacy, Physiatry, Physical Therapy, Plastic/Reconstructive Surgery, Podiatry, Pulmonology, Rheumatology, Travel Medicine, Urology, Women's Health - Mobile Health Vehicle, </content>
+      <content name="snippet" type="html">75-184 Hualalai Road, Kailua-Kona, HI  96740</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/HAW/facilities/100429" score="8.9375" rank="5" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc5&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Waipio Clinic</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100429</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">94-1480 Moaniani St.</content>
+      <content name="city" type="html">Waipahu</content>
+      <content name="state" type="html">HI</content>
+      <content name="phone_number" type="Local">808-432-3100</content>
+      <content name="services_list" type="html">Aesthetic Center (Cosmetic Dermatology), Allergy, Behavioral Health Services, Diagnostic Imaging, Family Medicine, Hearing Center, Internal Medicine, Laboratory, Obstetrics/Gynecology, Occupational Health Services, Ophthalmology, Optical Dispensing, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Pediatrics, Pharmacy, Physical/Occupational Therapy, </content>
+      <content name="snippet" type="html">94-1480 Moaniani St., Waipahu, HI  96797</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100374" score="8.9375" rank="6" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc6&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Daly City Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100374</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">395 Hickey Blvd.</content>
+      <content name="city" type="html">Daly City</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">650-301-5860</content>
+      <content name="services_list" type="html">Injections, Internal Medicine, Laboratory, Nutrition Clinic, Obstetrics/Gynecology, Ophthalmology, Optical Center, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Pediatrics, Pharmacies, Radiology, Teen Clinic, Ultrasound, Hearing Center, </content>
+      <content name="snippet" type="html">395 Hickey Blvd., Daly City, CA  94015</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100337" score="8.9375" rank="7" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc7&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Kaiser Permanente Redwood City Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100337</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">1150 Veterans Blvd.</content>
+      <content name="city" type="html">Redwood City</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">650-299-2000</content>
+      <content name="services_list" type="html">Pharmacy (Mail-Order ), Audiology, Hearing Center, Member Service Call Center, Allergy/Immunology, Dermatology, Opthalmology, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Surgery Clinic, Urology, Nutrition Clinic, Pharmacy (Aspen building), Member Services/Patient Relations, After-hours Clinic (Pediatrics), Optical Center, Pharmacy (Birch Building), Electroencephalography (EEG), Emergency, Head and Neck Surgery, Interventional Neuroradiology, Laboratory, Mammography, Neurology, Neuroscience, Neurosurgery, Nuclear Medicine/Bone Densitometry, Obstetrics/Gynecology, Pediatrics, Radiology (X-ray), Urgent Care, After-hours Clinic (Internal Medicine), Cardiology, Chemotherapy/Infusion, Gastroenterology (GI), Injection Clinic (Adult), Internal Medicine, Pharmacy (Main), Alcohol and Drug Treatment, Chronic Conditions Programs, Occupational Health, Orthopedics/Podiatry, Physical and Occupational Therapy, Physical Medicine and Rehabilitation, Psychiatry Services, Home Health/Hospice Services, Injection Clinic (Children), Respiratory Outpatient Care, </content>
+      <content name="snippet" type="html">1150 Veterans Blvd., Redwood City, CA  94063</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100347" score="8.9375" rank="8" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc8&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Novato Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100347</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">97 San Marin Drive</content>
+      <content name="city" type="html">Novato</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">415-899-7400</content>
+      <content name="services_list" type="html">Urgent Eye Care, Allergy Injections, Asthma Care Management, Home Health Care, Imaging, Internal Medicine, Laboratory, Mammography, Obstetrics/Gynecology, Optical Center, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Pediatrics, Pharmacy, Radiology/Mammography, Vision Essentials, </content>
+      <content name="snippet" type="html">97 San Marin Drive, Novato, CA  94945</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/NCA/facilities/100340" score="8.9375" rank="9" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc9&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Pleasanton Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100340</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">7601 Stoneridge Drive</content>
+      <content name="city" type="html">Pleasanton</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">925-847-5100</content>
+      <content name="services_list" type="html">Home Health Care, Ambulatory Surgery Center, Mental Health/Chemical Dependency Services, Adult Medicine, Allergy, Allergy Injections Clinic, Audiology, Chronic Conditions Programs, Cosmetic Dermatology, Dermatology, Dietitian, Electrocardiography (EKG), Head and Neck Surgery, Laboratory, Minor Injury Center (MIC), Occupational Health, Ophthalmology, Optical Center, &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Orthopedics/Podiatry, Pediatrics, Pharmacy - North 1, Pharmacy - South 1, Pharmacy South 2, Radiology/Imaging Services, Surgery, Ultrasound, Urgent Care, Urology, Women's Health Center, Physical Therapy, </content>
+      <content name="snippet" type="html">7601 Stoneridge Drive, Pleasanton, CA  94588</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100154" score="8.875" rank="10" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc10&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Carlsbad Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100154</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">6860 Avenida Encinas</content>
+      <content name="city" type="html">Carlsbad</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">619-528-5000</content>
+      <content name="services_list" type="html">Advice Nurse, Laboratory, Laboratory - EKG, Mammography, Nurses Clinic, Pediatrics, Pharmacy, Primary Care - Family Practice, Primary Care - Internal Medicine, Radiology/Diagnostic Imaging, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">6860 Avenida Encinas, Carlsbad, CA  92009</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100130" score="8.875" rank="11" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc11&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Escondido Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100130</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">732 N. Broadway</content>
+      <content name="city" type="html">Escondido</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">619-528-5000</content>
+      <content name="services_list" type="html">Advice Nurse, Laboratory, Laboratory - EKG, Nurse Clinic, Nutrition, Pediatrics, Pharmacy, Primary Care - Family Medicine, Primary Care - Internal Medicine, Radiology/Diagnostic Imaging, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">732 N. Broadway, Escondido, CA  92025</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100127" score="8.875" rank="12" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc12&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Fontana Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100127</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">9961 Sierra Ave.</content>
+      <content name="city" type="html">Fontana</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">909-427-5000</content>
+      <content name="services_list" type="html">Addiction Medicine, Occupational Therapy - Pediatric, Advice Nurse, Allergy, Anesthesiology, Audiology, Breast Care Coordinating Program, Cardiology, Dermatology, Diagnostic Imaging/Radiology, Emergency Department, Enterostomal Therapy (ET) Nurses, Family Medicine, Family Medicine Retinal Photos, Family Medicine Surgery Return Clinic, Family Medicine Thrive Center, Family Medicine Treatment Nurse, Gastroenterology (GI), Gastroenterology Lab, Genetics, Head and Neck Surgery, HEARx West Hearing Care Centers, Internal Medicine, Laboratory - Medical Office Building 3, Laboratory - Medical Office Buildings 1 and 2, Member Service Call Center, Neurology, Neurosurgery, Nuclear Medicine, Obstetrics/Gynecology, Occupational Health Center, Occupational Therapy, Orthopedics/Podiatry, Pain Management, Palliative Medicine, Pediatrics, Pharmacy - 24-hour, Pharmacy - Family Medicine/Urgent Care, Pharmacy - Link, Pharmacy - Neurology, Pharmacy - Obstetrics/Gynecology, Pharmacy - Ophthalmology/Mail-order, Physical Medicine, Physical Therapy, Plastic and Reconstructive Surgery, Pulmonary, Pulmonary Function Lab, Speech Therapy, Surgery, Teen Clinic, Urgent Care - Adult Medicine, Urgent Care - Pediatrics, Urology, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Extended Care, Hospice Program Inland Empire, Home Health, Pharmacy - Home Health, </content>
+      <content name="snippet" type="html">9961 Sierra Ave., Fontana, CA  92335</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100124" score="8.875" rank="13" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc13&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Gardena Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100124</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">15446 S. Western Ave.</content>
+      <content name="city" type="html">Gardena</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-800-780-1230 (toll free) </content>
+      <content name="services_list" type="html">Advice Nurse, Allergy Injections, Family Medicine, Internal Medicine, Laboratory, Medical Social Worker, Obstetrics/Gynecology, Pediatrics, Pharmacy, Physical, Occupational Therapy/Physical Medicine, Podiatry, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">15446 S. Western Ave., Gardena, CA  90249</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100142" score="8.875" rank="14" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc14&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">La Mesa Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100142</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">8080 Parkway Drive</content>
+      <content name="city" type="html">La Mesa</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">619-528-5000</content>
+      <content name="services_list" type="html">HEARx West Hearing Care Center, Advice Nurse, Dermatology, Laboratory, Laboratory - EKG, Nurse Clinic, Nutrition, Pediatrics, Pharmacy, Primary Care - Family Medicine, Primary Care - Internal Medicine, Radiology/Diagnostic Imaging, Urgent Care - Adult Medicine, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">8080 Parkway Drive, La Mesa, CA  91942</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100105" score="8.875" rank="15" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc15&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Lancaster Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100105</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">43112 15th St. West</content>
+      <content name="city" type="html">Lancaster</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-888-778-5000 (toll free) </content>
+      <content name="services_list" type="html">Advice Nurse, Allergy, Audiology, Cardiology, Dermatology, Family Medicine, Gastroenterology (GI), Geriatrics, Head and Neck Surgery, Infectious Disease, Infusion Clinic, Internal Medicine, Internal Medicine - After-hours, Laboratory, Member Service Call Center, Obstetrics/Gynecology, Occupational Health, Occupational Therapy, Oncology/Hematology, Orthopedics, Outpatient Procedure Suite (OPS), Pacemaker Clinic, Pediatrics, Pediatrics - After-hours, Pharmacy, Physical Medicine, Physical Therapy, Podiatry, Pulmonology, Radiology (X-ray), Rheumatology, Social Services, Surgery, Urgent Care - Adult, Urgent Care - Pediatrics, Urology, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Continuing Care, </content>
+      <content name="snippet" type="html">43112 15th St. West, Lancaster, CA  93534</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100099" score="8.875" rank="16" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc16&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Los Angeles Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100099</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">4867 W Sunset Blvd.</content>
+      <content name="city" type="html">Los Angeles</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-800-954-8000 (toll free) </content>
+      <content name="services_list" type="html">Member Service Call Center, Diagnostic Imaging/Radiology - 1505 N. Edgemont, Diagnostic Imaging/Radiology - Mammography, Infectious Disease/HIV Clinic, Infectious Disease Module, Neurology, Outpatient Infusion Center, Pharmacy - 1505 N. Edgemont St., Social Medicine, Surgery - Preadmission Center (PAC), Cardiac Surgery, Cardiology, Diagnostic Imaging/Radiology - CT and Ultrasound, Diagnostic Imaging/Radiology - MRI, Gastroenterology (GI), Gastroenterology (GI) - Liver Clinic, Gastroenterology (GI) - Pulmonary Function Lab, Obstetrics/Gynecology - After-hours Gynecology, Occupational Health Center, Physical, Occupational Therapy/Speech and Language, Physical Medicine and Rehabilitation, Pulmonary Function Laboratory, Sigmoidoscopy, Transplant Services - Heart, Transplant Services - Liver, Urgent Care/After-hours Care - Adult, Allergy, Blood Donor Center, Bone Marrow Transplant Clinic, Cardiology Rehabilitation, Dermatology, Diagnostic Imaging/Radiology - 1515 N. Vermont, Hematology/Oncology, Laboratory - 1515 N. Vermont Ave., Ophthalmology, Pharmacy - 1515 N. Vermont Ave., Pulmonary Medicine, Pulmonary Rehabilitation, Transplant Services - Blood and Marrow, Transplant Services - Lung, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Home Health, Hospice Home Care, Long-term Care, Addiction Medicine, Dialysis Unit (Outpatient), Laboratory - 4700 Sunset Blvd., Metabolic Clinic, Nephrology, Pediatrics/Teenage Medicine, Pharmacy - 4700 Sunset Blvd., Psychiatry, Urgent Care/After-hours Care - Pediatrics, Pharmacy - 4733 Sunset Blvd., Diagnostic Imaging/Radiology - 4760 Sunset Blvd., Orthopedics/Podiatry, Pain Management Center, Plastic Surgery, Surgery, Surgery - Ambulatory Surgery Center, Surgery - Discharge Area, Admitting, Advice Nurse, Cancer Information, Diagnostic Imaging/Radiology - Interventional, HEARx West Hearing Care Centers, Nuclear Medicine, Cardiac Catheterization Laboratory (Regional), Dialysis Unit (Inpatient), Emergency Department, Interventional Radiology, Neurosurgery, Audiology, Genetics, Gynecologic Oncology, Head and Neck Surgery, Laboratory - 4900 Sunset Blvd.., Obstetrics/Gynecology, Pharmacy - 4900/4904 Sunset Blvd., Urology, Diagnostic Imaging/Radiology  - 4950 Sunset Blvd., Endocrinology/Diabetes/Rheumatology, Internal Medicine - General, Laboratory - 4950 Sunset Blvd., Pharmacy - 4950 Sunset Blvd., Primary Care - Family Medicine, Radiation Oncology, Radiation Oncology - Ontario Medical Offices, Travel Advisory, </content>
+      <content name="snippet" type="html">4867 W Sunset Blvd., Los Angeles, CA  90027</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100088" score="8.875" rank="17" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc17&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Moreno Valley Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100088</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">12815 Heacock St.</content>
+      <content name="city" type="html">Moreno Valley</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-866-984-7483 (866 9THRIVE)  (toll free) </content>
+      <content name="services_list" type="html">HEARx West Hearing Care Center, Pharmacy - 2nd Floor, Addiction Medicine, Advice Nurse, Allergy Injections, Dermatology, Diagnostic Imaging, Family Medicine, Internal Medicine, Laboratory, Mammography, Obstetrics/Gynecology, Pediatrics, Pharmacy - 1st Floor, Population Care Nurse Clinic, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">12815 Heacock St., Moreno Valley, CA  92553</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100071" score="8.875" rank="18" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc18&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Panorama City Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100071</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">13651 Willard Street</content>
+      <content name="city" type="html">Panorama City</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">818-375-2000</content>
+      <content name="services_list" type="html">Advice Nurse, Anesthesiology, Audiology, Cardiac Studies, Cardiology, Diagnostic Imaging 2, EKG - Central Medical Office Building, G.I. Laboratory, Gastroenterology (GI), Head and Neck Surgery, Infectious Disease, Laboratory - Central Medical Office Building, Nephrology, Nuclear Medicine, Oncology/Hematology, Pain Medicine, Proctology, Pulmonary Function Testing, Pulmonary Medicine, Speech Pathology, Surgery, Urgent Care - Ambulatory Care, Urology, Vascular Laboratory, Continuing Care, Care Management - Care Plus, Care Management - Thrive Center, Diagnostic Imaging 3, EKG - North 3 Medical Offices, Endocrinology/Metabolic, Family Medicine, Genetics, Internal Medicine, Laboratory - North 3 Medical Offices, Obstetrics/Gynecology, Orthopedics - Cast Room, Pharmacy - North 3 Medical Offices, Rheumatology, Pharmacy - South 1 Medical Offices, Diagnostic Imaging 1, Emergency Services, HEARx West Hearing Care Centers, HIV Services, Laboratory - Main Medical Center, Long-term Care, Member Services Call Center, Pharmacy - 24-hour, Respiratory Care, Allergy, Care Management, Dermatology, Laboratory - South 1 Medical Offices, Neurology, Pediatrics, Pediatrics - Immunizations, Pediatric Subspecialties, Social Services, Teenage Health Care Center, Urgent Care, Geriatric Assessment Clinic, Occupational Health Center, Orthopedics, Physical/Occupational Therapy, Physical Medicine, Podiatry, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">13651 Willard Street, Panorama City, CA  91402</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100062" score="8.875" rank="19" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc19&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Riverside Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100062</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">10800 Magnolia Ave.</content>
+      <content name="city" type="html">Riverside</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-866-984-7483 (866 9THRIVE)  (toll free) </content>
+      <content name="services_list" type="html">HEARx West Hearing Care Center, Advice Nurse, Allergy, Allergy injections, Anesthesiology - Interventional Pain Clinic, Anesthesiology - Preop Clinic, Audiology, Continuing Care, Dermatology, Diagnostic Imaging, Emergency Department, Family Medicine, Family Medicine - After-hours clinic, Gastroenterology (GI), Genetics, Head and Neck Surgery/Audiology, Internal Medicine, Internal Medicine - Cardiac Rehabilitation, Internal Medicine - Cardiodiagnostic Laboratory, Labor and Delivery/Family Care Center Hospital, Laboratory - Medical Office Building 1, Laboratory - Medical Office Building 2, Laboratory - Park Sierra Medical Office, Mammography, Member Service Call Center, Neurology, Nuclear Medicine, Obstetrics/Gynecology, Occupational Health Center, Orthopedics, Pediatrics, Pharmacy - Medical Office Building 2, Pharmacy - Park Sierra Medical Offices, 1st floor, Pharmacy - Park Sierra Medical Offices, 2nd floor, Pharmacy - Riverside Medical Center, Physical/Occupational Therapy, Physical Medicine, Podiatry, Population Care Nurse Clinic, Pulmonary Function Lab, Social Services, Speech Pathology, Surgery, Urgent Care Clinic, Urology, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">10800 Magnolia Ave., Riverside, CA  92505</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100051" score="8.875" rank="20" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc20&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Santa Clarita Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100051</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">27107 Tourney Rd.</content>
+      <content name="city" type="html">Santa Clarita</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-888-778-5000 (toll free) </content>
+      <content name="services_list" type="html">Advice Nurse, Family Medicine, Gastroenterology (GI)/ GI Lab, Infectious Disease, Internal Medicine, Laboratory, Mammography/Radiology/Ultrasound, Obstetrics/Gynecology, Pediatrics, Pharmacy - 1st Floor, Pharmacy - 2nd Floor, Physical Therapy, Psychiatry, Social Services, Urgent Care, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">27107 Tourney Rd., Santa Clarita, CA  91355</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100049" score="8.875" rank="21" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc21&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">South Bay Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100049</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">25825 Vermont Ave.</content>
+      <content name="city" type="html">Harbor City</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-800-780-1230 (toll free) </content>
+      <content name="services_list" type="html">Home Health, Hospice, HEARx West Hearing Care Center, After-hours Care - Adult Medicine, After-hours Care - Pediatrics, Breastfeeding Clinic, Diagnostic Imaging - Normandie North 1, Family Medicine, Genetics, Laboratory - Normandie North 1, Neurology, Obstetrics/Gynecology, Occupational Health Center, Pediatrics, Pharmacy - 24-hour, Geriatrics, Geriatrics - Cognitive Assessment Program Clinic, Medical Social Worker, Advice Nurse, Allergy Shots, Audiology, Cardiology, Cosmetic Services, Dermatology, Diagnostic Imaging - Main Hospital, Emergency Services, Gastroenterology (GI), Hearing, Infectious Disease, Internal Medicine, Laboratory - Hospital, 1st Floor, Long-term Care, Orthopedics/Podiatry, Pharmacy - Lakeside, Physical Medicine/Physical, Occupational Therapy, Pulmonology, Rheumatology, Speech Pathology, Urgent Obstetrics Care after 5 p.m., Diagnostic Imaging - Parkview Medical Offices, Endocrinology, Head and Neck Surgery, Infusion Center, Integrated Pain Management, Interventional Pain, Nephrology, Oncology, Pharmacy - Parkview, Surgery, Urology, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Oak Street Physical Therapy, </content>
+      <content name="snippet" type="html">25825 Vermont Ave., Harbor City, CA  90710</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100041" score="8.875" rank="22" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc22&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Thousand Oaks I Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100041</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">365 E. Hillcrest Drive</content>
+      <content name="city" type="html">Thousand Oaks</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="toll free">1-888-515-3500 (toll free) </content>
+      <content name="services_list" type="html">Advice Nurse, Allergy, Family Medicine, Geriatrics, Internal Medicine, Laboratory, Mammography, Obstetrics/Gynecology, Pharmacy, Podiatry, Retinal Screening, Urgent Care, Vision Essentials -  Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">365 E. Hillcrest Drive, Thousand Oaks, CA  91360</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100036" score="8.875" rank="23" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc23&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Vandever Medical Offices</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100036</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">4405 Vandever Ave.</content>
+      <content name="city" type="html">San Diego</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">619-528-5000</content>
+      <content name="services_list" type="html">Member Service Call Center, Advice Nurse, Laboratory, Laboratory - EKG, Neurology, Nurses Clinic, Obstetrics and Gynecology, Pediatrics, Pediatric Specialties, Pharmacy, Primary Care - Family Medicine, Primary Care - Internal Medicine, Radiology/Diagnostic Imaging, Sleep Clinic, Surgery, Urgent Care - Adult Medicine, Urgent Care - Pediatrics, Urology, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, </content>
+      <content name="snippet" type="html">4405 Vandever Ave., San Diego, CA  92120</content>
+    </document>
+    <document url="http://facilities.kp.org/data/regions/SCA/facilities/100045" score="8.875" rank="24" source="kp-mg-facdir" context="http://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v%3astate=%28root%29%7croot&amp;v%3aframe=tree&amp;subquery=id%3aNdoc24&amp;active%3d=root&amp;v%3asubsearch=1&amp;">
+      <content type="text" name="title">Woodland Hills Medical Center</content>
+      <content name="p_url" type="html">http://kp.org/kpweb/facilitydir/facility.do?id=100045</content>
+      <content name="affiliated_facility" type="html">No</content>
+      <content name="street_address" type="html">5601 De Soto Ave.</content>
+      <content name="city" type="html">Woodland Hills</content>
+      <content name="state" type="html">CA</content>
+      <content name="phone_number" type="Local">818-719-2000</content>
+      <content name="services_list" type="html">Addiction Medicine, Adolescent Clinic, Advice Nurse, Allergy, Anesthesiology, Anticoagulation pharmacist, Audiology, Blood Donor Center, Bone Density, Breast Center/Mammography, Cardiology/ EKG, Center for Wound Healing, Childrens Center for Attentional Problems, Continuing Care - Home Health/Hospice/Long-term, Dermatology, Diagnostic Imaging - Chest and routine X-rays, Diagnostic Imaging - CT Scan, Diagnostic Imaging - Mammography, Diagnostic Imaging - MRI, Diagnostic Imaging - Northside X-ray, Diagnostic Imaging - Ultrasound, Emergency Services, Endocrinology/Diabetes Center, Family Medicine, Gastroenterology (GI), Genetics, Geriatric Assessment Clinic, Head and Neck Surgery, Immunization Clinic, Infectious Disease, Infertility, Infusion Center, Internal Medicine - Medical Office Tower, Internal Medicine - Northside Medical Offices, Laboratory - Medical Office Tower, Laboratory - Northside, Member Service Call Center, Nephrology, Neurology, Neurosurgery, Nuclear Medicine, Obstetrics/Gynecology, Occupational Health Center, Occupational Therapy, Oncology, Orthopedics/Podiatry, Pain Procedures, Pathology, Pediatric/Oncology, Pediatrics, Peritoneal Dialysis, Pharmacies - Outpatient Pharmacy, Pharmacy - 2nd Floor, Pharmacy - 3rd Floor, Pharmacy - 4th Floor, Pharmacy - Northside Medical Offices, Physical Medicine, Physical Therapy, Plastic Surgery, Population Care Management, Psychiatry, Pulmonary Medicine/Respiratory Care, Rheumatology, Social Services, Speech Therapy, Surgery - General, Surgi-Center, Travel Shots Clinic, Urgent Care/Ambulatory Care - Adults, Urgent Care/Ambulatory Care - Pediatrics, Urology, Vascular Surgery, Vision Essentials - Ophthalmology, Vision Essentials - Optical Center, Vision Essentials - &lt;span class="vivbold qt0"&gt;Optometry&lt;/span&gt;, Dialysis Services, HEARx West Hearing Care Center, </content>
+      <content name="snippet" type="html">5601 De Soto Ave., Woodland Hills, CA  91365</content>
+    </document>
+  </list>
+  <navigation base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v:state=root|root-">
+    <link start="0" end="25">0-25|0</link>
+    <link start="25" end="50">25-25|0</link>
+    <link start="50" end="60">50-25|0</link>
+    <link type="next" start="25" end="50">25-25|0</link>
+  </navigation>
+  <tree base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;v:state=" recluster-base-url="https://xlzxdap0039x.lvdc.kp.org:8443/search/cgi-bin/query-meta?v%3afile=viv_l1hKqs&amp;">
+    <node type="top" level="0" ndocs="60" active="1" subnodes="12" ts="|root" ls="root|root" bs="|root">
+      <node type="close" level="1" ndocs="29" subnodes="4" ts="(root(N150))|root" ls="root|N150" bs="(root(N150))|N150">
+        <description>Medical Center</description>
+      </node>
+      <node type="close" level="1" ndocs="9" subnodes="2" ts="(root(N231))|root" ls="root|N231" bs="(root(N231))|N231">
+        <description>Diagnostic Imaging, Family Medicine</description>
+      </node>
+      <node type="close" level="1" ndocs="4" subnodes="0" ts="(root(N222))|root" ls="root|N222" bs="(root(N222))|N222">
+        <description>Urgent Eye Care</description>
+      </node>
+      <node type="close" level="1" ndocs="3" subnodes="0" ts="(root(N121))|root" ls="root|N121" bs="(root(N121))|N121">
+        <description>Ranch</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N122))|root" ls="root|N122" bs="(root(N122))|N122">
+        <description>City Medical Offices</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N246))|root" ls="root|N246" bs="(root(N246))|N246">
+        <description>1-888-778-5000</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N250))|root" ls="root|N250" bs="(root(N250))|N250">
+        <description>Allergy Clinic</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N223))|root" ls="root|N223" bs="(root(N223))|N223">
+        <description>Internal Medicine, Laboratory, Mammography, Minor Injury</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N244))|root" ls="root|N244" bs="(root(N244))|N244">
+        <description>Internal Medicine, Laboratory, Medical Social Worker</description>
+      </node>
+      <node type="close" level="1" ndocs="2" subnodes="0" ts="(root(N245))|root" ls="root|N245" bs="(root(N245))|N245">
+        <description>Occupational Health, Ophthalmology, Optical Center, Optometry</description>
+      </node>
+      <node type="more" ts="(root-0-20)|root"/>
+    </node>
+  </tree>
+</vce>

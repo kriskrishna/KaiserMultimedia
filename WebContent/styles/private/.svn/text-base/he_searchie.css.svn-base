@@ -1,0 +1,17 @@
+/* 
+   Member Guides Search
+   UI Developer: Ryan Pong
+   WPP Release 4 - 6.2.2011
+   
+   Modification logs:
+*/
+div.searchResultContainer{width:995px!important}
+div.searchResult{margin-right:15px;width:725px}
+div.mgs_maincontent #citybgID{width:150px;}/* Need defined width for IE, Mozilla scales appropriates */
+form.keywordSearchForm input.submitQuery,div.mgs_keyword_cont #submitQuery{line-height:0px}/* Defining line height because IE doesn't take negative font-indent*/
+div.wppInputErrorMessage ul{left:0px; padding-left:10px}
+div.mgs_keyword_cont #searchString{border-color:#ffffff}
+.keywordSearchForm #submitQuery{display:block; padding-left:99px}
+
+
+

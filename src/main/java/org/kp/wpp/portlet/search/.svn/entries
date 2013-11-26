@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:44:54.000000Z"
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-26T19:03:51.356644Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/java/org/kp/wpp/portlet/search"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45807"/>
+<entry
+   name="KaiserMGSearchPortlet.java"
+   committed-date="2013-08-22T18:17:14.409667Z"
+   text-time="2013-08-22T18:17:14.000000Z"
+   checksum="c79580dd18b97d06b958a2728df4660d"
+   last-author="m504923"
+   committed-rev="45714"
+   kind="file"/>
+<entry
+   name="KaiserSearchPortlet.java"
+   committed-date="2013-08-09T17:46:50.485156Z"
+   text-time="2013-08-09T17:46:50.000000Z"
+   checksum="b26d4f026b9def13e4dcfc24946fb483"
+   last-author="m504923"
+   committed-rev="45247"
+   kind="file"/>
+<entry
+   name="beans"
+   kind="dir"/>
+<entry
+   name="constants"
+   kind="dir"/>
+<entry
+   name="helpers"
+   kind="dir"/>
+<entry
+   name="utils"
+   kind="dir"/>
+</wc-entries>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-20T21:53:54.481688Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/src/main/java/org/kp/wpp/portlet/search/constants"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="m504923"
+   committed-rev="45608"/>
+<entry
+   name="IPortletConstants.java"
+   committed-date="2013-08-20T21:53:54.481688Z"
+   text-time="2013-08-20T21:53:54.000000Z"
+   checksum="02cfab74255db8d0437c594cb71ad274"
+   last-author="m504923"
+   committed-rev="45608"
+   kind="file"/>
+</wc-entries>

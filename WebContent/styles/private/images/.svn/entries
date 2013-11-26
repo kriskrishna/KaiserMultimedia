@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   prop-time="2013-08-29T16:45:00.000000Z"
+   name=""
+   revision="45983"
+   uuid="5363c03c-70d6-0410-ba2b-cf01c2f8424f"
+   committed-date="2013-08-06T18:38:59.255671Z"
+   url="http://svn.kp.org/svn/wpp/trunk/src/java/portlets/kaisersearchportlet/WebContent/styles/private/images"
+   repos="http://svn.kp.org/svn/wpp"
+   kind="dir"
+   last-author="l523788"
+   committed-rev="45163"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="bg_mg_search.jpg"
+   text-time="2011-01-13T00:19:15.000000Z"
+   committed-date="2011-01-13T00:19:15.153818Z"
+   checksum="30b4cfd8b6c42950275718f0a38fea82"
+   committed-rev="15263"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="blue_arrow_down.png"
+   text-time="2013-08-02T21:42:54.000000Z"
+   committed-date="2013-08-02T21:42:54.817451Z"
+   checksum="d28f1623988433322b4c06868b872771"
+   committed-rev="45104"
+   kind="file"
+   last-author="l523788"/>
+<entry
+   prop-time="2013-08-29T16:44:58.000000Z"
+   name="blue_stroke.png"
+   text-time="2013-06-06T02:23:03.000000Z"
+   committed-date="2013-06-06T02:23:03.513724Z"
+   checksum="73fee9692254ab881dccd4f8f497ac8e"
+   committed-rev="43447"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="btn-ncal.png"
+   text-time="2013-07-11T19:16:00.000000Z"
+   committed-date="2013-07-11T19:16:00.302567Z"
+   checksum="823b87a9b10a9cf6755b603604ff2b08"
+   committed-rev="44588"
+   kind="file"
+   last-author="e949004"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="btn-ncal_text.png"
+   text-time="2013-07-11T19:16:00.000000Z"
+   committed-date="2013-07-11T19:16:00.302567Z"
+   checksum="f626eb0f35e9e8cdbbd904863dcb0c95"
+   committed-rev="44588"
+   kind="file"
+   last-author="e949004"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="btn_go.gif"
+   text-time="2012-10-16T19:23:33.000000Z"
+   committed-date="2012-10-16T19:23:33.404843Z"
+   checksum="7e5e62b779fe94cd4cd5597cb08a0122"
+   committed-rev="39211"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="btn_search.gif"
+   text-time="2010-04-16T19:40:58.000000Z"
+   committed-date="2010-04-16T19:40:58.596148Z"
+   checksum="706971a3b247ce236c621597bc3ac73d"
+   committed-rev="9594"
+   kind="file"
+   last-author="l525045"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="button_wpp_2.png"
+   text-time="2013-06-20T21:36:01.000000Z"
+   committed-date="2013-06-20T21:36:01.339725Z"
+   checksum="8733e8851ef5d3f508760d447c2513b5"
+   committed-rev="43889"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:56.000000Z"
+   name="ctr_entry_header_curve.gif"
+   text-time="2010-04-16T19:40:58.000000Z"
+   committed-date="2010-04-16T19:40:58.596148Z"
+   checksum="be44d1804338b81479b28e7267076fe3"
+   committed-rev="9594"
+   kind="file"
+   last-author="l525045"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="gradient_dropdown.png"
+   text-time="2013-06-12T23:26:32.000000Z"
+   committed-date="2013-06-12T23:26:32.544212Z"
+   checksum="91fb5057a6c217c7359663387e3f25d7"
+   committed-rev="43596"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:55.000000Z"
+   name="grey_circle_arrow.png"
+   text-time="2013-08-06T18:38:59.000000Z"
+   committed-date="2013-08-06T18:38:59.255671Z"
+   checksum="1dc30ca0b554dcd382aeb46407fcedeb"
+   committed-rev="45163"
+   kind="file"
+   last-author="l523788"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="grnBtnBg.gif"
+   text-time="2009-09-22T07:08:40.000000Z"
+   committed-date="2009-09-22T07:08:40.954642Z"
+   checksum="ce9596100f9b7b191adedd63f375160d"
+   committed-rev="4928"
+   kind="file"
+   last-author="d111634"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="header_sprite.gif"
+   text-time="2012-10-15T18:58:29.000000Z"
+   committed-date="2012-10-15T18:58:29.157582Z"
+   checksum="686864d755b4615df4a5fd2282b687a2"
+   committed-rev="39164"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="icons_all.gif"
+   text-time="2013-07-31T21:51:23.000000Z"
+   committed-date="2013-07-31T21:51:23.046525Z"
+   checksum="d4bd67b3f3fba3d721424ad78229387b"
+   committed-rev="45061"
+   kind="file"
+   last-author="l523788"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="icons_all_prod.gif"
+   text-time="2012-09-24T19:35:42.000000Z"
+   committed-date="2012-09-24T19:35:42.002084Z"
+   checksum="dddcd2104f6070e09df2cdef8943bd68"
+   committed-rev="38558"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="leftnavbg.gif"
+   text-time="2011-01-26T23:14:33.000000Z"
+   committed-date="2011-01-26T23:14:33.247381Z"
+   checksum="fc82c06819bf88232db2b503c89fd6ba"
+   committed-rev="15701"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="ln_longgradient.gif"
+   text-time="2010-04-16T19:40:58.000000Z"
+   committed-date="2010-04-16T19:40:58.596148Z"
+   checksum="db459a4f36d4d7324db38f681c9f5a96"
+   committed-rev="9594"
+   kind="file"
+   last-author="l525045"/>
+<entry
+   prop-time="2013-08-29T16:45:00.000000Z"
+   name="mg_bg_slice.png"
+   text-time="2010-11-11T03:32:39.000000Z"
+   committed-date="2010-11-11T03:32:39.990954Z"
+   checksum="b4f0c8e0f0552ca5cd0ddaeff1f26cb9"
+   committed-rev="13956"
+   kind="file"
+   last-author="l525045"/>
+<entry
+   prop-time="2013-08-29T16:44:58.000000Z"
+   name="mg_header2.gif"
+   text-time="2010-12-28T21:41:00.000000Z"
+   committed-date="2010-12-28T21:41:00.832236Z"
+   checksum="6f0eae1bf98a7ac4dfc62912beb7cd44"
+   committed-rev="14834"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:56.000000Z"
+   name="mg_header_img.jpg"
+   text-time="2010-12-28T21:41:00.000000Z"
+   committed-date="2010-12-28T21:41:00.832236Z"
+   checksum="eac7249286fc2c94054949d87f24ea51"
+   committed-rev="14834"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:55.000000Z"
+   name="mg_header_tab.png"
+   text-time="2013-08-02T21:42:54.000000Z"
+   committed-date="2013-08-02T21:42:54.817451Z"
+   checksum="4b9421fee20d6d29b50e89283bee4315"
+   committed-rev="45104"
+   kind="file"
+   last-author="l523788"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="mg_nub.gif"
+   text-time="2010-12-28T21:41:00.000000Z"
+   committed-date="2010-12-28T21:41:00.832236Z"
+   checksum="7e2a79283aa9a0137585b09ba6bee3df"
+   committed-rev="14834"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:56.000000Z"
+   name="mg_sprite.gif"
+   text-time="2010-12-06T22:02:58.000000Z"
+   committed-date="2010-12-06T22:02:58.474820Z"
+   checksum="9d3d3bb77924b4ccd6e763d03f593d05"
+   committed-rev="14349"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="mg_sprite.png"
+   text-time="2010-12-06T19:09:40.000000Z"
+   committed-date="2010-12-06T19:09:40.977543Z"
+   checksum="e3583a363e10b529fa8daceb80628e7e"
+   committed-rev="14342"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:58.000000Z"
+   name="mg_sprite2.png"
+   text-time="2010-11-11T03:32:39.000000Z"
+   committed-date="2010-11-11T03:32:39.990954Z"
+   checksum="6c745f0722ffb827e47718c614e28e50"
+   committed-rev="13956"
+   kind="file"
+   last-author="l525045"/>
+<entry
+   prop-time="2013-08-29T16:44:56.000000Z"
+   name="mg_sprite_bak.png"
+   text-time="2010-12-06T19:09:40.000000Z"
+   committed-date="2010-12-06T19:09:40.977543Z"
+   checksum="6c745f0722ffb827e47718c614e28e50"
+   committed-rev="14342"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:45:00.000000Z"
+   name="mpArrows.gif"
+   text-time="2013-06-24T22:55:20.000000Z"
+   committed-date="2013-06-24T22:55:20.790486Z"
+   checksum="51f58623a6c1dff499a677803430eeb7"
+   committed-rev="43998"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="si_mmr_home.jpg"
+   text-time="2010-11-17T00:18:57.000000Z"
+   committed-date="2010-11-17T00:18:57.454417Z"
+   checksum="c73394b42ae560012505854a1fbf58ab"
+   committed-rev="14093"
+   kind="file"
+   last-author="l525045"/>
+<entry
+   prop-time="2013-08-29T16:44:55.000000Z"
+   name="step.gif"
+   text-time="2011-08-22T22:09:58.000000Z"
+   committed-date="2011-08-22T22:09:58.001671Z"
+   checksum="7a93224ae1a337ac699113f417726069"
+   committed-rev="23848"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:58.000000Z"
+   name="step1.gif"
+   text-time="2011-08-22T22:09:58.000000Z"
+   committed-date="2011-08-22T22:09:58.001671Z"
+   checksum="04a71ab6017100a44ad82d94367a72a4"
+   committed-rev="23848"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="step2.gif"
+   text-time="2011-08-22T22:09:58.000000Z"
+   committed-date="2011-08-22T22:09:58.001671Z"
+   checksum="42c05e675dd178bd377afdbe16a8d179"
+   committed-rev="23848"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:59.000000Z"
+   name="step3.gif"
+   text-time="2011-08-22T22:09:58.000000Z"
+   committed-date="2011-08-22T22:09:58.001671Z"
+   checksum="9c11f3faad1d4e79ee2ffeee8d77f19d"
+   committed-rev="23848"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:44:56.000000Z"
+   name="tab_arrow.png"
+   text-time="2013-08-06T18:01:55.000000Z"
+   committed-date="2013-08-06T18:01:55.100742Z"
+   checksum="a466ea36bb65e1caa1f70edcd9e7ad46"
+   committed-rev="45161"
+   kind="file"
+   last-author="l523788"/>
+<entry
+   prop-time="2013-08-29T16:44:57.000000Z"
+   name="tab_doctor.png"
+   text-time="2013-06-20T21:36:01.000000Z"
+   committed-date="2013-06-20T21:36:01.339725Z"
+   checksum="3e5cdd420fb06f3c3ca2bed37e830bdc"
+   committed-rev="43889"
+   kind="file"
+   last-author="f525302"/>
+<entry
+   prop-time="2013-08-29T16:45:00.000000Z"
+   name="tab_facility.png"
+   text-time="2013-06-20T21:36:01.000000Z"
+   committed-date="2013-06-20T21:36:01.339725Z"
+   checksum="53c19db5680335f5359cd12f1c5b12b4"
+   committed-rev="43889"
+   kind="file"
+   last-author="f525302"/>
+</wc-entries>
